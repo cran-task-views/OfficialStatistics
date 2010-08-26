@@ -295,7 +295,12 @@ For general time series methodology we refer to the
   Package <pkg>RecordLinkage</pkg> provides functions for linking and 
   deduplicating data sets. 
   </li>
-</ul>
+  <li>
+  Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amonst
+  other matching methods. If two data set have to be matched, the data must come as one data frame including a factor
+  variable which includes information about the membership of each observation.
+  </li>
+  </ul>
 
 <p><strong>Indices and Indicators</strong></p>
 <ul>
@@ -311,7 +316,7 @@ For general time series methodology we refer to the
   Package <pkg>ineq</pkg> computes various inequality measures (Gini, Theil,
   entropy, among others), concentration measures (Herfindahl, Rosenbluth), and poverty
   measures (Watts, Sen, SST, and Foster). It also computes and draws empirical and theoretical
-  Lorenz curves as well as Pen's parade.
+  Lorenz curves as well as Pen's parade. It is not designed to deal with sampling weights. 
   </li>
   <li>
   Function <code>priceIndex()</code> from package <pkg>micEcon</pkg> allows to 
@@ -411,6 +416,8 @@ For general time series methodology we refer to the
 <links>
   <view>TimeSeries</view>
   <view>SocialSciences</view>
+  <a href="http://www.r-project.org/conferences/useR-2008/tutorials/gomez.html>Link</a> to the useR!2008 
+  Small Area Estimation tutorial resources. 
 </links>
 
 </CRANTaskView>
