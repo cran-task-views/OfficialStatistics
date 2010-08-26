@@ -11,7 +11,7 @@ Many packages provide functionality for more than one of the topics listed
 below.  Therefore this list is not a strict categorization and packages can be 
 listed more than once.  Please note that not all topics that are of interest in 
 official statistics are listed below, because functionality in R might be 
-missing until now (e.g. for editing or small area estimation).
+missing until now (e.g. for editing).
  
 
 <p><strong>Complex Survey Design: General Comments</strong></p>
@@ -253,9 +253,11 @@ re-identified and by guaranting a minimum amount of information loss.
   (micro)data, i.e. for the generation of public- and scientific-use files.  
   The package also comes with a graphical user interface.
   </li>
+  <li>
   Package <pkg>simPopulation</pkg> simulates synthetic, confidential, close-to-reality populations for 
   surveys based on sample data. Such population data can then be used for 
   extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example.
+  </li>
   <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential 
   (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE 
@@ -297,10 +299,10 @@ For general time series methodology we refer to the
   </li>
   <li>
   Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amonst
-  other matching methods. If two data set have to be matched, the data must come as one data frame including a factor
+  other matching methods. If two data sets have to be matched, the data must come as one data frame including a factor
   variable which includes information about the membership of each observation.
   </li>
-  </ul>
+</ul>  
 
 <p><strong>Indices and Indicators</strong></p>
 <ul>
@@ -327,7 +329,7 @@ For general time series methodology we refer to the
  
 
   
-<p><strong>Additional Packages</strong></p>
+<p><strong>Additional Packages and Functionalities</strong></p>
 <ul>
   <li>
   Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
@@ -363,6 +365,11 @@ For general time series methodology we refer to the
   Package <pkg>spsurvey</pkg> includes facilities for spatial survey design and 
   analysis for equal and unequal probability (stratified) sampling.
   </li>
+  <li>
+  Package <pkg>nmle</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
+  <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
+  Small Area Estimation. 
+  </li>
 </ul>  
   
 
@@ -370,6 +377,8 @@ For general time series methodology we refer to the
 </info>
 
 <packagelist>
+  <pkg>nmle</pkg>
+  <pkg>lme4</pkg>
   <pkg>Amelia</pkg>
   <pkg>cat</pkg>
   <pkg>EVER</pkg>
