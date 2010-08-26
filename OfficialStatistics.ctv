@@ -318,7 +318,8 @@ For general time series methodology we refer to the
   Package <pkg>ineq</pkg> computes various inequality measures (Gini, Theil,
   entropy, among others), concentration measures (Herfindahl, Rosenbluth), and poverty
   measures (Watts, Sen, SST, and Foster). It also computes and draws empirical and theoretical
-  Lorenz curves as well as Pen's parade. It is not designed to deal with sampling weights. 
+  Lorenz curves as well as Pen's parade. It is not designed to deal with sampling weights directly
+  (these could only be emulated via <code>rep(x, weights)</code>). 
   </li>
   <li>
   Function <code>priceIndex()</code> from package <pkg>micEcon</pkg> allows to 
