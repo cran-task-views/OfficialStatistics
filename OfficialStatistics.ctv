@@ -221,6 +221,11 @@ count variables.
   compositional data (function <code>impKNNa()</code>) using the Aitchison 
   distance and adjustment of the nearest neighbor. 
   </li>
+  <li> 
+  Package <pkg>rrcovNA</pkg> provides an algorithm for (robust) sequential imputation (function 
+  <code>impSeq()</code> and <code>impSeqRob()</code>  
+  by minimizing the determinant of the covariance of the augmented data matrix.
+  </li>
 </ul>
 
 <p>Miscellaneous Imputation Methods:</p>
@@ -333,6 +338,12 @@ For general time series methodology we refer to the
 <p><strong>Additional Packages and Functionalities</strong></p>
 <ul>
   <li>
+  Package <pkg>rrcovNA</pkg> provides robust location and scatter estimation and robust
+                    principal component analysis with high breakdown point for
+                    incomplete data. It is therefore 
+                    applicable to find representative and non-representative outliers.
+  </li>
+  <li>
   Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
   'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann 
   and Helmut Kuechenhoff (2010).
@@ -402,6 +413,7 @@ For general time series methodology we refer to the
   <pkg>RecordLinkage</pkg>
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
+  <pkg>rrcovNA</pkg>
   <pkg>sampfling</pkg>
   <pkg>sampling</pkg>
   <pkg>samplingbook</pkg>
