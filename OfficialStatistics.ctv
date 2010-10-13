@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2010-08-25</version>
+<version>2010-10-12</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
