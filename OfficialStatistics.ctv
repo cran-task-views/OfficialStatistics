@@ -17,10 +17,7 @@ missing until now (e.g. for editing).
 <p><strong>Complex Survey Design: General Comments</strong></p>
 <ul>
   <li> Package <pkg>sampling</pkg> includes many different algorithms for 
-  drawing survey samples and calibrating the design weights.  Since the package 
-  is designed for teaching purposes and is based on interpreted R code only, 
-  some functionality such as calibration or certain sampling methods may be too 
-  slow for large data sets. 
+  drawing survey samples and calibrating the design weights.  
   </li>
   <li> Package <pkg>survey</pkg> can also handle moderate data sets and is the 
   standard package for dealing with already drawn survey samples in R.  Once 
@@ -121,7 +118,7 @@ missing until now (e.g. for editing).
   </li>
   <li>
   The <code>calibWeights()</code> function in package <pkg>laeken</pkg> is a 
-  faster implementation of parts of <code>calib()</code> from package 
+  possible faster (depending on the example) implementation of parts of <code>calib()</code> from package 
   <pkg>sampling</pkg>. 
   </li>
   <li>
