@@ -362,11 +362,6 @@ For general time series methodology we refer to the
   graphics and simulation.
   </li>
   <li>
-  Package <pkg>surveyNG</pkg> is an experimental revision of the survey package 
-  that provides database interface facilities and efficient calculations with 
-  sparse matrices.
-  </li>
-  <li>
   Package <pkg>odfWeave.survey</pkg> provides support for <pkg>odfWeave</pkg> 
   for the <pkg>survey</pkg> package.
   </li>
@@ -424,7 +419,6 @@ For general time series methodology we refer to the
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
   <pkg priority="core">survey</pkg>
-  <pkg>surveyNG</pkg>
   <pkg>TeachingSampling</pkg>
   <pkg>urn</pkg>
   <pkg>VIM</pkg>
