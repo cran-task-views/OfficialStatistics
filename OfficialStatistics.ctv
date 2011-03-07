@@ -11,7 +11,7 @@ Many packages provide functionality for more than one of the topics listed
 below.  Therefore this list is not a strict categorization and packages can be 
 listed more than once.  Please note that not all topics that are of interest in 
 official statistics are listed below, because functionality in R might be 
-missing until now (e.g. for editing).
+missing until now.
  
 
 <p><strong>Complex Survey Design: General Comments</strong></p>
@@ -129,8 +129,36 @@ missing until now (e.g. for editing).
   </li>
 </ul>
 
-
-
+<p><strong>Editing and Visual Inspection of Microdata</strong></p>
+<p>Editing tools:</p>
+<ul>
+  <li> 
+    Package <pkg>editrules</pkg> convert readable linear (in)equalities into matrix form.
+  </li>
+  <li> 
+Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and applies deductive correction of simple rounding, typing and
+                    sign errors based on balanced edits. Values are changed so that the given balanced edits are fulfilled. To determine which values are changed the Levenstein-metric is applied.
+  </li>
+</ul>  
+<p>Visual tools:</p>
+<ul>
+  <li> 
+    Package <pkg>VIM</pkg> is designed to visualize missing values 
+  using suitable plot methods. It can be used to analyse the structure of missing values in microdata using univariate, bivariate, multiple and multivariate plots where the  
+  information of missing values 
+  from specified variables are highlighted in selected variables. 
+  It also comes with a graphical user interface.  
+   </li>
+     <li> 
+   With <pkg>tableplot</pkg> (large) statistical dataset with different type of variables (numeric and categorical), can be visualised. 
+   Using function <code>tabplot()</code>, the whole data matrix is visualized whereas the columns in the plot represents the columns of the 
+   data matrix and the rows are proportional to mean values of certain observations represented by a bar chart 
+   (for variables of type numeric) or stacked bar charts (for variables of type factor). 
+   Missing values are taken into account as well as ffdf datasets from the <pkg>ff</pkg> package are supported. 
+   One application of this package is in editing to detect possible data errors.
+      </li>
+</ul>
+   
 <p><strong>Imputation</strong></p>
 A distinction between iterative model-based methods, k-nearest neighbor methods 
 and miscellaneous methods is made.  However, often the criteria for using a 
