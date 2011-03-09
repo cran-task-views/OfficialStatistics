@@ -150,12 +150,10 @@ Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and appli
   It also comes with a graphical user interface.  
    </li>
      <li> 
-   With <pkg>tableplot</pkg> (large) statistical dataset with different type of variables (numeric and categorical), can be visualised. 
-   Using function <code>tabplot()</code>, the whole data matrix is visualized whereas the columns in the plot represents the columns of the 
-   data matrix and the rows are proportional to mean values of certain observations represented by a bar chart 
-   (for variables of type numeric) or stacked bar charts (for variables of type factor). 
-   Missing values are taken into account as well as ffdf datasets from the <pkg>ff</pkg> package are supported. 
-   One application of this package is in editing to detect possible data errors.
+   Package <pkg>tabplot</pkg>  provides the tableplot visualization method, which is used to profile or explore large statistical datasets. 
+   Up to a dozen of variables are shown column-wise as bar charts (numeric variables) or stacked bar charts (factors). 
+   Key aspects of the analysis with tableplots are the smoothness of a data distribution, 
+   the selective occurrence of missing values, and the distribution of correlated variables.   
       </li>
 </ul>
    
