@@ -65,6 +65,14 @@ missing until now.
   Package <pkg>stratification</pkg> allows univariate stratification of survey 
   populations with a generalisation of the Lavallee-Hidiroglou method.
   </li>
+  <li>
+  Package <pkg>SamplingStrata</pkg> offers an approach for choosing the best 
+  stratification of a sampling frame in a multivariate and multidomain setting, 
+  where the sampling sizes in each strata are determined in order to satisfy accuracy 
+  constraints on target estimates.
+To evaluate the distribution of target variables in different strata, information of the sampling frame, 
+or data from previous rounds of the same survey, may be used.
+  </li>
 </ul>
 
 
