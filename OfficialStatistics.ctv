@@ -170,7 +170,8 @@ A distinction between iterative model-based methods, k-nearest neighbor methods
 and miscellaneous methods is made.  However, often the criteria for using a 
 method depend on the scale of the data, which in official statistics are 
 typically a mixture of continuous, semi-continuous, binary, categorical and 
-count variables.
+count variables. In addition, measurement errors may corrupt non-robust imputation methods.
+Note that only few imputation methods can deal with mixed types of variables and only few methods account for robustness issues.
 <p>EM-based Imputation Methods:</p>
 <ul>
   <li>
@@ -204,7 +205,7 @@ count variables.
   <li>
   Package <pkg>mix</pkg> provides iterative EM-based multiple regression 
   imputation.  The data set may consist of continuous, binary or categorical 
-  variables. 
+  variables, but methods for semi-continuous variables are missing.
   </li>
   <li>
   Package <pkg>pan</pkg> provides multiple imputation for multivariate panel or 
@@ -228,8 +229,15 @@ count variables.
   </li>
 </ul>
 
-<p>k-Nearest Neighbor (knn) Imputation Methods</p>
+<p>Nearest Neighbor Imputation Methods</p>
 <ul>
+  <li>
+  Package <pkg>VIM</pkg> provides an implementation of the popular 
+  sequential and random (within a domain) hot-deck algorithm.  
+  </li> 
+  <li>
+  <pkg>VIM</pkg> also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets.
+  It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continous variables.
   <li>
   Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
   imputation of continuous variables where different metrics and methods can be 
@@ -241,7 +249,7 @@ count variables.
   separates the dataset into incomplete and complete observations.  The 
   observations in the incomplete set are imputed by the order of missing rate.  
   Once the missing values in an observations are imputed, the imputed 
-  observation is moved into the complete set.
+  observation is moved into the complete set. It can only applied to continuous scaled variables.
   </li>
   <li>
   Package <pkg>impute</pkg> impute provides knn imputation of continuous 
@@ -255,7 +263,7 @@ count variables.
   <li> 
   Package <pkg>rrcovNA</pkg> provides an algorithm for (robust) sequential imputation (function 
   <code>impSeq()</code> and <code>impSeqRob()</code>  
-  by minimizing the determinant of the covariance of the augmented data matrix.
+  by minimizing the determinant of the covariance of the augmented data matrix. It's application is limited to continuous scaled data.
   </li>
 </ul>
 
