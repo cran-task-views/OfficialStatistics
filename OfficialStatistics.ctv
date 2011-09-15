@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2011-08-02</version>
+<version>2011-09-07</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -238,6 +238,7 @@ Note that only few imputation methods can deal with mixed types of variables and
   <li>
   <pkg>VIM</pkg> also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets.
   It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continous variables.
+  </li>
   <li>
   Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
   imputation of continuous variables where different metrics and methods can be 
