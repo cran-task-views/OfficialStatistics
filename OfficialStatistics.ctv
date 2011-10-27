@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2011-09-07</version>
+<version>2011-08-02</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -146,6 +146,16 @@ or data from previous rounds of the same survey, may be used.
   <li> 
 Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and applies deductive correction of simple rounding, typing and
                     sign errors based on balanced edits. Values are changed so that the given balanced edits are fulfilled. To determine which values are changed the Levenstein-metric is applied.
+  </li>
+  <li>
+  Package <pkg>SeleMix</pkg> can be used for selective editing for continous scaled data. It fits a mixture model and tries to 
+  quantify the impact of errors to estimates.
+  </li>
+  <li>
+  Package <pkg>rrcovNA</pkg> provides robust location and scatter estimation and robust
+                    principal component analysis with high breakdown point for
+                    incomplete data. It is therefore 
+                    applicable to find representative and non-representative outliers.
   </li>
 </ul>  
 <p>Visual tools:</p>
@@ -378,12 +388,6 @@ For general time series methodology we refer to the
 <p><strong>Additional Packages and Functionalities</strong></p>
 <ul>
   <li>
-  Package <pkg>rrcovNA</pkg> provides robust location and scatter estimation and robust
-                    principal component analysis with high breakdown point for
-                    incomplete data. It is therefore 
-                    applicable to find representative and non-representative outliers.
-  </li>
-  <li>
   Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
   'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann 
   and Helmut Kuechenhoff (2010).
@@ -426,6 +430,8 @@ For general time series methodology we refer to the
 <packagelist>
   <pkg>Amelia</pkg>
   <pkg>cat</pkg>
+  <pkg>deducorrect</pkg>
+  <pkg>editrules</pkg>
   <pkg>EVER</pkg>
   <pkg>Hmisc</pkg>
   <pkg>impute</pkg>
@@ -455,6 +461,7 @@ For general time series methodology we refer to the
   <pkg>SDaA</pkg>
   <pkg>sdcMicro</pkg>
   <pkg>sdcTable</pkg>
+  <pkg>seleMix</pkg>
   <pkg>SeqKnn</pkg>
   <pkg>simFrame</pkg>
   <pkg>simPopulation</pkg>
