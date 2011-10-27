@@ -148,8 +148,9 @@ Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and appli
                     sign errors based on balanced edits. Values are changed so that the given balanced edits are fulfilled. To determine which values are changed the Levenstein-metric is applied.
   </li>
   <li>
-  Package <pkg>SeleMix</pkg> can be used for selective editing for continous scaled data. It fits a mixture model and tries to 
-  quantify the impact of errors to estimates.
+  Package <pkg>SeleMix</pkg> can be used for selective editing for continuous scaled data. 
+  A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to 
+  quantify the impact of errors to the estimates.
   </li>
   <li>
   Package <pkg>rrcovNA</pkg> provides robust location and scatter estimation and robust
