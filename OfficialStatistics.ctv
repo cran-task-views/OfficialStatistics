@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2011-11-02</version>
+<version>2011-11-18</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -264,10 +264,6 @@ Note that only few imputation methods can deal with mixed types of variables and
   observation is moved into the complete set. It can only applied to continuous scaled variables.
   </li>
   <li>
-  Package <pkg>impute</pkg> impute provides knn imputation of continuous 
-  variables.
-  </li>
-  <li>
   Package <pkg>robCompositions</pkg> provides knn imputation for 
   compositional data (function <code>impKNNa()</code>) using the Aitchison 
   distance and adjustment of the nearest neighbor. 
@@ -276,6 +272,10 @@ Note that only few imputation methods can deal with mixed types of variables and
   Package <pkg>rrcovNA</pkg> provides an algorithm for (robust) sequential imputation (function 
   <code>impSeq()</code> and <code>impSeqRob()</code>  
   by minimizing the determinant of the covariance of the augmented data matrix. It's application is limited to continuous scaled data.
+  </li>
+  <li>
+  Package <bioc>impute</bioc> on Bioconductor impute provides knn imputation of continuous 
+  variables.
   </li>
 </ul>
 
@@ -435,7 +435,6 @@ For general time series methodology we refer to the
   <pkg>editrules</pkg>
   <pkg>EVER</pkg>
   <pkg>Hmisc</pkg>
-  <pkg>impute</pkg>
   <pkg>ineq</pkg>
   <pkg>laeken</pkg>
   <pkg>lme4</pkg>
@@ -480,6 +479,7 @@ For general time series methodology we refer to the
 <links>
   <view>TimeSeries</view>
   <view>SocialSciences</view>
+  <bioc>impute</bioc>
   <a href="http://www.R-project.org/conferences/useR-2008/tutorials/gomez.html">useR!2008 Tutorial: Small Area Estimation</a>
 </links>
 
