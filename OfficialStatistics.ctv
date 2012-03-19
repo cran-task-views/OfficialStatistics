@@ -422,7 +422,8 @@ For general time series methodology we refer to the
   living in herds for surveys to substantiate freedom from disease. 
   The criteria of estimating the sample sizes take the herd-level clustering of 
   diseases as well as imperfect diagnostic tests into account and select the samples 
-  based on a two-stage design. The package provides a graphical user interface as well. 
+  based on a two-stage design. Inclusion probabilities are not considered in the estimation. 
+  The package provides a graphical user interface as well. 
   </li>
   <li>
   Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
