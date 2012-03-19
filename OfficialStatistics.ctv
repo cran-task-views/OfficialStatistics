@@ -418,6 +418,13 @@ For general time series methodology we refer to the
   analysis for equal and unequal probability (stratified) sampling.
   </li>
   <li>
+  The <pkg>FFD</pkg> package is designed to calculate optimal sample sizes of a population of animals 
+  living in herds for surveys to substantiate freedom from disease. 
+  The criteria of estimating the sample sizes take the herd-level clustering of 
+  diseases as well as imperfect diagnostic tests into account and select the samples 
+  based on a two-stage design. The package provides a graphical user interface as well. 
+  </li>
+  <li>
   Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
   <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
   small area estimation. 
@@ -439,6 +446,7 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>deducorrect</pkg>
   <pkg>editrules</pkg>
   <pkg>EVER</pkg>
+  <pkg>FFD</pkg>
   <pkg>Hmisc</pkg>
   <pkg>ineq</pkg>
   <pkg>laeken</pkg>
