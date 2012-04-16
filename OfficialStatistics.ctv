@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2012-03-22</version>
+<version>2012-04-16</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -403,9 +403,6 @@ For general time series methodology we refer to the
   designs and parameter estimation in finite populations.
   </li>
   <li>
-  Package <pkg>urn</pkg> allows sampling without replacement.
-  </li>
-  <li>
   Package <pkg>memisc</pkg> includes tools for the management of survey data, 
   graphics and simulation.
   </li>
@@ -485,7 +482,6 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>stratification</pkg>
   <pkg priority="core">survey</pkg>
   <pkg>TeachingSampling</pkg>
-  <pkg>urn</pkg>
   <pkg>VIM</pkg>
   <pkg>x12</pkg>
   <pkg>yaImpute</pkg>
