@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2012-04-16</version>
+<version>2012-06-24</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -256,14 +256,6 @@ Note that only few imputation methods can deal with mixed types of variables and
   used for determining the distance between observations.
   </li>
   <li>
-  Function <code>SeqKNN()</code> in Package <pkg>SeqKnn</pkg> imputes the 
-  missing values in continuously scaled variables sequentially.  First, it 
-  separates the dataset into incomplete and complete observations.  The 
-  observations in the incomplete set are imputed by the order of missing rate.  
-  Once the missing values in an observations are imputed, the imputed 
-  observation is moved into the complete set. It can only applied to continuous scaled variables.
-  </li>
-  <li>
   Package <pkg>robCompositions</pkg> provides knn imputation for 
   compositional data (function <code>impKNNa()</code>) using the Aitchison 
   distance and adjustment of the nearest neighbor. 
@@ -474,7 +466,6 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>sdcMicro</pkg>
   <pkg>sdcTable</pkg>
   <pkg>SeleMix</pkg>
-  <pkg>SeqKnn</pkg>
   <pkg>simFrame</pkg>
   <pkg>simPopulation</pkg>
   <pkg>spsurvey</pkg>
