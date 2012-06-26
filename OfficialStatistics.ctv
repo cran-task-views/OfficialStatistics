@@ -326,10 +326,10 @@ For general time series methodology we refer to the
   which can also be found in the <pkg>stats</pkg> package.
   </li>
   <li>
-  Many powerful tools can be accessed via package <pkg>x12</pkg>.  It provides 
-  a wrapper function and GUI for the 
-  <a href="http://www.census.gov/srd/www/x12a/">X12 binaries</a> under 
-  windows, which have to be installed first.
+  Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>x12GUI</pkg>. <pkg>x12</pkg> provides 
+  a wrapper function for the <a href="http://www.census.gov/srd/www/x12a/"> X12 binaries</a>, which have to be installed first. It uses  
+  with a S4-class interface for batch processing of multiple time series. <pkg>x12GUI</pkg> provides a graphical user interface for 
+  the X12-Arima seasonal adjustment software. 
   </li>
 </ul>
 
@@ -352,6 +352,27 @@ For general time series methodology we refer to the
   </li>
 </ul>  
 
+<p><strong>Small Area Estimation</strong></p>
+<ul>
+  <li>
+	Package <pkg>rsae</pkg> provides functions to estimate the parameters of the basic unit-level 
+	small area estimation (SAE) model (aka nested error regression model) 
+	by means of maximum likelihood (ML) or robust ML. On the basis of the estimated parameters, robust predictions of the area-specific 
+	means are computed (incl. MSE estimates; parametric bootstrap). 
+	The current version (rsae 0.4-x) does not allow for categorical independent variables.
+  </li>
+    <li>
+  Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
+  <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
+  small area estimation. 
+  </li>
+  <li>
+  With package <pkg>JoSAE</pkg> point and variance estimation for the generalized regression (GREG) and a unit level
+  empirical best linear unbiased prediction EBLUP estimators can be made at domain level. It basically provides wrapper functions to the <pkg>lme</pkg> package 
+that is used to fit the basic random effects models.
+  </li>
+</ul> 
+ 
 <p><strong>Indices and Indicators</strong></p>
 <ul>
   <li>
@@ -413,11 +434,6 @@ For general time series methodology we refer to the
   diseases as well as imperfect diagnostic tests into account and select the samples 
   based on a two-stage design. Inclusion probabilities are not considered in the estimation. 
   The package provides a graphical user interface as well. 
-  </li>
-  <li>
-  Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
-  <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
-  small area estimation. 
   </li>
   <li>
   The <pkg>pxR</pkg> package provides a set of functions for reading
