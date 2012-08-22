@@ -390,6 +390,10 @@ that is used to fit the basic random effects models.
   Lorenz curves as well as Pen's parade. It is not designed to deal with sampling weights directly
   (these could only be emulated via <code>rep(x, weights)</code>). 
   </li>
+  <li> Package <pkg>IC2</pkg> include three inequality indices: 
+  extended Gini, Atkinson and Generalized Entropy. It can deal with sampling weights and 
+  subgroup decomposition is supported.
+  </li>
   <li>
   Function <code>priceIndex()</code> from package <pkg>micEcon</pkg> allows to 
   estimate the Paasche, the Fisher and the Laspeyres price indices.
