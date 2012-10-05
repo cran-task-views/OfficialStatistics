@@ -2,8 +2,8 @@
 
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
-<maintainer email="templ@tuwien.ac.at">Matthias Templ</maintainer>
-<version>2012-08-22</version>
+<maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
+<version>2012-10-05</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -172,8 +172,13 @@ Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and appli
    Package <pkg>tabplot</pkg>  provides the tableplot visualization method, which is used to profile or explore large statistical datasets. 
    Up to a dozen of variables are shown column-wise as bar charts (numeric variables) or stacked bar charts (factors). 
    Key aspects of the analysis with tableplots are the smoothness of a data distribution, 
-   the selective occurrence of missing values, and the distribution of correlated variables.   
+   the selective occurrence of missing values, and the distribution of correlated variables. The package <pkg>tabplotGTK</pkg> is a graphical user interface for 
+   <pkg>tabplot</pkg>. 
       </li>
+   	<li>
+   	Package <pkg>treemap</pkg> provide treemaps. A treemap is a space-filling visualization of aggregates of data with
+    hierarchical structures. Colors can be used to relate to highlight differences between comparable aggregates.
+    </li>
 </ul>
    
 <p><strong>Imputation</strong></p>
@@ -365,6 +370,11 @@ For general time series methodology we refer to the
   Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
   <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
   small area estimation. 
+  </li>
+  <li>
+  The <pkg>hbsae</pkg> package provides functions to compute small area estimates based on a basic area or unit-level model. 
+  The model is fit using restricted maximum likelihood, or in a hierarchical Bayesian way. Auxilary information can be either
+  counts resulting from categorical variables or means from continuous population information. 
   </li>
   <li>
   With package <pkg>JoSAE</pkg> point and variance estimation for the generalized regression (GREG) and a unit level
