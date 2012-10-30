@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2012-10-05</version>
+<version>2012-10-30</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -468,6 +468,7 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>EVER</pkg>
   <pkg>FFD</pkg>
   <pkg>Hmisc</pkg>
+  <pkg>IC2</pkg>
   <pkg>ineq</pkg>
   <pkg>laeken</pkg>
   <pkg>lme4</pkg>
