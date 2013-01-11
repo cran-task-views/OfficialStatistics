@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2012-10-30</version>
+<version>2013-01-11</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -57,9 +57,6 @@ missing until now.
   The <pkg>pps</pkg> package contains functions to select samples using pps 
   sampling.  Also stratified simple random sampling is possible as well as to 
   compute joint inclusion probabilities for Sampford's method of pps sampling. 
-  </li>
-  <li> Package <pkg>sampfling</pkg> implements the Sampford algorithm to obtain 
-  a sample without replacement and with unequal probabilities. 
   </li>
   <li>
   Package <pkg>stratification</pkg> allows univariate stratification of survey 
@@ -490,7 +487,6 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
   <pkg>rrcovNA</pkg>
-  <pkg>sampfling</pkg>
   <pkg>sampling</pkg>
   <pkg>samplingbook</pkg>
   <pkg>SDaA</pkg>
