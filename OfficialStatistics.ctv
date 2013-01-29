@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2013-01-11</version>
+<version>2013-01-29</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -169,8 +169,7 @@ Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and appli
    Package <pkg>tabplot</pkg>  provides the tableplot visualization method, which is used to profile or explore large statistical datasets. 
    Up to a dozen of variables are shown column-wise as bar charts (numeric variables) or stacked bar charts (factors). 
    Key aspects of the analysis with tableplots are the smoothness of a data distribution, 
-   the selective occurrence of missing values, and the distribution of correlated variables. The package <pkg>tabplotGTK</pkg> is a graphical user interface for 
-   <pkg>tabplot</pkg>. 
+   the selective occurrence of missing values, and the distribution of correlated variables. 
       </li>
    	<li>
    	Package <pkg>treemap</pkg> provide treemaps. A treemap is a space-filling visualization of aggregates of data with
@@ -323,9 +322,9 @@ For general time series methodology we refer to the
   <li>
   Decomposition of time series can be done with the function 
   <code>decompose()</code>, or more advanced by using the function 
-  <code>stl()</code>, both from the basic <pkg>stats</pkg> package.  
+  <code>stl()</code>, both from the basic stats package.  
   Decomposition is also possible with the <code>StructTS()</code> function, 
-  which can also be found in the <pkg>stats</pkg> package.
+  which can also be found in the stats package.
   </li>
   <li>
   Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>x12GUI</pkg>. <pkg>x12</pkg> provides 
@@ -375,7 +374,7 @@ For general time series methodology we refer to the
   </li>
   <li>
   With package <pkg>JoSAE</pkg> point and variance estimation for the generalized regression (GREG) and a unit level
-  empirical best linear unbiased prediction EBLUP estimators can be made at domain level. It basically provides wrapper functions to the <pkg>lme</pkg> package 
+  empirical best linear unbiased prediction EBLUP estimators can be made at domain level. It basically provides wrapper functions to the <pkg>nlme</pkg> package 
 that is used to fit the basic random effects models.
   </li>
 </ul> 
@@ -464,11 +463,15 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>editrules</pkg>
   <pkg>EVER</pkg>
   <pkg>FFD</pkg>
+  <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
   <pkg>IC2</pkg>
   <pkg>ineq</pkg>
+  <pkg>JoSAE</pkg>
   <pkg>laeken</pkg>
   <pkg>lme4</pkg>
+  <pkg>lpSolve</pkg>
+  <pkg>MatchIt</pkg>
   <pkg>memisc</pkg>
   <pkg>mi</pkg>
   <pkg>mice</pkg>
@@ -479,6 +482,7 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>mix</pkg>
   <pkg>nlme</pkg>
   <pkg>norm</pkg>
+  <pkg>odfWeave</pkg>
   <pkg>odfWeave.survey</pkg>
   <pkg>pan</pkg>
   <pkg>pps</pkg>
@@ -487,8 +491,10 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
   <pkg>rrcovNA</pkg>
+  <pkg>rsae</pkg>
   <pkg>sampling</pkg>
   <pkg>samplingbook</pkg>
+  <pkg>SamplingStrata</pkg>
   <pkg>SDaA</pkg>
   <pkg>sdcMicro</pkg>
   <pkg>sdcTable</pkg>
@@ -499,9 +505,12 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
   <pkg priority="core">survey</pkg>
+  <pkg>tabplot</pkg>
   <pkg>TeachingSampling</pkg>
+  <pkg>treemap</pkg>
   <pkg>VIM</pkg>
   <pkg>x12</pkg>
+  <pkg>x12GUI</pkg>
   <pkg>yaImpute</pkg>
 </packagelist>
 
