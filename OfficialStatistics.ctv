@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2013-01-29</version>
+<version>2013-02-18</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -99,6 +99,16 @@ or data from previous rounds of the same survey, may be used.
   <li>
   Package <pkg>simFrame</pkg> allows to compare (user-defined) point and 
   variance estimators in a simulation environment. 
+  </li>
+  <li>
+  The <pkg>lavaan.survey</pkg> package provides a wrapper function for packages <pkg>survey</pkg> and <pkg>lavaan</pkg>. 
+  It can be used for 
+  fitting structural equation models (SEM) on samples from complex designs. Using 
+  the design object functionality from package <pkg>survey</pkg>, lavaan objects are re-fit 
+  (corrected) with the <code>lavaan.survey()</code> function of package <pkg>lavaan.survey</pkg>.
+  This allows for the incorporation of clustering, stratification, sampling weights, 
+and finite population corrections into a SEM analysis. <code>lavaan.survey()</code> also accomodates 
+replicate weights and multiply imputed datasets.
   </li>
 </ul>
 
