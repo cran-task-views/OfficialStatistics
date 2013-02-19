@@ -479,6 +479,8 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>ineq</pkg>
   <pkg>JoSAE</pkg>
   <pkg>laeken</pkg>
+  <pkg>lavaan</pkg>
+  <pkg>lavaan.survey</pkg>
   <pkg>lme4</pkg>
   <pkg>lpSolve</pkg>
   <pkg>MatchIt</pkg>
