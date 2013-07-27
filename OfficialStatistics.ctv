@@ -3,15 +3,13 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2013-05-16</version>
+<version>2013-07-27</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
 Many packages provide functionality for more than one of the topics listed 
 below.  Therefore this list is not a strict categorization and packages can be 
-listed more than once.  Please note that not all topics that are of interest in 
-official statistics are listed below, because functionality in R might be 
-missing until now.
+listed more than once.  
  
 
 <p><strong>Complex Survey Design: General Comments</strong></p>
@@ -422,6 +420,11 @@ that is used to fit the basic random effects models.
 <p><strong>Additional Packages and Functionalities</strong></p>
 <ul>
   <li>
+  Package <pkg>SAScii</pkg> imports ASCII files directly into R using only a SAS input script, which
+  is parsed and converted into arguments for a read.fwf call. This is useful whenever SAS scripts for importing data
+  are already available.
+  </li> 
+  <li>
   Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
   'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann 
   and Helmut Kuechenhoff (2010).
@@ -513,6 +516,7 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>samplingbook</pkg>
   <pkg>SamplingStrata</pkg>
   <pkg>samplingVarEst</pkg>
+  <pkg>SAScii</pkg>
   <pkg>SDaA</pkg>
   <pkg>sdcMicro</pkg>
   <pkg>sdcTable</pkg>
