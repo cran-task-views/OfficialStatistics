@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2013-07-27</version>
+<version>2013-12-10</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -363,13 +363,6 @@ For general time series methodology we refer to the
 
 <p><strong>Small Area Estimation</strong></p>
 <ul>
-  <li>
-	Package <pkg>rsae</pkg> provides functions to estimate the parameters of the basic unit-level 
-	small area estimation (SAE) model (aka nested error regression model) 
-	by means of maximum likelihood (ML) or robust ML. On the basis of the estimated parameters, robust predictions of the area-specific 
-	means are computed (incl. MSE estimates; parametric bootstrap). 
-	The current version (rsae 0.4-x) does not allow for categorical independent variables.
-  </li>
     <li>
   Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
   <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
@@ -511,7 +504,6 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
   <pkg>rrcovNA</pkg>
-  <pkg>rsae</pkg>
   <pkg>sampling</pkg>
   <pkg>samplingbook</pkg>
   <pkg>SamplingStrata</pkg>
