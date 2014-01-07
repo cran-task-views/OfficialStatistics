@@ -9,7 +9,8 @@
 methods typically used in official statistics and survey methodology.
 Many packages provide functionality for more than one of the topics listed 
 below.  Therefore this list is not a strict categorization and packages can be 
-listed more than once.  
+listed more than once. Certain data import/export facilities regarding to often used statistical software tools
+like SPSS, SAS or Stata are mentioned in the end of the task view.
  
 
 <p><strong>Complex Survey Design: General Comments</strong></p>
@@ -407,16 +408,48 @@ that is used to fit the basic random effects models.
   </li>
 </ul>
  
- 
-
+<p><strong>Microsimulation</strong></p>
+<ul>
+  <li>
+  Package <pkg>sms</pkg> provides facilities to simulate micro-data from given macro-data. It contains functions for spatial microsimulation methods.
+  </li>
+</ul>
   
 <p><strong>Additional Packages and Functionalities</strong></p>
+Various additional packages are available that provides certain functionality useful in official statistics and survey methodology.
+<p>Data Import and Export:</p>
 <ul>
   <li>
   Package <pkg>SAScii</pkg> imports ASCII files directly into R using only a SAS input script, which
   is parsed and converted into arguments for a read.fwf call. This is useful whenever SAS scripts for importing data
   are already available.
   </li> 
+<li>
+The <pkg>foreign</pkg> package includes tools for reading data from SAS Xport (function <code>read.xport()</code>), Stata (function <code>read.dta()</code>), SPSS (function <code>read.spss()</code>) and various other formats. It provides facilites to write file to various formats, see function <code>write.foreign()</code>.
+</li>
+<li>
+Also the package <pkg>Hmisc</pkg> provides tools to read data sets from SPSS (function 
+<code>spss.get()</code>)  or Stata (function <code>stata.get()</code>). 
+</li>
+<li>
+Function <code>readSpssSav()</code> from package <pkg>spssDDI</pkg> reads the metadata inside a SPSS System file and optionally the actual data.
+</li>
+  <li>
+  The <pkg>pxR</pkg> package provides a set of functions for reading
+and writing PC-Axis files, used by different statistical
+organizations around the globe for disemination of their (multidimensional) tables.
+  </li>
+<li>
+With package <pkg>prevR</pkg> and it's function <code>import.dhs()</code> it is possible to directly imports 
+data from the Demographic Health Survey.
+</li>
+<li>
+Function <code>describe()</code> from package <pkg>questionr</pkg> describes the variables of a dataset that might include labels imported with the foreign or memisc packages.
+</li>
+</ul>
+
+<p>Sampling Techniques:</p>
+<ul>
   <li>
   Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
   'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann 
@@ -456,11 +489,6 @@ that is used to fit the basic random effects models.
   based on a two-stage design. Inclusion probabilities are not considered in the estimation. 
   The package provides a graphical user interface as well. 
   </li>
-  <li>
-  The <pkg>pxR</pkg> package provides a set of functions for reading
-and writing PC-Axis files, used by different statistical
-organizations around the globe for disemination of their (multidimensional) tables.
-  </li>
 </ul>  
   
 
@@ -474,6 +502,7 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>editrules</pkg>
   <pkg>EVER</pkg>
   <pkg>FFD</pkg>
+  <pkg>foreign</pkg>
   <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
   <pkg>IC2</pkg>
@@ -499,7 +528,9 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>odfWeave.survey</pkg>
   <pkg>pan</pkg>
   <pkg>pps</pkg>
+  <pkg>prevR</pkg>
   <pkg>pxR</pkg> 
+  <pkg>questionr</pkg> 
   <pkg>RecordLinkage</pkg>
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
@@ -515,6 +546,8 @@ organizations around the globe for disemination of their (multidimensional) tabl
   <pkg>SeleMix</pkg>
   <pkg>simFrame</pkg>
   <pkg>simPopulation</pkg>
+  <pkg>sms</pkg>
+  <pkg>spssDDI</pkg>
   <pkg>spsurvey</pkg>
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
