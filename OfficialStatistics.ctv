@@ -411,7 +411,12 @@ that is used to fit the basic random effects models.
 <p><strong>Microsimulation</strong></p>
 <ul>
   <li>
-  Package <pkg>sms</pkg> provides facilities to simulate micro-data from given macro-data. It contains functions for spatial microsimulation methods.
+  Synthetic, confidential, close-to-reality populations based on sample data can be simulated using
+<pkg>simPopulation</pkg>. Such population data can then be used as a basis for microsimulation scenarios.
+  </li>
+  <li>
+Package <pkg>sms</pkg> provides facilities to simulate micro-data from given area-based macro-data. Simulated annealing is used to best satisfy the available description of an area. 
+For computational issues, the calculations can be run in parallel mode.
   </li>
 </ul>
   
