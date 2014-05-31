@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-01-09</version>
+<version>2014-05-31</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -352,10 +352,6 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   likelihood aproach or via hot-deck.
   </li>
   <li>
-  Package <pkg>RecordLinkage</pkg> provides functions for linking and 
-  deduplicating data sets. 
-  </li>
-  <li>
   Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amonst
   other matching methods. If two data sets have to be matched, the data must come as one data frame including a factor
   variable which includes information about the membership of each observation.
@@ -533,7 +529,6 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>prevR</pkg>
   <pkg>pxR</pkg> 
   <pkg>questionr</pkg> 
-  <pkg>RecordLinkage</pkg>
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
   <pkg>rrcovNA</pkg>
