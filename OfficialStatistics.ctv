@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-06-08</version>
+<version>2014-06-13</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -311,11 +311,11 @@ re-identified and by guaranting a minimum amount of information loss.
   (micro)data, i.e. for the generation of public- and scientific-use files.  
   The package also comes with a graphical user interface.
   </li>
-  <li>
+<!--  <li>
   Package <pkg>simPopulation</pkg> simulates synthetic, confidential, close-to-reality populations for 
   surveys based on sample data. Such population data can then be used for 
   extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example.
-  </li>
+  </li> -->
   <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential 
   (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE 
@@ -551,7 +551,6 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>seasonal</pkg>
   <pkg>SeleMix</pkg>
   <pkg>simFrame</pkg>
-  <pkg>simPopulation</pkg>
   <pkg>sms</pkg>
   <pkg>spsurvey</pkg>
   <pkg>StatMatch</pkg>
