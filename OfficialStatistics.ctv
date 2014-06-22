@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-06-13</version>
+<version>2014-06-22</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -316,12 +316,6 @@ re-identified and by guaranting a minimum amount of information loss.
   surveys based on sample data. Such population data can then be used for 
   extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example.
   </li> -->
-  <li>
-  Package <pkg>sdcTable</pkg>  can be used to provide confidential 
-  (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE 
-  technique and uses package <pkg>lpSolve</pkg> for solving (a large amount of) 
-  linear programs.
-  </li>
 </ul>
 
 <p><strong>Seasonal Adjustment</strong></p>
@@ -517,7 +511,6 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>lavaan</pkg>
   <pkg>lavaan.survey</pkg>
   <pkg>lme4</pkg>
-  <pkg>lpSolve</pkg>
   <pkg>MatchIt</pkg>
   <pkg>memisc</pkg>
   <pkg>mi</pkg>
@@ -547,7 +540,6 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>SAScii</pkg>
   <pkg>SDaA</pkg>
   <pkg>sdcMicro</pkg>
-  <pkg>sdcTable</pkg>
   <pkg>seasonal</pkg>
   <pkg>SeleMix</pkg>
   <pkg>simFrame</pkg>
