@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-06-23</version>
+<version>2014-06-25</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -416,6 +416,9 @@ that is used to fit the basic random effects models.
   <li>
   Synthetic, confidential, close-to-reality populations based on sample data can be simulated using
 <pkg>simPopulation</pkg>. Such population data can then be used as a basis for microsimulation scenarios.
+  </li>
+  <li>
+The <pkg>MicSim<\pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
   </li>
   <li>
 Package <pkg>sms</pkg> provides facilities to simulate micro-data from given area-based macro-data. Simulated annealing is used to best satisfy the available description of an area. 
