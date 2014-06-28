@@ -414,10 +414,6 @@ that is used to fit the basic random effects models.
 <p><strong>Microsimulation</strong></p>
 <ul>
   <li>
-  Synthetic, confidential, close-to-reality populations based on sample data can be simulated using
-<pkg>simPopulation</pkg>. Such population data can then be used as a basis for microsimulation scenarios.
-  </li>
-  <li>
 The <pkg>MicSim<\pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
   </li>
   <li>
