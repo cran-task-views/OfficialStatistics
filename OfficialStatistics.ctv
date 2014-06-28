@@ -414,7 +414,7 @@ that is used to fit the basic random effects models.
 <p><strong>Microsimulation</strong></p>
 <ul>
   <li>
-The <pkg>MicSim<\pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
+The <pkg>MicSim</pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
   </li>
   <li>
 Package <pkg>sms</pkg> provides facilities to simulate micro-data from given area-based macro-data. Simulated annealing is used to best satisfy the available description of an area. 
@@ -521,6 +521,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>mi</pkg>
   <pkg>mice</pkg>
   <pkg>micEcon</pkg>
+  <pkg>MicSim</pkg>
   <pkg>MImix</pkg>
   <pkg>missMDA</pkg>
   <pkg>mitools</pkg>
