@@ -424,7 +424,7 @@ that is used to fit the basic random effects models.
  Package <pkg>tmap</pkg> offers a layer-based way to make thematic maps, like choropleths and bubble maps.
   </li>
   <li>
- Package <pkg>worldmap</pkg> outline how to map country referenced data and 
+ Package <pkg>rworldmap</pkg> outline how to map country referenced data and 
 support users in visualising their own data. Examples are given, e.g., maps for the world bank and UN. It provides also new ways to visualise maps.
   </li>
 </ul>
@@ -582,7 +582,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>treemap</pkg>
   <pkg>vardpoor</pkg>
   <pkg>VIM</pkg>
-  <pkg>worldmap</pkg>
+  <pkg>rworldmap</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
   <pkg>yaImpute</pkg>
