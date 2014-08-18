@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-06-25</version>
+<version>2014-08-18</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -109,6 +109,9 @@ or data from previous rounds of the same survey, may be used.
 and finite population corrections into a SEM analysis. <code>lavaan.survey()</code> also accomodates 
 replicate weights and multiply imputed datasets.
   </li>
+ <li>
+Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonlinear population statistics, variance estimation of sample surveys by the ultimate cluster method, variance estimation for longitudinal and crossectional measures and measures of change for any stage cluster sampling designs. 
+ </li>
 </ul>
 
 
@@ -281,6 +284,14 @@ Note that only few imputation methods can deal with mixed types of variables and
   </li>
 </ul>
 
+
+<p>Copula-based Imputation Methods: </p>
+<ul>
+  <li>
+The S4 class package <pkg>CoImp</pkg> imputes multivariate missing data by using conditional copula functions. The imputation procedure is semiparametric: the margins are non-parametrically estimated through local likelihood of low-degree polynomials while a range of different parametric models for the copula can be selected by the user. The missing values are imputed by drawing observations from the conditional density functions by means of the Hit or Miss Monte Carlo method. It works either for a matrix of continuous scaled variables or a matrix of discrete distributions.
+  </li>
+</ul>
+
 <p>Miscellaneous Imputation Methods:</p>
 <ul>
   <li>
@@ -384,7 +395,7 @@ that is used to fit the basic random effects models.
   </li>
 </ul> 
  
-<p><strong>Indices and Indicators</strong></p>
+<p><strong>Indices and Indicators and Visualisation of Indicators</strong></p>
 <ul>
   <li>
   Package <pkg>laeken</pkg> provides functions to estimate popular 
@@ -409,7 +420,16 @@ that is used to fit the basic random effects models.
   Function <code>priceIndex()</code> from package <pkg>micEcon</pkg> allows to 
   estimate the Paasche, the Fisher and the Laspeyres price indices.
   </li>
+  <li>
+ Package <pkg>tmap</pkg> offers a layer-based way to make thematic maps, like choropleths and bubble maps.
+  </li>
+  <li>
+ Package <pkg>worldmap</pkg> outline how to map country referenced data and 
+support users in visualising their own data. Examples are given, e.g., maps for the world bank and UN. It provides also new ways to visualise maps.
+  </li>
 </ul>
+
+
  
 <p><strong>Microsimulation</strong></p>
 <ul>
@@ -502,6 +522,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
 <packagelist>
   <pkg>Amelia</pkg>
   <pkg>cat</pkg>
+  <pkg>CoImp</pkg>
   <pkg>deducorrect</pkg>
   <pkg>editrules</pkg>
   <pkg>EVER</pkg>
@@ -557,8 +578,11 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg priority="core">survey</pkg>
   <pkg>tabplot</pkg>
   <pkg>TeachingSampling</pkg>
+  <pkg>tmap</pkg>
   <pkg>treemap</pkg>
+  <pkg>vardpoor</pkg>
   <pkg>VIM</pkg>
+  <pkg>worldmap</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
   <pkg>yaImpute</pkg>
