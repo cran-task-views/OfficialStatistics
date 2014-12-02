@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-08-18</version>
+<version>2014-12-02</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -84,12 +84,6 @@ or data from previous rounds of the same survey, may be used.
   or user-defined).
   </li>
   <li>
-  Package <pkg>EVER</pkg> provides the estimation of variance for complex 
-  designs by delete-a-group jackknife replication for (Horvitz-Thompson-) 
-  totals, means, absolute and relative frequency distributions, contingency 
-  tables, ratios, quantiles and regression coefficients even for domains.
-  </li>
-  <li>
   Package <pkg>laeken</pkg> provides functions to estimate certain Laeken 
   indicators (at-risk-of-poverty rate, quintile share ratio, relative median 
   risk-of-poverty gap, Gini coefficient) including their variance for domains 
@@ -121,12 +115,6 @@ Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonline
   <li>
   Package <pkg>survey</pkg> allows for post-stratification, generalized 
   raking/calibration, GREG estimation and trimming of weights. 
-  </li>
-  <li>
-  Package <pkg>EVER</pkg> provide facilities (function 
-  <code>kottcalibrate()</code>) to calibrate either on a total number of units 
-  in the population, on mariginal distributions or joint distributions of 
-  categorical variables, or on totals of quantitative variables. 
   </li>
   <li>
   The <code>calib()</code> function in Package <pkg>sampling</pkg> allows to 
@@ -525,7 +513,6 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>CoImp</pkg>
   <pkg>deducorrect</pkg>
   <pkg>editrules</pkg>
-  <pkg>EVER</pkg>
   <pkg>FFD</pkg>
   <pkg>foreign</pkg>
   <pkg>hbsae</pkg>
