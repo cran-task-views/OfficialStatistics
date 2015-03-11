@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2014-12-18</version>
+<version>2015-03-11</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -311,9 +311,9 @@ re-identified and by guaranting a minimum amount of information loss.
   The package also comes with a graphical user interface.
   </li>
 <!--  <li>
-  Package <pkg>simPopulation</pkg> simulates synthetic, confidential, close-to-reality populations for 
+  Package <pkg>simPop</pkg> simulates synthetic, confidential, close-to-reality populations for 
   surveys based on sample data. Such population data can then be used for 
-  extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example.
+  extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example. See also for more details in the microsimulation section.
   </li> -->
   <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential 
@@ -425,12 +425,18 @@ support users in visualising their own data. Examples are given, e.g., maps for 
  
 <p><strong>Microsimulation</strong></p>
 <ul>
+<li>
+Using package <pkg>simPop</pkg> one can simulate populations from surveys based on auxiliary data with model-based methods or synthetic reconstruction methods. Hiercharical and cluster structures (such as households) can be considered as well as the methods takes account for samples collected based on complex sample designs. Calibration tools (iterative proportional fitting, iterative proportional updating) and combinatorial optimization tools (simulated annealing) are also available. The code is optimized for fast computations. The package based on a S4 class implementation. The simulated population can serve as basis data for microsimulation studies.
+</li>
   <li>
 The <pkg>MicSim</pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
   </li>
   <li>
 Package <pkg>sms</pkg> provides facilities to simulate micro-data from given area-based macro-data. Simulated annealing is used to best satisfy the available description of an area. 
 For computational issues, the calculations can be run in parallel mode.
+  </li>
+  <li>
+Package <pkg>synthpop</pkg> using regression tree methods to simulate synthetic data from given data. It is suitable to produce synthetic data when the data have no hierarchical and cluster information (such as households) as well as when the data does not collected with a complex sampling design.
   </li>
 </ul>
   
@@ -479,7 +485,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
     <li>
   The main contributions of
  <pkg>samplingVarEst</pkg> are Jackknife alternatives for variance estimation
- of unequal probability one or two stage designs. 
+ of unequal probability with one or two stage designs. 
   </li>
   <li>
   Package <pkg>TeachingSampling</pkg> includes functionality for sampling 
