@@ -569,11 +569,13 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>seasonal</pkg>
   <pkg>SeleMix</pkg>
   <pkg>simFrame</pkg>
+  <pkg>simPop</pkg>
   <pkg>sms</pkg>
   <pkg>spsurvey</pkg>
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
   <pkg priority="core">survey</pkg>
+  <pkg>synthpop</pkg>
   <pkg>tabplot</pkg>
   <pkg>TeachingSampling</pkg>
   <pkg>tmap</pkg>
