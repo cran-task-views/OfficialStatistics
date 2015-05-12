@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2015-03-11</version>
+<version>2015-04-12</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -342,7 +342,7 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   </li>
 </ul>
 
-<p><strong>Statistical Record Matching</strong></p>
+<p><strong>Statistical Matching and Record Linkage</strong></p>
 <ul>
   <li>
   Package <pkg>StatMatch</pkg> provides functions to perform statistical 
@@ -358,6 +358,9 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amonst
   other matching methods. If two data sets have to be matched, the data must come as one data frame including a factor
   variable which includes information about the membership of each observation.
+  </li>
+  <li>
+  Package <pkg>stringdist</pkg> can calculate various string distances based on edits (damerau-levenshtein, hamming, levenshtein, optimal sting alignment), qgrams (q-gram, cosine, jaccard distance) or heuristic metrics (jaro, jaro-winkler). 
   </li>
 </ul>  
 
@@ -437,6 +440,9 @@ For computational issues, the calculations can be run in parallel mode.
   </li>
   <li>
 Package <pkg>synthpop</pkg> using regression tree methods to simulate synthetic data from given data. It is suitable to produce synthetic data when the data have no hierarchical and cluster information (such as households) as well as when the data does not collected with a complex sampling design.
+  </li>
+  <li>
+Package <pkg>saeSim</pkg> Tools for the simulation of data in the context of small area estimation. 
   </li>
 </ul>
   
@@ -558,6 +564,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>robCompositions</pkg>
   <pkg>rrcovNA</pkg>
   <pkg>rsae</pkg>
+  <pkg>saeSim</pkg>
   <pkg>sampling</pkg>
   <pkg>samplingbook</pkg>
   <pkg>SamplingStrata</pkg>
@@ -574,6 +581,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>spsurvey</pkg>
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
+  <pkg>sringdist</pkg>
   <pkg priority="core">survey</pkg>
   <pkg>synthpop</pkg>
   <pkg>tabplot</pkg>
