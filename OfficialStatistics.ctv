@@ -581,7 +581,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>spsurvey</pkg>
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
-  <pkg>sringdist</pkg>
+  <pkg>stringdist</pkg>
   <pkg priority="core">survey</pkg>
   <pkg>synthpop</pkg>
   <pkg>tabplot</pkg>
