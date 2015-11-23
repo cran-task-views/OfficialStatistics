@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2015-04-12</version>
+<version>2015-11-21</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -241,7 +241,7 @@ Note that only few imputation methods can deal with mixed types of variables and
   </li>
 </ul>
 
-<p>Nearest Neighbor Imputation Methods</p>
+<p>Nearest Neighbor Imputation and Hot-Deck Methods</p>
 <ul>
   <li>
   Package <pkg>VIM</pkg> provides an implementation of the popular 
@@ -250,6 +250,12 @@ Note that only few imputation methods can deal with mixed types of variables and
   <li>
   <pkg>VIM</pkg> also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets.
   It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continous variables.
+  </li>
+  <li>
+  <pkg>hot.deck</pkg> provides hotdeck imputation. Two methods are supported: best cell and probabilistic draw. Multiple imputation is supported. 
+  </li>
+    <li>
+  <pkg>VIM</pkg> provides an efficent implementation of sequential and random (within domain) hotdeck. It is suited to work with large data sets.  
   </li>
   <li>
   Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
@@ -517,6 +523,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   based on a two-stage design. Inclusion probabilities are not considered in the estimation. 
   The package provides a graphical user interface as well. 
   </li>
+  <pkg>mipfp</pkg> provides multidimensional iterative proportional fitting to calibrate n-dimensional arrays given target marginal tables.
 </ul>  
   
 
@@ -533,6 +540,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>foreign</pkg>
   <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
+  <pkg>hot.deck</pkg>
   <pkg>IC2</pkg>
   <pkg>ineq</pkg>
   <pkg>JoSAE</pkg>
@@ -547,6 +555,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>micEcon</pkg>
   <pkg>MicSim</pkg>
   <pkg>MImix</pkg>
+  <pkg>mipfp</pkg> 
   <pkg>missMDA</pkg>
   <pkg>mitools</pkg>
   <pkg>mix</pkg>
