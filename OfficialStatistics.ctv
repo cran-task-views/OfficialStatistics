@@ -254,7 +254,7 @@ Note that only few imputation methods can deal with mixed types of variables and
   <li>
   <pkg>hot.deck</pkg> provides hotdeck imputation. Two methods are supported: best cell and probabilistic draw. Multiple imputation is supported. 
   </li>
-    <li>
+  <li>
   <pkg>VIM</pkg> provides an efficent implementation of sequential and random (within domain) hotdeck. It is suited to work with large data sets.  
   </li>
   <li>
@@ -523,7 +523,9 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   based on a two-stage design. Inclusion probabilities are not considered in the estimation. 
   The package provides a graphical user interface as well. 
   </li>
+  <li>
   <pkg>mipfp</pkg> provides multidimensional iterative proportional fitting to calibrate n-dimensional arrays given target marginal tables.
+  </li>
 </ul>  
   
 
