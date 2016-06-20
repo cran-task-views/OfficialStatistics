@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2015-11-21</version>
+<version>2016-06-20</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -117,7 +117,7 @@ Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonline
   raking/calibration, GREG estimation and trimming of weights. 
   </li>
   <li>
-  The <code>calib()</code> function in Package <pkg>sampling</pkg> allows to 
+  The <code>calib()</code> function in package <pkg>sampling</pkg> allows to 
   calibrate for nonresponse (with response homogeneity groups) for stratified 
   samples.
   </li>
@@ -125,6 +125,10 @@ Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonline
   The <code>calibWeights()</code> function in package <pkg>laeken</pkg> is a 
   possible faster (depending on the example) implementation of parts of <code>calib()</code> from package 
   <pkg>sampling</pkg>. 
+  </li>
+  The <code>calibSample()</code> function in package <pkg>simPop</pkg> is potential faster than the previous two mentioned functions, and it provides more user-friendlyness. <code>calibVars()</code> can be used to construct a matrix of binary variables for calibration. <code>calibPop()</code> is used to calibrate population person within household data using a simulated annealing approach.
+  <li>
+  Package <pkg>Icarus</pkg> focuses on calibration and reweighting in survey sampling and was designed to provide a familiar setting in R for user of the SAS macro <pkg>Calmar</pkg>.
   </li>
   <li>
   Package <pkg>reweight</pkg> allows for calibration of survey weights for 
@@ -241,7 +245,7 @@ Note that only few imputation methods can deal with mixed types of variables and
   </li>
 </ul>
 
-<p>Nearest Neighbor Imputation and Hot-Deck Methods</p>
+<p>Nearest Neighbor Imputation Methods</p>
 <ul>
   <li>
   Package <pkg>VIM</pkg> provides an implementation of the popular 
@@ -250,12 +254,6 @@ Note that only few imputation methods can deal with mixed types of variables and
   <li>
   <pkg>VIM</pkg> also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets.
   It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continous variables.
-  </li>
-  <li>
-  <pkg>hot.deck</pkg> provides hotdeck imputation. Two methods are supported: best cell and probabilistic draw. Multiple imputation is supported. 
-  </li>
-  <li>
-  <pkg>VIM</pkg> provides an efficent implementation of sequential and random (within domain) hotdeck. It is suited to work with large data sets.  
   </li>
   <li>
   Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
@@ -542,8 +540,8 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>foreign</pkg>
   <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
-  <pkg>hot.deck</pkg>
   <pkg>IC2</pkg>
+  <pkg>Icarus</pkg>
   <pkg>ineq</pkg>
   <pkg>JoSAE</pkg>
   <pkg>laeken</pkg>
@@ -557,7 +555,6 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>micEcon</pkg>
   <pkg>MicSim</pkg>
   <pkg>MImix</pkg>
-  <pkg>mipfp</pkg> 
   <pkg>missMDA</pkg>
   <pkg>mitools</pkg>
   <pkg>mix</pkg>
