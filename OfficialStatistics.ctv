@@ -126,7 +126,9 @@ Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonline
   possible faster (depending on the example) implementation of parts of <code>calib()</code> from package 
   <pkg>sampling</pkg>. 
   </li>
+  <li>
   The <code>calibSample()</code> function in package <pkg>simPop</pkg> is potential faster than the previous two mentioned functions, and it provides more user-friendlyness. <code>calibVars()</code> can be used to construct a matrix of binary variables for calibration. <code>calibPop()</code> is used to calibrate population person within household data using a simulated annealing approach.
+  </li>
   <li>
   Package <pkg>icarus</pkg> focuses on calibration and reweighting in survey sampling and was designed to provide a familiar setting in R for user of the SAS macro <tt>Calmar</tt>.
   </li>
