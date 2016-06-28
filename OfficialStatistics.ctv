@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2016-06-27</version>
+<version>2016-06-28</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -84,10 +84,13 @@ or data from previous rounds of the same survey, may be used.
   or user-defined).
   </li>
   <li>
+Package <pkg>convey</pkg> extends package <pkg>survey</pkg> -- see the topic about indicators below.
+  </li>
+    <li>
   Package <pkg>laeken</pkg> provides functions to estimate certain Laeken 
   indicators (at-risk-of-poverty rate, quintile share ratio, relative median 
   risk-of-poverty gap, Gini coefficient) including their variance for domains 
-  and stratas based on bootstrap resampling. 
+  and stratas using a calibrated bootstrap. 
   </li>
   <li>
   Package <pkg>simFrame</pkg> allows to compare (user-defined) point and 
@@ -407,6 +410,9 @@ that is used to fit the basic random effects models.
   from continuous univariate distributions such as income variables.
   </li>
   <li>
+  Package <pkg>convey</pkg> estimates variances on indicators of income concentration and poverty using familiar linearized and replication-based designs created by the <pkg>survey</pkg> package such as the Gini coefficient, Atkinson index, at-risk-of-poverty threshold, and more than a dozen others.
+  </li>
+  <li>
   Package <pkg>ineq</pkg> computes various inequality measures (Gini, Theil,
   entropy, among others), concentration measures (Herfindahl, Rosenbluth), and poverty
   measures (Watts, Sen, SST, and Foster). It also computes and draws empirical and theoretical
@@ -536,6 +542,7 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
   <pkg>Amelia</pkg>
   <pkg>cat</pkg>
   <pkg>CoImp</pkg>
+  <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
   <pkg>editrules</pkg>
   <pkg>FFD</pkg>
