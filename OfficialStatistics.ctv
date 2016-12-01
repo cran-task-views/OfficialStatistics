@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2016-09-28</version>
+<version>2016-12-01</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -23,8 +23,10 @@ like SPSS, SAS or Stata are mentioned in the end of the task view.
   the given survey design is specified within the function 
   <code>svydesign()</code>, point and variance estimates can be computed.
   </li>
-  <li>
-  The methods from the survey package is called from package <pkg>srvyr</pkg> using the <pkg>dplyr</pkg> syntax, i.e. piping, verbs like <code>group_by</code> and <code>summarize</code>, and other <pkg>dplyr</pkg> inspired syntactic style when calculating summary statistics on survey data.
+  <li>The methods from the <pkg>survey</pkg> package are called from package
+  <pkg>srvyr</pkg> using the dplyr syntax, i.e., piping, verbs like
+  <code>group_by</code> and <code>summarize</code>, and other dplyr-inspired
+  syntactic style when calculating summary statistics on survey data.
   </li>
   <li> Package <pkg>simFrame</pkg> is designed for performing simulation 
   studies in official statistics.  It provides a framework for comparing 
@@ -126,7 +128,9 @@ Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonline
 accounts for one-stage of stratification and clustering as well as unequal probability of selection.
  </li>
  <li>
- Package <pkg>svyPVpack</pkg> extends package <pkg>survey</pkg>. This package deals with data which stem from survey designs and has been created to handle data from large scale assessments like PISA, PIAAC etc.. 
+ Package <pkg>svyPVpack</pkg> extends package <pkg>survey</pkg>. This package deals with data
+ which stem from survey designs and has been created to handle data from large scale
+ assessments like PISA, PIAAC etc.. 
  </li>
 </ul>
 
@@ -161,7 +165,7 @@ accounts for one-stage of stratification and clustering as well as unequal proba
   allow complex sampling designs. 
   </li>
   <li>
-  The package <pkg>calibrateSSB</pkg> include a function to calculate weights and estimates for panel data with non-response.
+  The package <pkg>CalibrateSSB</pkg> include a function to calculate weights and estimates for panel data with non-response.
   </li>
   <li>
   Package <pkg>Frames2</pkg> allows point and interval estimation in dual frame surveys. When two probability samples (one from each frame) are drawn. Information collected is suitably combined to get estimators of the parameter of interest. 
@@ -603,7 +607,7 @@ including data with replication weights (e.g. from bootstrap).
 <packagelist>
   <pkg>Amelia</pkg>
   <pkg>BIFIEsurvey</pkg>
-  <pkg>calibrateSSB</pkg>
+  <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
   <pkg>CoImp</pkg>
   <pkg>convey</pkg>
@@ -650,6 +654,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>pxR</pkg> 
   <pkg>quantification</pkg>
   <pkg>questionr</pkg> 
+  <pkg>RcmdrPlugin.sampling</pkg>
   <pkg>RecordLinkage</pkg>
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
@@ -679,6 +684,9 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>stringdist</pkg>
   <pkg priority="core">survey</pkg>
   <pkg>surveybootstrap</pkg>
+  <pkg>surveydata</pkg>
+  <pkg>svyPVpack</pkg>
+  <pkg>surveyoutliers</pkg>
   <pkg>synthpop</pkg>
   <pkg>tabplot</pkg>
   <pkg>TeachingSampling</pkg>
