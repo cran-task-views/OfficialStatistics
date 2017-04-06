@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2016-12-01</version>
+<version>2017-06-04</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -281,6 +281,9 @@ Note that only few imputation methods can deal with mixed types of variables and
   Package <pkg>robCompositions</pkg> provides iterative model-based imputation 
   for compositional data (function <code>impCoda()</code>). 
   </li>
+  <li>
+  Package <pkg>missForest</pkg> uses the functionality of the <pkg>randomForest</pkg> to impute missing values in an iterative single-imputation fashion. It can deal with almost any kind of variables except semi-continuous ones. Even the underlying bootstrap approach of random forests ensures that from multiple runs one can get multiple imputations but the additional uncertainty of imputation is only considered when choosing the random forest method of package <pkg>mice</pkg>.  
+  </li>
 </ul>
 
 <p>Nearest Neighbor Imputation Methods</p>
@@ -496,6 +499,11 @@ Package <pkg>saeSim</pkg> Tools for the simulation of data in the context of sma
   
 <p><strong>Additional Packages and Functionalities</strong></p>
 Various additional packages are available that provides certain functionality useful in official statistics and survey methodology.
+<ul>
+<li>
+The <pkg>questionr</pkg> package contains a set of functions to make the processing and analysis of surveys easier. It provides interactive shiny apps and addins for data recoding, contingency tables, dataset metadata handling, and several convenience functions.
+<li>
+</ul>
 <p>Data Import and Export:</p>
 <ul>
   <li>
@@ -505,6 +513,9 @@ Various additional packages are available that provides certain functionality us
   </li> 
 <li>
 The <pkg>foreign</pkg> package includes tools for reading data from SAS Xport (function <code>read.xport()</code>), Stata (function <code>read.dta()</code>), SPSS (function <code>read.spss()</code>) and various other formats. It provides facilites to write file to various formats, see function <code>write.foreign()</code>.
+</li>
+<li>
+Also the package <pkg>haven</pkg> imports and exports SAS, Stata and SPSS (function <code>read.spss()</code>) files. The package is more efficient for loading heavy data sets and it handles the labelling of variables and values in an advanced manner.
 </li>
 <li>
 Also the package <pkg>Hmisc</pkg> provides tools to read data sets from SPSS (function 
@@ -618,6 +629,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>Frames2</pkg>
   <pkg>GeomComb</pkg>
   <pkg>gridsample</pkg>
+  <pkg>haven</pkg>
   <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
   <pkg>IC2</pkg>
@@ -638,6 +650,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>MicSim</pkg>
   <pkg>MImix</pkg>
   <pkg>mipfp</pkg>
+  <pkg>missForest</pkg>
   <pkg>missMDA</pkg>
   <pkg>mitools</pkg>
   <pkg>mix</pkg>
