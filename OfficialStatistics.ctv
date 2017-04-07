@@ -282,7 +282,7 @@ Note that only few imputation methods can deal with mixed types of variables and
   for compositional data (function <code>impCoda()</code>). 
   </li>
   <li>
-  Package <pkg>missForest</pkg> uses the functionality of the <pkg>randomForest</pkg> to impute missing values in an iterative single-imputation fashion. It can deal with almost any kind of variables except semi-continuous ones. Even the underlying bootstrap approach of random forests ensures that from multiple runs one can get multiple imputations but the additional uncertainty of imputation is only considered when choosing the random forest method of package <pkg>mice</pkg>.  
+  Package <pkg>missForest</pkg> uses the functionality of the randomForest to impute missing values in an iterative single-imputation fashion. It can deal with almost any kind of variables except semi-continuous ones. Even the underlying bootstrap approach of random forests ensures that from multiple runs one can get multiple imputations but the additional uncertainty of imputation is only considered when choosing the random forest method of package <pkg>mice</pkg>.  
   </li>
 </ul>
 
@@ -502,7 +502,7 @@ Various additional packages are available that provides certain functionality us
 <ul>
 <li>
 The <pkg>questionr</pkg> package contains a set of functions to make the processing and analysis of surveys easier. It provides interactive shiny apps and addins for data recoding, contingency tables, dataset metadata handling, and several convenience functions.
-<li>
+</li>
 </ul>
 <p>Data Import and Export:</p>
 <ul>
