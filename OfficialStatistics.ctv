@@ -104,7 +104,7 @@ Package <pkg>convey</pkg> extends package <pkg>survey</pkg> -- see the topic abo
   Package <pkg>laeken</pkg> provides functions to estimate certain Laeken 
   indicators (at-risk-of-poverty rate, quintile share ratio, relative median 
   risk-of-poverty gap, Gini coefficient) including their variance for domains 
-  and stratas using a calibrated bootstrap. 
+  and strata using a calibrated bootstrap. 
   </li>
   <li>
   Package <pkg>simFrame</pkg> allows to compare (user-defined) point and 
@@ -117,11 +117,11 @@ Package <pkg>convey</pkg> extends package <pkg>survey</pkg> -- see the topic abo
   the design object functionality from package <pkg>survey</pkg>, lavaan objects are re-fit 
   (corrected) with the <code>lavaan.survey()</code> function of package <pkg>lavaan.survey</pkg>.
   This allows for the incorporation of clustering, stratification, sampling weights, 
-and finite population corrections into a SEM analysis. <code>lavaan.survey()</code> also accomodates 
+and finite population corrections into a SEM analysis. <code>lavaan.survey()</code> also accommodates 
 replicate weights and multiply imputed datasets.
   </li>
  <li>
-Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonlinear population statistics, variance estimation of sample surveys by the ultimate cluster method, variance estimation for longitudinal and crossectional measures and measures of change for any stage cluster sampling designs. 
+Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonlinear population statistics, variance estimation of sample surveys by the ultimate cluster method, variance estimation for longitudinal and cross-sectional measures and measures of change for any stage cluster sampling designs. 
  </li>
  <li>
  The package <pkg>rpms</pkg> fits a linear model to survey data in each node obtained by recursively partitioning the data. The algorithm
@@ -242,12 +242,12 @@ Note that only few imputation methods can deal with mixed types of variables and
   </li>
   <li>
   Package <pkg>mitools</pkg> provides tools to perform analyses and combine 
-  results from multiply-imputated datasets.
+  results from multiply-imputed datasets.
   </li>
   <li>
   Package <pkg>Amelia</pkg> provides multiple imputation where first bootstrap 
   samples with the same dimensions as the original data are drawn, and then 
-  used for EM-based imputation.  It is also possible to impute longitudial 
+  used for EM-based imputation.  It is also possible to impute longitudinal 
   data.  The package in addition comes with a graphical user interface. 
   </li>
   <li>
@@ -294,7 +294,7 @@ Note that only few imputation methods can deal with mixed types of variables and
   </li> 
   <li>
   <pkg>VIM</pkg> also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets.
-  It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continous variables.
+  It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continuous variables.
   </li>
   <li>
   Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
@@ -335,7 +335,7 @@ The S4 class package <pkg>CoImp</pkg> imputes multivariate missing data by using
   <li>
   Package <pkg>mice</pkg> (function <code>mice.impute.pmm()</code>) and 
   Package <pkg>Hmisc</pkg> (function <code>aregImpute()</code>) allow 
-  predicitve mean matching imputation.
+  predictive mean matching imputation.
   </li>
   <li>
   Package <pkg>VIM</pkg> allows to visualize the structure of missing values 
@@ -348,7 +348,7 @@ The S4 class package <pkg>CoImp</pkg> imputes multivariate missing data by using
 Data from statistical agencies and other institutions are in its raw form 
 mostly confidential and data providers have to be ensure confidentiality by 
 both modifying the original data so that no statistical units can be 
-re-identified and by guaranting a minimum amount of information loss.
+re-identified and by guaranteeing a minimum amount of information loss.
 <ul>
   <li>
   Package <pkg>sdcMicro</pkg> can be used for the generation of confidential 
@@ -396,14 +396,14 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   Package <pkg>StatMatch</pkg> provides functions to perform statistical 
   matching between two data sources sharing a number of common variables. It 
   creates a synthetic data set after matching of two data sources via a 
-  likelihood aproach or via hot-deck.
+  likelihood approach or via hot-deck.
   </li>
   <li>
   Package <pkg>RecordLinkage</pkg> provides functions for linking and 
   deduplicating data sets. 
   </li>
   <li>
-  Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amonst
+  Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amongst
   other matching methods. If two data sets have to be matched, the data must come as one data frame including a factor
   variable which includes information about the membership of each observation.
   </li>
@@ -483,7 +483,7 @@ support users in visualising their own data. Examples are given, e.g., maps for 
 Using package <pkg>simPop</pkg> one can simulate populations from surveys based on auxiliary data with model-based methods or synthetic reconstruction methods. Hiercharical and cluster structures (such as households) can be considered as well as the methods takes account for samples collected based on complex sample designs. Calibration tools (iterative proportional fitting, iterative proportional updating) and combinatorial optimization tools (simulated annealing) are also available. The code is optimized for fast computations. The package based on a S4 class implementation. The simulated population can serve as basis data for microsimulation studies.
 </li>
   <li>
-The <pkg>MicSim</pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
+The <pkg>MicSim</pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, education changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
   </li>
   <li>
 Package <pkg>sms</pkg> provides facilities to simulate micro-data from given area-based macro-data. Simulated annealing is used to best satisfy the available description of an area. 
@@ -512,7 +512,7 @@ The <pkg>questionr</pkg> package contains a set of functions to make the process
   are already available.
   </li> 
 <li>
-The <pkg>foreign</pkg> package includes tools for reading data from SAS Xport (function <code>read.xport()</code>), Stata (function <code>read.dta()</code>), SPSS (function <code>read.spss()</code>) and various other formats. It provides facilites to write file to various formats, see function <code>write.foreign()</code>.
+The <pkg>foreign</pkg> package includes tools for reading data from SAS Xport (function <code>read.xport()</code>), Stata (function <code>read.dta()</code>), SPSS (function <code>read.spss()</code>) and various other formats. It provides facilities to write file to various formats, see function <code>write.foreign()</code>.
 </li>
 <li>
 Also the package <pkg>haven</pkg> imports and exports SAS, Stata and SPSS (function <code>read.spss()</code>) files. The package is more efficient for loading heavy data sets and it handles the labelling of variables and values in an advanced manner.
@@ -524,7 +524,7 @@ Also the package <pkg>Hmisc</pkg> provides tools to read data sets from SPSS (fu
   <li>
   The <pkg>pxR</pkg> package provides a set of functions for reading
 and writing PC-Axis files, used by different statistical
-organizations around the globe for disemination of their (multidimensional) tables.
+organizations around the globe for dissemination of their (multidimensional) tables.
   </li>
 <li>
 With package <pkg>prevR</pkg> and it's function <code>import.dhs()</code> it is possible to directly imports 
