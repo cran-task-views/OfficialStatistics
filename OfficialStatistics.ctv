@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2017-26-04</version>
+<version>2018-05-01</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -13,51 +13,19 @@ listed more than once. Certain data import/export facilities regarding to often 
 like SPSS, SAS or Stata are mentioned in the end of the task view.
  
 
-<p><strong>Complex Survey Design: General Comments</strong></p>
+<p><strong>Complex Survey Design: Sampling and Sample Size Calculation</strong></p>
 <ul>
-  <li> Package <pkg>sampling</pkg> includes many different algorithms for 
-  drawing survey samples and calibrating the design weights.  
+  <li> Package <pkg>sampling</pkg> includes many different algorithms (Brewer, Midzuno, pps, systematic, Sampford, balanced 
+  (cluster or stratified) sampling via the cube method, etc.) for 
+  drawing survey samples and calibrating the design weights. 
   </li>
-  <li> Package <pkg>survey</pkg> can also handle moderate data sets and is the 
-  standard package for dealing with already drawn survey samples in R.  Once 
-  the given survey design is specified within the function 
-  <code>svydesign()</code>, point and variance estimates can be computed.
-  </li>
-  <li>The methods from the <pkg>survey</pkg> package are called from package
-  <pkg>srvyr</pkg> using the dplyr syntax, i.e., piping, verbs like
-  <code>group_by</code> and <code>summarize</code>, and other dplyr-inspired
-  syntactic style when calculating summary statistics on survey data.
-  </li>
-  <li> Package <pkg>simFrame</pkg> is designed for performing simulation 
-  studies in official statistics.  It provides a framework for comparing 
-  different point and variance estimators under different survey designs as 
-  well as different conditions regarding missing values, representative and 
-  non-representative outliers.
-  </li>
-</ul>
-
-
-
-<p><strong>Complex Survey Design: Details</strong></p>
-<ul>
-  <li>
-  Package <pkg>survey</pkg> allows to specify a complex survey design 
-  (stratified sampling design, cluster sampling, multi-stage sampling and pps 
-  sampling with or without replacement) for an already drawn survey sample in 
-  order to compute accurate point and variance estimates.
-  </li>
-  <li>
-  Various algorithms for drawing a sample are implemented in package 
-  <pkg>sampling</pkg> (Brewer, Midzuno, pps, systematic, Sampford, balanced 
-  (cluster or stratified) sampling via the cube method, etc.).
-  </li>
-  <!--
-  <li>
+ <li> R package <pkg>surveyplanning</pkg> includes tools for sample survey planning, including sample size calculation, estimation of expected precision for the estimates of totals, and calculation of optimal sample size allocation.
+ </li>
+   <li>
   Package <pkg>simFrame</pkg> includes a fast (compiled C-Code) version of 
   Midzuno sampling. 
   </li>
-  -->
-  <li>
+   <li>
   The <pkg>pps</pkg> package contains functions to select samples using pps 
   sampling.  Also stratified simple random sampling is possible as well as to 
   compute joint inclusion probabilities for Sampford's method of pps sampling. 
@@ -75,6 +43,9 @@ To evaluate the distribution of target variables in different strata, informatio
 or data from previous rounds of the same survey, may be used.
   </li>
   <li>
+  The package <pkg>BalancedSampling</pkg> selects balanced and spatially balanced probability samples in multi-dimensional spaces with any prescribed inclusion probabilities. It also includes the local pivot method, the cube and local cube method and a few more methods.  
+  </li>
+  <li>
   Package <pkg>gridsample</pkg> selects PSUs within user-defined strata using gridded population data, given desired numbers of sampled households within each PSU. The population densities used to create PSUs are drawn from rasters
   </li>
   <li>
@@ -85,17 +56,23 @@ or data from previous rounds of the same survey, may be used.
   </li>
 </ul>
 
-
-
 <p><strong>Complex Survey Design: Point and Variance Estimation and Model Fitting</strong></p>
 <ul>
   <li>
-  Package <pkg>survey</pkg> allows to specify a complex survey design. The 
-  resulting object can be used to estimate (Horvitz-Thompson-) totals, means, 
+  Package <pkg>survey</pkg> works with survey samples. It allows to specify a complex survey design (stratified sampling design, cluster sampling, multi-stage sampling and pps 
+  sampling with or without replacement). Once 
+  the given survey design is specified within the function 
+  <code>svydesign()</code>, point and variance estimates can be computed.
+  The resulting object can be used to estimate (Horvitz-Thompson-) totals, means, 
   ratios and quantiles for domains or the whole survey sample, and to apply 
   regression models.  Variance estimation for means, totals and ratios can be 
   done either by Taylor linearization or resampling (BRR, jackkife, bootstrap 
   or user-defined).
+  </li>
+    <li>The methods from the <pkg>survey</pkg> package are called from package
+  <pkg>srvyr</pkg> using the dplyr syntax, i.e., piping, verbs like
+  <code>group_by</code> and <code>summarize</code>, and other dplyr-inspired
+  syntactic style when calculating summary statistics on survey data.
   </li>
   <li>
 Package <pkg>convey</pkg> extends package <pkg>survey</pkg> -- see the topic about indicators below.
@@ -108,7 +85,10 @@ Package <pkg>convey</pkg> extends package <pkg>survey</pkg> -- see the topic abo
   </li>
   <li>
   Package <pkg>simFrame</pkg> allows to compare (user-defined) point and 
-  variance estimators in a simulation environment. 
+  variance estimators in a simulation environment. It provides a framework for comparing 
+  different point and variance estimators under different survey designs as 
+  well as different conditions regarding missing values, representative and 
+  non-representative outliers.
   </li>
   <li>
   The <pkg>lavaan.survey</pkg> package provides a wrapper function for packages <pkg>survey</pkg> and <pkg>lavaan</pkg>. 
@@ -174,7 +154,15 @@ accounts for one-stage of stratification and clustering as well as unequal proba
 
 <p><strong>Editing and Visual Inspection of Microdata</strong></p>
 <p>Editing tools:</p>
-<ul>
+<ul> 
+  <li>
+  Package <pkg>validate</pkg> includes rule management and data validation and package <pkg>validatetools</pkg> is checking and simplifying sets of validation rules.
+  </li>
+  <li>
+  Package <pkg>errorlocate</pkg> includes error localisation based on the principle of Fellegi and Holt.
+It supports categorical and/or numeric data and linear equalities, inequalities and conditional rules.
+The package includes a configurable backend for MIP-based error localization.
+  </li>
   <li> 
     Package <pkg>editrules</pkg> convert readable linear (in)equalities into matrix form.
   </li>
@@ -255,6 +243,9 @@ Note that only few imputation methods can deal with mixed types of variables and
   <code>irmi()</code>) using robust estimations, which allows to adequately 
   deal with data including outliers.  It can handle data consisting of 
   continuous, semi-continuous, binary, categorical and/or count variables.
+  </li>
+  <li>
+  Single imputation methods are included or called from other packages by the package <pkg>simputation</pkg>. It supports regression (standard, M-estimation, ridge/lasso/elasticnet), hot-deck methods (powered by VIM), randomForest, EM-based, and iterative randomForest imputation. 
   </li>
   <li>
   Package <pkg>mix</pkg> provides iterative EM-based multiple regression 
@@ -363,8 +354,11 @@ re-identified and by guaranteeing a minimum amount of information loss.
   <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential 
   (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE 
-  technique and uses linear programming packages Rglpk and lpSolveAPI for solving
+  technique and uses linear programming packages <pkg>Rglpk</pkg> and <pkg>lpSolveAPI</pkg> for solving
   (a large amount of) linear programs.
+  </li>
+  <li>
+  An interface to the package <pkg>sdcTable</pkg> is provided by package <pkg>easySdcTable</pkg>.
   </li>
 </ul>
 
@@ -410,6 +404,12 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   <li>
   Package <pkg>stringdist</pkg> can calculate various string distances based on edits (damerau-levenshtein, hamming, levenshtein, optimal sting alignment), qgrams (q-gram, cosine, jaccard distance) or heuristic metrics (jaro, jaro-winkler). 
   </li>
+  <li>
+  Package <pkg>fuzzyjoin</pkg> allows for matching records based on inaccurate keys.
+  </li>
+  <li>
+  Package <pkg>XBRL</pkg> allows the extraction of business financial information from XBRL Documents.
+  </li>
 </ul>  
 
 <p><strong>Small Area Estimation</strong></p>
@@ -438,7 +438,7 @@ that is used to fit the basic random effects models.
   </li>
 </ul> 
  
-<p><strong>Indices and Indicators and Visualisation of Indicators</strong></p>
+<p><strong>Indices, Indicators, Tables and Visualisation of Indicators</strong></p>
 <ul>
   <li>
   Package <pkg>laeken</pkg> provides functions to estimate popular 
@@ -472,6 +472,12 @@ that is used to fit the basic random effects models.
   <li>
  Package <pkg>rworldmap</pkg> outline how to map country referenced data and 
 support users in visualising their own data. Examples are given, e.g., maps for the world bank and UN. It provides also new ways to visualise maps.
+  </li>
+  <li>
+  Package <pkg>rrcov3way</pkg> provides robust methods for multiway data analysis, applicable also for compositional data.
+  </li>
+    <li>
+  Package <pkg>robCompositions</pkg> methods for compositional tables including statistical tests.
   </li>
 </ul>
 
@@ -533,9 +539,30 @@ data from the Demographic Health Survey.
 <li>
 Function <code>describe()</code> from package <pkg>questionr</pkg> describes the variables of a dataset that might include labels imported with the foreign or memisc packages.
 </li>
+<li>
+Package <pkg>oecd</pkg> searches and extracts data from the OECD
+</li>
+<li>
+Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
+</li>
+<li>
+Tools to download data from the Eurostat database together with search and manipulation utilities are included in package <pkg>eurostat</pkg>.
+</li>
+<li>
+Package <pkg>acs</pkg> downloads, manipulates, and presents the American Community Survey and decennial data from the US Census.
+</li>
+<li>
+Access to data published by INEGI, Mexico's official statistics agency, is supported by package <pkg>inegiR</pkg>
+</li>
+<li>
+Package <pkg>cbsodataR</pkg> provides access to Statistics Netherlands' (CBS) open data API.
+</li>
+<li>
+A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata is implemented in package <pkg>censusapi</pkg>.
+</li>
 </ul>
 
-<p>Sampling Techniques and Misc:</p>
+<p>Misc:</p>
 <ul>
   <li>
   Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
@@ -597,6 +624,12 @@ including data with replication weights (e.g. from bootstrap).
   Package <pkg>surveyoutliers</pkg> winsorize values of a variable of interest.
   </li>
   <li>
+  The package <pkg>univOutl</pkg> includes various methods for detecting univariate outliers, e.g. the  Hidiroglou-Berthelot method.
+  </li>
+  <li>
+  Package <pkg>extremevalues</pkg> is designed to detect univariate outliers based on modeling the bulk distribution.
+  </li>
+  <li>
   Package <pkg>RRTCS</pkg> includes randomized response techniques for complex surveys.
   </li>
   <li>
@@ -616,17 +649,24 @@ including data with replication weights (e.g. from bootstrap).
 </info>
 
 <packagelist>
+  <pkg>acs</pkg>
   <pkg>Amelia</pkg>
+  <pkg>BalancedSampling</pkg>
   <pkg>BIFIEsurvey</pkg>
   <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
+  <pkg>cbsodataR</pkg>
   <pkg>CoImp</pkg>
   <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
+  <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
+  <pkg>eurostat</pkg>
+  <pkg>extremevalues</pkg>
   <pkg>FFD</pkg>
   <pkg>foreign</pkg>
   <pkg>Frames2</pkg>
+  <pkg>fuzzyjoin</pkg>
   <pkg>GeomComb</pkg>
   <pkg>gridsample</pkg>
   <pkg>haven</pkg>
@@ -634,6 +674,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>Hmisc</pkg>
   <pkg>IC2</pkg>
   <pkg>icarus</pkg>
+  <pkg>inegiR</pkg>
   <pkg>ineq</pkg>
   <pkg>JoSAE</pkg>
   <pkg>laeken</pkg>
@@ -658,6 +699,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>norm</pkg>
   <pkg>odfWeave</pkg>
   <pkg>odfWeave.survey</pkg>
+  <pkg>oecd</pkg>
   <pkg>pan</pkg>
   <pkg>panelaggregation</pkg>
   <pkg>pps</pkg>
@@ -689,15 +731,18 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>SeleMix</pkg>
   <pkg>simFrame</pkg>
   <pkg>simPop</pkg>
+  <pkg>simputation</pkg>
   <pkg>sms</pkg>
   <pkg>spsurvey</pkg>
   <pkg>srvyr</pkg>
   <pkg>StatMatch</pkg>
   <pkg>stratification</pkg>
   <pkg>stringdist</pkg>
+  <pkg>sorvi</pkg>
   <pkg priority="core">survey</pkg>
   <pkg>surveybootstrap</pkg>
   <pkg>surveydata</pkg>
+  <pkg>surveyplanning</pkg>
   <pkg>svyPVpack</pkg>
   <pkg>surveyoutliers</pkg>
   <pkg>synthpop</pkg>
@@ -705,11 +750,15 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>TeachingSampling</pkg>
   <pkg>tmap</pkg>
   <pkg>treemap</pkg>
+  <pkg>univOutl</pkg>
+  <pkg>validate</pkg>
+  <pkg>validatetools</pkg>
   <pkg>vardpoor</pkg>
   <pkg>VIM</pkg>
   <pkg>rworldmap</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
+  <pkg>XBRL</pkg>
   <pkg>yaImpute</pkg>
 </packagelist>
 
