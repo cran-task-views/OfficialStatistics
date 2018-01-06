@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-05-01</version>
+<version>2018-01-05</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -159,9 +159,7 @@ accounts for one-stage of stratification and clustering as well as unequal proba
   Package <pkg>validate</pkg> includes rule management and data validation and package <pkg>validatetools</pkg> is checking and simplifying sets of validation rules.
   </li>
   <li>
-  Package <pkg>errorlocate</pkg> includes error localisation based on the principle of Fellegi and Holt.
-It supports categorical and/or numeric data and linear equalities, inequalities and conditional rules.
-The package includes a configurable backend for MIP-based error localization.
+  Package <pkg>errorlocate</pkg> includes error localisation based on the principle of Fellegi and Holt. It supports categorical and/or numeric data and linear equalities, inequalities and conditional rules. The package includes a configurable backend for MIP-based error localization.
   </li>
   <li> 
     Package <pkg>editrules</pkg> convert readable linear (in)equalities into matrix form.
@@ -352,10 +350,7 @@ re-identified and by guaranteeing a minimum amount of information loss.
   extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example. See also for more details in the microsimulation section.
   </li> -->
   <li>
-  Package <pkg>sdcTable</pkg>  can be used to provide confidential 
-  (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE 
-  technique and uses linear programming packages <pkg>Rglpk</pkg> and <pkg>lpSolveAPI</pkg> for solving
-  (a large amount of) linear programs.
+  Package <pkg>sdcTable</pkg>  can be used to provide confidential (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE technique and uses linear programming packages (Rglpk and lpSolveAPI) for solving (a large amount of) linear programs.
   </li>
   <li>
   An interface to the package <pkg>sdcTable</pkg> is provided by package <pkg>easySdcTable</pkg>.
@@ -540,7 +535,7 @@ data from the Demographic Health Survey.
 Function <code>describe()</code> from package <pkg>questionr</pkg> describes the variables of a dataset that might include labels imported with the foreign or memisc packages.
 </li>
 <li>
-Package <pkg>oecd</pkg> searches and extracts data from the OECD
+Package <pkg>OECD</pkg> searches and extracts data from the OECD.
 </li>
 <li>
 Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
@@ -656,11 +651,13 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
+  <pkg>censusapi</pkg>
   <pkg>CoImp</pkg>
   <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
   <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
+  <pkg>errorlocate</pkg>
   <pkg>eurostat</pkg>
   <pkg>extremevalues</pkg>
   <pkg>FFD</pkg>
@@ -699,7 +696,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>norm</pkg>
   <pkg>odfWeave</pkg>
   <pkg>odfWeave.survey</pkg>
-  <pkg>oecd</pkg>
+  <pkg>OECD</pkg>
   <pkg>pan</pkg>
   <pkg>panelaggregation</pkg>
   <pkg>pps</pkg>
@@ -714,6 +711,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
   <pkg>rpms</pkg>
+  <pkg>rrcov3way</pkg>
   <pkg>rrcovNA</pkg>
   <pkg>rsae</pkg>
   <pkg>rspa</pkg>
