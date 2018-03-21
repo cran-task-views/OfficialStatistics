@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-02-22</version>
+<version>2018-03-21</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -535,6 +535,10 @@ Function <code>describe()</code> from package <pkg>questionr</pkg> describes the
 Package <pkg>OECD</pkg> searches and extracts data from the OECD.
 </li>
 <li>
+Package <pkg>Rilostat</pkg> contains 
+tools to download data from the <a href="http://www.ilo.org/ilostat"> international labour organisation database</a> together with search and manipulation utilities. It can also import ilostat data that are available on their data base in SDMX format.
+</li>
+<li>
 Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
 </li>
 <li>
@@ -695,6 +699,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>OECD</pkg>
   <pkg>pan</pkg>
   <pkg>panelaggregation</pkg>
+  <pkg>Rilostat</pkg>
   <pkg>pps</pkg>
   <pkg>PracTools</pkg>
   <pkg>prevR</pkg>
