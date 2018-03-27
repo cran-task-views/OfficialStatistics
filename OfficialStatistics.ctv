@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-03-21</version>
+<version>2018-03-27</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -454,6 +454,8 @@ that is used to fit the basic random effects models.
   extended Gini, Atkinson and Generalized Entropy. It can deal with sampling weights and 
   subgroup decomposition is supported.
   </li>
+    <li> Package <pkg>DHS.rates</pkg> estimates key indicators (especially fertility rates) and their variances for the Demographic and Health Survey (DHS) data.
+  </li>
   <li>
   Functions <code>priceIndex()</code> from package <pkg>micEconIndex</pkg> allows to 
   estimate the Paasche, the Fisher and the Laspeyres price indices. For estimating quantities (of goods, for example), function <code>quantityIndex()</code> might be your friend.
@@ -656,6 +658,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>CoImp</pkg>
   <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
+  <pkg>DHS.rates</pkg>
   <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
   <pkg>errorlocate</pkg>
