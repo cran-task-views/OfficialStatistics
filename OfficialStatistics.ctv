@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-04-20</version>
+<version>2018-06-23</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -111,6 +111,9 @@ accounts for one-stage of stratification and clustering as well as unequal proba
  Package <pkg>svyPVpack</pkg> extends package <pkg>survey</pkg>. This package deals with data
  which stem from survey designs and has been created to handle data from large scale
  assessments like PISA, PIAAC etc.. 
+ </li>
+ <li>
+ Package <pkg>weights</pkg> provides a variety of functions for producing simple weighted statistics, such as weighted Pearson's correlations, partial correlations, Chi-Squared statistics, histograms and t-tests.
  </li>
 </ul>
 
@@ -586,6 +589,15 @@ A wrapper for the U.S. Census Bureau APIs that returns data frames of Census dat
   graphics and simulation.
   </li>
   <li>
+  Package <pkg>anesrake</pkg> provides a comprehensive system for selecting
+variables and weighting data to match the specifications of the American
+National Election Studies.
+  </li>
+  <li>
+  Package <pkg>odfWeave.survey</pkg> provides support for <pkg>odfWeave</pkg> 
+  for the <pkg>survey</pkg> package.
+  </li>
+  <li>
   Package <pkg>spsurvey</pkg> includes facilities for spatial survey design and 
   analysis for equal and unequal probability (stratified) sampling.
   </li>
@@ -645,6 +657,7 @@ including data with replication weights (e.g. from bootstrap).
 <packagelist>
   <pkg>acs</pkg>
   <pkg>Amelia</pkg>
+  <pkg>anesrake</pkg>
   <pkg>BalancedSampling</pkg>
   <pkg>BIFIEsurvey</pkg>
   <pkg>CalibrateSSB</pkg>
@@ -711,6 +724,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>rpms</pkg>
   <pkg>rrcov3way</pkg>
   <pkg>rrcovNA</pkg>
+  <pkg>rworldmap</pkg>
   <pkg>rsae</pkg>
   <pkg>rspa</pkg>
   <pkg>saeSim</pkg>
@@ -751,7 +765,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>validatetools</pkg>
   <pkg>vardpoor</pkg>
   <pkg>VIM</pkg>
-  <pkg>rworldmap</pkg>
+  <pkg>weights</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
   <pkg>XBRL</pkg>
