@@ -578,10 +578,6 @@ A wrapper for the U.S. Census Bureau APIs that returns data frames of Census dat
  of unequal probability with one or two stage designs. 
   </li>
   <li>
-  Package <pkg>TeachingSampling</pkg> includes functionality for sampling 
-  designs and parameter estimation in finite populations.
-  </li>
-  <li>
   Package <pkg>memisc</pkg> includes tools for the management of survey data, 
   graphics and simulation.
   </li>
@@ -753,7 +749,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>surveyoutliers</pkg>
   <pkg>synthpop</pkg>
   <pkg>tabplot</pkg>
-  <pkg>TeachingSampling</pkg>
   <pkg>tmap</pkg>
   <pkg>treemap</pkg>
   <pkg>univOutl</pkg>
