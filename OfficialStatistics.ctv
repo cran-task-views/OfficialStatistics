@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-06-23</version>
+<version>2018-07-15</version>
   
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -50,9 +50,6 @@ or data from previous rounds of the same survey, may be used.
   </li>
   <li>
   Package <pkg>PracTools</pkg> contains functions for sample size calculation for survey samples using stratified or clustered one-, two-, and three-stage sample designs as well as functions to compute variance components for multistage designs and sample sizes in two-phase designs.
-  </li>
-  <li>
-  Package <pkg>samplesize4surveys</pkg> computes the required sample size for estimation of totals, means and proportions under complex sampling designs.
   </li>
 </ul>
 
@@ -733,7 +730,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>SamplingStrata</pkg>
   <pkg>samplingVarEst</pkg>
   <pkg>SAScii</pkg>
-  <pkg>samplesize4surveys</pkg>
   <pkg>SDaA</pkg>
   <pkg>sdcMicro</pkg>
   <pkg>sdcTable</pkg>
