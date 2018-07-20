@@ -3,8 +3,8 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-07-15</version>
-  
+<version>2018-07-21</version>
+
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
 Many packages provide functionality for more than one of the topics listed 
@@ -407,6 +407,12 @@ Less functionality but with the support of SEATS Spec is supported by package <p
 <p><strong>Small Area Estimation</strong></p>
 <ul>
   <li>
+  Package <pkg>sae</pkg> include functions for small area estimation, for example, direct estimators, the empirical best predictor and composite estimators.
+  </li>
+  <li>
+  Package <pkg>emdi</pkg> includes further functionality for supporting the user even beyond estimation, for example, for performing model diagnostic analyses, visualizing, and exporting the results for further processing. It includes build-in functionality for transformating variables and includes bootstrap methods for variance estimation. It also includes export to Excel and applies parallel computing in an automatized manner. 
+  </li>
+  <li>
 	Package <pkg>rsae</pkg> provides functions to estimate the parameters of the basic unit-level 
 	small area estimation (SAE) model (aka nested error regression model) 
 	by means of maximum likelihood (ML) or robust ML. On the basis of the estimated parameters, robust predictions of the area-specific 
@@ -427,6 +433,9 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   With package <pkg>JoSAE</pkg> point and variance estimation for the generalized regression (GREG) and a unit level
   empirical best linear unbiased prediction EBLUP estimators can be made at domain level. It basically provides wrapper functions to the <pkg>nlme</pkg> package 
 that is used to fit the basic random effects models.
+  </li>
+  <li>
+  The package <pkg>BayesSAE</pkg> also allows for Bayesian methods range from the basic Fay-Herriot model to its improvement such as You-Chapman models, unmatched models, spatial models and so on.
   </li>
 </ul> 
  
@@ -652,6 +661,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>Amelia</pkg>
   <pkg>anesrake</pkg>
   <pkg>BalancedSampling</pkg>
+  <pkg>BayesSAE</pkg>
   <pkg>BIFIEsurvey</pkg>
   <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
@@ -663,6 +673,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>DHS.rates</pkg>
   <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
+  <pkg>emdi</pkg>
   <pkg>errorlocate</pkg>
   <pkg>eurostat</pkg>
   <pkg>extremevalues</pkg>
@@ -720,6 +731,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>rworldmap</pkg>
   <pkg>rsae</pkg>
   <pkg>rspa</pkg>
+  <pkg>sae</pkg>
   <pkg>saeSim</pkg>
   <pkg>sampling</pkg>
   <pkg>samplingbook</pkg>
