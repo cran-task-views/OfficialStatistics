@@ -596,10 +596,6 @@ variables and weighting data to match the specifications of the American
 National Election Studies.
   </li>
   <li>
-  Package <pkg>odfWeave.survey</pkg> provides support for <pkg>odfWeave</pkg> 
-  for the <pkg>survey</pkg> package.
-  </li>
-  <li>
   Package <pkg>spsurvey</pkg> includes facilities for spatial survey design and 
   analysis for equal and unequal probability (stratified) sampling.
   </li>
