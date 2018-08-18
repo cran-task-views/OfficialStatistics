@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-07-21</version>
+<version>2018-08-18</version>
 
 <info> This CRAN task view contains a list of packages that includes
 methods typically used in official statistics and survey methodology.
@@ -634,6 +634,9 @@ including data with replication weights (e.g. from bootstrap).
   Package <pkg>extremevalues</pkg> is designed to detect univariate outliers based on modeling the bulk distribution.
   </li>
   <li>
+  Package <pkg>RRreg</pkg> implements univariate and multivariate analysis (correlation, linear, and logistic regression) for several variants of the randomized response technique, a survey method for eliminating response biases due to social desirability.
+  </li>
+  <li>
   Package <pkg>RRTCS</pkg> includes randomized response techniques for complex surveys.
   </li>
   <li>
@@ -713,6 +716,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>pps</pkg>
   <pkg>PracTools</pkg>
   <pkg>prevR</pkg>
+  <pkg>RRreg</pkg>
   <pkg>RRTCS</pkg>
   <pkg>pxR</pkg> 
   <pkg>quantification</pkg>
