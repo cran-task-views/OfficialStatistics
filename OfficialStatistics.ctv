@@ -3,9 +3,9 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-08-18</version>
+<version>2018-11-07</version>
 
-<info> This CRAN task view contains a list of packages that includes
+<info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
 Many packages provide functionality for more than one of the topics listed 
 below.  Therefore this list is not a strict categorization and packages can be 
@@ -355,6 +355,9 @@ re-identified and by guaranteeing a minimum amount of information loss.
   <li>
   An interface to the package <pkg>sdcTable</pkg> is provided by package <pkg>easySdcTable</pkg>.
   </li>
+  <li>
+  Package <pkg>SmallCountRounding</pkg> can be used to protect frequency tables by rounding necessary inner cells so that cross-classifications to be published are safe.
+  </li>
 </ul>
 
 <p><strong>Seasonal Adjustment and Forecasting</strong></p>
@@ -556,17 +559,37 @@ Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
 Tools to download data from the Eurostat database together with search and manipulation utilities are included in package <pkg>eurostat</pkg>.
 </li>
 <li>
+Package <pkg>census</pkg> is a scraper to collect US Census data from the American Community Survey (ACS) data and metadata. Further packages that are useful for working with US Census data are described in the following. A  complete list can be found at <a href="https://rconsortium.github.io/censusguide/"> https://rconsortium.github.io/censusguide/ </a>.
+</li>
+<li>
 Package <pkg>acs</pkg> downloads, manipulates, and presents the American Community Survey and decennial data from the US Census.
-</li>
-<li>
-Access to data published by INEGI, Mexico's official statistics agency, is supported by package <pkg>inegiR</pkg>
-</li>
-<li>
-Package <pkg>cbsodataR</pkg> provides access to Statistics Netherlands' (CBS) open data API.
 </li>
 <li>
 A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata is implemented in package <pkg>censusapi</pkg>.
 </li>
+<li>
+Package <pkg>censusGeography</pkg> converts spefific United States Census geographic code for city, state (FIP and ICP), region, and birthplace.
+</li>
+<li>
+With package <pkg>idbr</pkg> you can to make requests to the US Census Bureau's International Data Base API.
+</li>
+<li>
+Package <pkg>ipumsr</pkg> provides an easy way to import census, survey and geographic data provided by IPUMS. 
+</li>
+<li>
+Package <pkg>noncensus</pkg> contains a collection of various regional information determined by the U.S. Census Bureau along with demographic data.
+</li>
+<li>
+Package <pkg>tidycensus</pkg> provides an integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files
+</li>
+<li>
+Access to data published by INEGI, Mexico's official statistics agency, is supported by package
+<pkg>inegiR</pkg>
+</li>
+<li>
+Package <pkg>cbsodataR</pkg> provides access to Statistics Netherlands' (CBS) open data API.
+</li>
+
 </ul>
 
 <p>Misc:</p>
@@ -665,6 +688,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
+  <pkg>census</pkg>
   <pkg>censusapi</pkg>
   <pkg>CoImp</pkg>
   <pkg>convey</pkg>
@@ -686,8 +710,10 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>Hmisc</pkg>
   <pkg>IC2</pkg>
   <pkg>icarus</pkg>
+  <pkg>idbr</pkg> 
   <pkg>inegiR</pkg>
   <pkg>ineq</pkg>
+  <pkg>ipumsr</pkg>
   <pkg>JoSAE</pkg>
   <pkg>laeken</pkg>
   <pkg>lavaan</pkg>
@@ -708,6 +734,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>mitools</pkg>
   <pkg>mix</pkg>
   <pkg>nlme</pkg>
+  <pkg>noncensus</pkg>
   <pkg>norm</pkg>
   <pkg>OECD</pkg>
   <pkg>pan</pkg>
@@ -743,6 +770,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>sdcTable</pkg>
   <pkg>seasonal</pkg>
   <pkg>SeleMix</pkg>
+  <pkg>SmallCountRounding</pkg>
   <pkg>simFrame</pkg>
   <pkg>simPop</pkg>
   <pkg>simputation</pkg>
