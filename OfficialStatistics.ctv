@@ -690,6 +690,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>cbsodataR</pkg>
   <pkg>census</pkg>
   <pkg>censusapi</pkg>
+  <pkg>censusGeography</pkg>
   <pkg>CoImp</pkg>
   <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
@@ -789,6 +790,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>surveyoutliers</pkg>
   <pkg>synthpop</pkg>
   <pkg>tabplot</pkg>
+  <pkg>tidycensus</pkg>
   <pkg>tmap</pkg>
   <pkg>treemap</pkg>
   <pkg>univOutl</pkg>
