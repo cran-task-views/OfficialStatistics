@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2018-11-07</version>
+<version>2019-01-23</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -559,9 +559,6 @@ Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
 Tools to download data from the Eurostat database together with search and manipulation utilities are included in package <pkg>eurostat</pkg>.
 </li>
 <li>
-Package <pkg>census</pkg> is a scraper to collect US Census data from the American Community Survey (ACS) data and metadata. Further packages that are useful for working with US Census data are described in the following. A  complete list can be found at <a href="https://rconsortium.github.io/censusguide/"> https://rconsortium.github.io/censusguide/ </a>.
-</li>
-<li>
 Package <pkg>acs</pkg> downloads, manipulates, and presents the American Community Survey and decennial data from the US Census.
 </li>
 <li>
@@ -688,7 +685,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
-  <pkg>census</pkg>
   <pkg>censusapi</pkg>
   <pkg>censusGeography</pkg>
   <pkg>CoImp</pkg>
