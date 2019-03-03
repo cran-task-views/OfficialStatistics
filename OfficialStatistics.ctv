@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-01-23</version>
+<version>2019-03-03</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -193,12 +193,6 @@ adjust numerical records so they obey (in)equation restrictions.
   from specified variables are highlighted in selected variables. 
   It also comes with a graphical user interface.  
    </li>
-     <li> 
-   Package <pkg>tabplot</pkg>  provides the tableplot visualization method, which is used to profile or explore large statistical datasets. 
-   Up to a dozen of variables are shown column-wise as bar charts (numeric variables) or stacked bar charts (factors). 
-   Key aspects of the analysis with tableplots are the smoothness of a data distribution, 
-   the selective occurrence of missing values, and the distribution of correlated variables. 
-      </li>
    	<li>
    	Package <pkg>treemap</pkg> provide treemaps. A treemap is a space-filling visualization of aggregates of data with
     hierarchical structures. Colors can be used to relate to highlight differences between comparable aggregates.
@@ -785,7 +779,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>svyPVpack</pkg>
   <pkg>surveyoutliers</pkg>
   <pkg>synthpop</pkg>
-  <pkg>tabplot</pkg>
   <pkg>tidycensus</pkg>
   <pkg>tmap</pkg>
   <pkg>treemap</pkg>
