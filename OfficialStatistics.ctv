@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-03-11</version>
+<version>2019-06-20</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -583,7 +583,28 @@ Access to data published by INEGI, Mexico's official statistics agency, is suppo
 <li>
 Package <pkg>cbsodataR</pkg> provides access to Statistics Netherlands' (CBS) open data API.
 </li>
-
+<li>
+Package <pkg>EdSurvey</pkg> includes analysis of NCES Education Survey and Assessment Data
+</li>
+<li>
+Package <pkg>nomisr</pkg> gives access to Nomis UK Labour Market Data including Census and Labour Force Survey
+</li>
+<li>
+Package <pkg>readabs</pkg> to download and tidy time series data from the Australian Bureau of Statistics
+https://cran.r-project.org/package=readabs
+</li>
+<li>
+Package <pkg>FAOSTAT</pkg> to download data from the FAOSTAT database of the Food and Agricultural Organization (FAO) of the United Nations
+</li>
+<li>
+Package <pkg>ecb</pkg> provides access to the European Central Bank's Statistical Data Warehouse (SDW)
+</li>
+<li>
+Package <pkg>pxweb</pkg> provides generic interface for the PX-Web/PC-Axis API used by many National Statistical Agencies.
+</li>
+<li>
+Package <pkg>PxWebApiData</pkg> provides easy API access to e.g. Statistics Norway, Statistics Sweden and Statistics Finland.
+</li>
 </ul>
 
 <p>Misc:</p>
@@ -689,11 +710,14 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>deducorrect</pkg>
   <pkg>DHS.rates</pkg>
   <pkg>easySdcTable</pkg>
+  <pkg>ecb</pkg>
   <pkg>editrules</pkg>
+  <pkg>EdSurvey</pkg>
   <pkg>emdi</pkg>
   <pkg>errorlocate</pkg>
   <pkg>eurostat</pkg>
   <pkg>extremevalues</pkg>
+  <pkg>FAOSTAT</pkg>
   <pkg>FFD</pkg>
   <pkg>foreign</pkg>
   <pkg>Frames2</pkg>
@@ -728,6 +752,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>mitools</pkg>
   <pkg>mix</pkg>
   <pkg>nlme</pkg>
+  <pkg>nomisr</pkg>
   <pkg>noncensus</pkg>
   <pkg>norm</pkg>
   <pkg>OECD</pkg>
@@ -737,12 +762,15 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>pps</pkg>
   <pkg>PracTools</pkg>
   <pkg>prevR</pkg>
+  <pkg>pxweb</pkg>
+  <pkg>PxWebApiData</pkg> 
   <pkg>RRreg</pkg>
   <pkg>RRTCS</pkg>
   <pkg>pxR</pkg> 
   <pkg>quantification</pkg>
   <pkg>questionr</pkg> 
   <pkg>RcmdrPlugin.sampling</pkg>
+  <pkg>readabs</pkg>
   <pkg>RecordLinkage</pkg>
   <pkg>reweight</pkg>
   <pkg>robCompositions</pkg>
