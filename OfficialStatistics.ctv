@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-08-28</version>
+<version>2019-10-21</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -174,12 +174,6 @@ adjust numerical records so they obey (in)equation restrictions.
   A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to 
   quantify the impact of errors to the estimates.
   </li>
-  <li>
-  Package <pkg>rrcovNA</pkg> provides robust location and scatter estimation and robust
-                    principal component analysis with high breakdown point for
-                    incomplete data. It is therefore 
-                    applicable to find representative and non-representative outliers.
-  </li>
 </ul>  
 <p>Visual tools:</p>
 <ul>
@@ -285,11 +279,6 @@ Note that only few imputation methods can deal with mixed types of variables and
   Package <pkg>robCompositions</pkg> provides knn imputation for 
   compositional data (function <code>impKNNa()</code>) using the Aitchison 
   distance and adjustment of the nearest neighbor. 
-  </li>
-  <li> 
-  Package <pkg>rrcovNA</pkg> provides an algorithm for (robust) sequential imputation (function 
-  <code>impSeq()</code> and <code>impSeqRob()</code>  
-  by minimizing the determinant of the covariance of the augmented data matrix. It's application is limited to continuous scaled data.
   </li>
   <li>
   Package <bioc>impute</bioc> on Bioconductor impute provides knn imputation of continuous 
@@ -773,7 +762,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>robCompositions</pkg>
   <pkg>rpms</pkg>
   <pkg>rrcov3way</pkg>
-  <pkg>rrcovNA</pkg>
   <pkg>rworldmap</pkg>
   <pkg>rsae</pkg>
   <pkg>rspa</pkg>
