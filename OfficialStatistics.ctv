@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-11-07</version>
+<version>2019-11-21</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -319,11 +319,11 @@ mostly confidential and data providers have to be ensure confidentiality by
 both modifying the original data so that no statistical units can be 
 re-identified and by guaranteeing a minimum amount of information loss.
 <ul>
-  <li>
+<!--  <li>
   Package <pkg>sdcMicro</pkg> can be used for the generation of confidential 
   (micro)data, i.e. for the generation of public- and scientific-use files.  
   The package also comes with a graphical user interface.
-  </li>
+  </li> -->
   <li>
   Package <pkg>simPop</pkg> simulates synthetic, confidential, close-to-reality populations for 
   surveys based on sample data. Such population data can then be used for 
@@ -778,7 +778,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>SAScii</pkg>
   <pkg>SDaA</pkg>
   <pkg>sdcHierarchies</pkg>
-  <pkg>sdcMicro</pkg>
   <pkg>sdcSpatial</pkg>
   <pkg>sdcTable</pkg>
   <pkg>seasonal</pkg>
