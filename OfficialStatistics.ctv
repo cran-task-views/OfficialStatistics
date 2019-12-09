@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-11-21</version>
+<version>2019-12-09</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -389,6 +389,9 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   Package <pkg>MatchThem</pkg> provides tools of matching and weighting multiply imputed datasets to control for effects of confounders. Multiple imputed data files from mice and amelia can be used directly.
   </li>
   <li>
+  Package  <pkg>diyar</pkg> can link multiple data sets by determinisitic matching. Methods are implemented to treat missing values to reduce false matches or mismatches. 
+  </li>
+  <li>
   Package <pkg>stringdist</pkg> can calculate various string distances based on edits (damerau-levenshtein, hamming, levenshtein, optimal sting alignment), qgrams (q-gram, cosine, jaccard distance) or heuristic metrics (jaro, jaro-winkler). 
   </li>
   <li>
@@ -698,6 +701,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
   <pkg>DHS.rates</pkg>
+  <pkg>diyar</pkg>
   <pkg>easySdcTable</pkg>
   <pkg>ecb</pkg>
   <pkg>editrules</pkg>
