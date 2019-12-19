@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-12-12</version>
+<version>2019-12-19</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -363,7 +363,9 @@ For a more general view on time series methodology we refer to the
   the X12-Arima seasonal adjustment software. 
 Less functionality but with the support of SEATS Spec is supported by package <pkg>seasonal</pkg>. 
   </li>
-  A wrapper to JDemetra plus is provided by <pkg>RJDemetra</pkg>. It offers a full access to all options and outputs from JDemetra plus including the two seasonal adjustment methods from TRAMO/SEATS and X12/X13 Arima SEATS. 
+  <li>
+  A wrapper to JDemetra plus is provided by <pkg>RJDemetra</pkg>. It offers a full access to all options and outputs from JDemetra plus including the two seasonal adjustment methods from TRAMO/SEATS and X12/X13 Arima SEATS.
+  </li>
   <li>
   Given the large pool of individual forecasts in survey-type forecasting, forecast combination techniques from package <pkg>GeomComb</pkg> can be useful. It can also handle missing values in the time series.
   </li>
