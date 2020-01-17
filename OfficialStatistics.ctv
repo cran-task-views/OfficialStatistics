@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2019-12-19</version>
+<version>2020-01-17</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -569,9 +569,6 @@ With package <pkg>idbr</pkg> you can to make requests to the US Census Bureau's 
 Package <pkg>ipumsr</pkg> provides an easy way to import census, survey and geographic data provided by IPUMS. 
 </li>
 <li>
-Package <pkg>noncensus</pkg> contains a collection of various regional information determined by the U.S. Census Bureau along with demographic data.
-</li>
-<li>
 Package <pkg>tidycensus</pkg> provides an integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files
 </li>
 <li>
@@ -753,7 +750,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>mix</pkg>
   <pkg>nlme</pkg>
   <pkg>nomisr</pkg>
-  <pkg>noncensus</pkg>
   <pkg>norm</pkg>
   <pkg>OECD</pkg>
   <pkg>pan</pkg>
