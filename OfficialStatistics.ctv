@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2020-01-17</version>
+<version>2020-02-03</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -378,10 +378,6 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   matching between two data sources sharing a number of common variables. It 
   creates a synthetic data set after matching of two data sources via a 
   likelihood approach or via hot-deck.
-  </li>
-  <li>
-  Package <pkg>RecordLinkage</pkg> provides functions for linking and 
-  deduplicating data sets. 
   </li>
   <li>
   Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amongst
@@ -767,7 +763,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>questionr</pkg> 
   <pkg>RcmdrPlugin.sampling</pkg>
   <pkg>readabs</pkg>
-  <pkg>RecordLinkage</pkg>
   <pkg>reweight</pkg>
   <pkg>RJDemetra</pkg>
   <pkg>robCompositions</pkg>
