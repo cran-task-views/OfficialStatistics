@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2020-02-03</version>
+<version>2020-05-04</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -108,6 +108,9 @@ accounts for one-stage of stratification and clustering as well as unequal proba
  Package <pkg>svyPVpack</pkg> extends package <pkg>survey</pkg>. This package deals with data
  which stem from survey designs and has been created to handle data from large scale
  assessments like PISA, PIAAC etc.. 
+ </li>
+  <li>
+ Package <pkg>collapse</pkg> implements advanced and computationally fast methods for (weighted) data aggregation statistics such as the weighted median, weighted mean, etc. and supports fast aggregation and transformations of time series and fast (grouped, weighted, panel-decomposed) summary statistics for complex multilevel / panel data. 
  </li>
  <li>
  Package <pkg>weights</pkg> provides a variety of functions for producing simple weighted statistics, such as weighted Pearson's correlations, partial correlations, Chi-Squared statistics, histograms and t-tests.
@@ -694,6 +697,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>CalibrateSSB</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
+  <pkg>collapse</pkg>
   <pkg>censusapi</pkg>
   <pkg>censusGeography</pkg>
   <pkg>CoImp</pkg>
