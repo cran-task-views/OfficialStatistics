@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2020-05-04</version>
+<version>2020-06-16</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -44,9 +44,6 @@ or data from previous rounds of the same survey, may be used.
   </li>
   <li>
   The package <pkg>BalancedSampling</pkg> selects balanced and spatially balanced probability samples in multi-dimensional spaces with any prescribed inclusion probabilities. It also includes the local pivot method, the cube and local cube method and a few more methods.  
-  </li>
-  <li>
-  Package <pkg>gridsample</pkg> selects PSUs within user-defined strata using gridded population data, given desired numbers of sampled households within each PSU. The population densities used to create PSUs are drawn from rasters
   </li>
   <li>
   Package <pkg>PracTools</pkg> contains functions for sample size calculation for survey samples using stratified or clustered one-, two-, and three-stage sample designs as well as functions to compute variance components for multistage designs and sample sizes in two-phase designs.
@@ -718,7 +715,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>foreign</pkg>
   <pkg>Frames2</pkg>
   <pkg>GeomComb</pkg>
-  <pkg>gridsample</pkg>
   <pkg>haven</pkg>
   <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
