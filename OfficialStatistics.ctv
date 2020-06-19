@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2020-06-16</version>
+<version>2020-06-20</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -540,6 +540,9 @@ Package <pkg>OECD</pkg> searches and extracts data from the OECD.
 Package <pkg>tidyqwi</pkg> provides an api for accessing the United States Census Bureau's Quartely Workforce Indicator.
 </li>
 <li>
+<pkg>cancensus</pkg> provides access to Statistics Canada's Census data with the option to retrieve all data as spatial data and <pkg>cansim</pkg> is designed to retrieve and work with Statistics Canada's data vectors, tables, and cubes. 
+</li> 
+<li>
 Package <pkg>Rilostat</pkg> contains 
 tools to download data from the <a href="http://www.ilo.org/ilostat"> international labour organisation database</a> together with search and manipulation utilities. It can also import ilostat data that are available on their data base in SDMX format.
 </li>
@@ -692,6 +695,8 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>BayesSAE</pkg>
   <pkg>BIFIEsurvey</pkg>
   <pkg>CalibrateSSB</pkg>
+  <pkg>cancensus</pkg>
+  <pkg>cansim</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
   <pkg>collapse</pkg>
