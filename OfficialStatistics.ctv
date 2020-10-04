@@ -320,11 +320,6 @@ re-identified and by guaranteeing a minimum amount of information loss.
   The package also comes with a graphical user interface.
   </li> -->
   <li>
-  Package <pkg>simPop</pkg> simulates synthetic, confidential, close-to-reality populations for 
-  surveys based on sample data. Such population data can then be used for 
-  extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example. See also for more details in the microsimulation section.
-  </li>
-  <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE technique and uses linear programming packages (Rglpk and lpSolveAPI) for solving (a large amount of) linear programs.
   </li>
   <li>
@@ -781,7 +776,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>seasonal</pkg>
   <pkg>SmallCountRounding</pkg>
   <pkg>simFrame</pkg>
-  <pkg>simPop</pkg>
   <pkg>simputation</pkg>
   <pkg>sms</pkg>
   <pkg>spsurvey</pkg>
