@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2020-09-08</version>
+<version>2020-10-04</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -168,11 +168,6 @@ Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and appli
   <li>
   The package <pkg>rspa</pkg> implements functions to minimally
 adjust numerical records so they obey (in)equation restrictions.
-  </li>
-  <li>
-  Package <pkg>SeleMix</pkg> can be used for selective editing for continuous scaled data. 
-  A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to 
-  quantify the impact of errors to the estimates.
   </li>
 </ul>  
 <p>Visual tools:</p>
@@ -784,7 +779,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>sdcSpatial</pkg>
   <pkg>sdcTable</pkg>
   <pkg>seasonal</pkg>
-  <pkg>SeleMix</pkg>
   <pkg>SmallCountRounding</pkg>
   <pkg>simFrame</pkg>
   <pkg>simPop</pkg>
