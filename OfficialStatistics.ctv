@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2020-10-04</version>
+<version>2020-10-28</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -537,9 +537,6 @@ tools to download data from the <a href="http://www.ilo.org/ilostat"> internatio
 Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
 </li>
 <li>
-Tools to download data from the Eurostat database together with search and manipulation utilities are included in package <pkg>eurostat</pkg>.
-</li>
-<li>
 Package <pkg>acs</pkg> downloads, manipulates, and presents the American Community Survey and decennial data from the US Census.
 </li>
 <li>
@@ -699,7 +696,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>EdSurvey</pkg>
   <pkg>emdi</pkg>
   <pkg>errorlocate</pkg>
-  <pkg>eurostat</pkg>
   <pkg>extremevalues</pkg>
   <pkg>FAOSTAT</pkg>
   <pkg>FFD</pkg>
