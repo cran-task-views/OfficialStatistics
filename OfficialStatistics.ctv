@@ -179,6 +179,9 @@ adjust numerical records so they obey (in)equation restrictions.
   from specified variables are highlighted in selected variables. 
   It also comes with a graphical user interface.  
    </li>
+   <li>
+   Package <pkg>longCatEDA</pkg> extends the matrixplot from package <pkg>VIM</pkg> to check for monotone missingness in longitudinal data. 
+   </li>
    	<li>
    	Package <pkg>treemap</pkg> provide treemaps. A treemap is a space-filling visualization of aggregates of data with
     hierarchical structures. Colors can be used to relate to highlight differences between comparable aggregates.
@@ -314,11 +317,8 @@ mostly confidential and data providers have to be ensure confidentiality by
 both modifying the original data so that no statistical units can be 
 re-identified and by guaranteeing a minimum amount of information loss.
 <ul>
-<!--  <li>
-  Package <pkg>sdcMicro</pkg> can be used for the generation of confidential 
-  (micro)data, i.e. for the generation of public- and scientific-use files.  
-  The package also comes with a graphical user interface.
-  </li> -->
+<li>
+  Package <pkg>sdcMicro</pkg> can be used to anonymize data, i.e. for the generation of public- and scientific-use files. It implements a wide range of methods for the anonymization of categorical and continuous (key) variables. The package also comes with a graphical user interface.
   <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE technique and uses linear programming packages (Rglpk and lpSolveAPI) for solving (a large amount of) linear programs.
   </li>
@@ -726,6 +726,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>lavaan</pkg>
   <pkg>lavaan.survey</pkg>
   <pkg>lme4</pkg>
+  <pkg>longCatEDA</pkg>
   <pkg>mapStats</pkg>
   <pkg>MatchIt</pkg>
   <pkg>MatchThem</pkg>
@@ -778,6 +779,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>SAScii</pkg>
   <pkg>SDaA</pkg>
   <pkg>sdcHierarchies</pkg>
+  <pkg>sdcMicro</pkg>
   <pkg>sdcSpatial</pkg>
   <pkg>sdcTable</pkg>
   <pkg>seasonal</pkg>
