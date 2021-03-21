@@ -317,8 +317,9 @@ mostly confidential and data providers have to be ensure confidentiality by
 both modifying the original data so that no statistical units can be 
 re-identified and by guaranteeing a minimum amount of information loss.
 <ul>
-<li>
+  <li>
   Package <pkg>sdcMicro</pkg> can be used to anonymize data, i.e. for the generation of public- and scientific-use files. It implements a wide range of methods for the anonymization of categorical and continuous (key) variables. The package also comes with a graphical user interface.
+  </li>
   <li>
   Package <pkg>sdcTable</pkg>  can be used to provide confidential (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE technique and uses linear programming packages (Rglpk and lpSolveAPI) for solving (a large amount of) linear programs.
   </li>
