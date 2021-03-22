@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-01-16</version>
+<version>2021-03-22</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -585,9 +585,6 @@ https://cran.r-project.org/package=readabs
 Package <pkg>FAOSTAT</pkg> to download data from the FAOSTAT database of the Food and Agricultural Organization (FAO) of the United Nations
 </li>
 <li>
-Package <pkg>ecb</pkg> provides access to the European Central Bank's Statistical Data Warehouse (SDW)
-</li>
-<li>
 Package <pkg>pxweb</pkg> provides generic interface for the PX-Web/PC-Axis API used by many National Statistical Agencies.
 </li>
 <li>
@@ -702,7 +699,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>DHS.rates</pkg>
   <pkg>diyar</pkg>
   <pkg>easySdcTable</pkg>
-  <pkg>ecb</pkg>
   <pkg>editrules</pkg>
   <pkg>EdSurvey</pkg>
   <pkg>emdi</pkg>
