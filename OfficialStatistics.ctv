@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-05-25</version>
+<version>2021-07-05</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -398,9 +398,6 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   Package <pkg>sae</pkg> include functions for small area estimation, for example, direct estimators, the empirical best predictor and composite estimators.
   </li>
   <li>
-  Package <pkg>emdi</pkg> includes further functionality for supporting the user even beyond estimation, for example, for performing model diagnostic analyses, visualizing, and exporting the results for further processing. It includes build-in functionality for transformating variables and includes bootstrap methods for variance estimation. It also includes export to Excel and applies parallel computing in an automatized manner. 
-  </li>
-  <li>
 	Package <pkg>rsae</pkg> provides functions to estimate the parameters of the basic unit-level 
 	small area estimation (SAE) model (aka nested error regression model) 
 	by means of maximum likelihood (ML) or robust ML. On the basis of the estimated parameters, robust predictions of the area-specific 
@@ -700,7 +697,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
   <pkg>EdSurvey</pkg>
-  <pkg>emdi</pkg>
   <pkg>errorlocate</pkg>
   <pkg>extremevalues</pkg>
   <pkg>FAOSTAT</pkg>
