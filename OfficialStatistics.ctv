@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-07-05</version>
+<version>2021-07-18</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -250,10 +250,6 @@ Note that only few imputation methods can deal with mixed types of variables and
   multiply-imputed data using mixture approximations.
   </li>
   <li>
-  Package <pkg>robCompositions</pkg> provides iterative model-based imputation 
-  for compositional data (function <code>impCoda()</code>). 
-  </li>
-  <li>
   Package <pkg>missForest</pkg> uses the functionality of the randomForest to impute missing values in an iterative single-imputation fashion. It can deal with almost any kind of variables except semi-continuous ones. Even the underlying bootstrap approach of random forests ensures that from multiple runs one can get multiple imputations but the additional uncertainty of imputation is only considered when choosing the random forest method of package <pkg>mice</pkg>.  
   </li>
 </ul>
@@ -272,11 +268,6 @@ Note that only few imputation methods can deal with mixed types of variables and
   Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
   imputation of continuous variables where different metrics and methods can be 
   used for determining the distance between observations.
-  </li>
-  <li>
-  Package <pkg>robCompositions</pkg> provides knn imputation for 
-  compositional data (function <code>impKNNa()</code>) using the Aitchison 
-  distance and adjustment of the nearest neighbor. 
   </li>
   <li>
   Package <bioc>impute</bioc> on Bioconductor impute provides knn imputation of continuous 
@@ -463,9 +454,6 @@ support users in visualising their own data. Examples are given, e.g., maps for 
   </li>
   <li>
   Package <pkg>rrcov3way</pkg> provides robust methods for multiway data analysis, applicable also for compositional data.
-  </li>
-    <li>
-  Package <pkg>robCompositions</pkg> methods for compositional tables including statistical tests.
   </li>
 </ul>
 
@@ -756,7 +744,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>reclin</pkg>
   <pkg>reweight</pkg>
   <pkg>RJDemetra</pkg>
-  <pkg>robCompositions</pkg>
   <pkg>rpms</pkg>
   <pkg>rrcov3way</pkg>
   <pkg>rworldmap</pkg>
