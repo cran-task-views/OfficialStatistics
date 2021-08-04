@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-08-01</version>
+<version>2021-08-04</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -89,11 +89,6 @@ Package <pkg>vardpoor</pkg> allows to calculate linearisation of several nonline
  <li>
  The package <pkg>rpms</pkg> fits a linear model to survey data in each node obtained by recursively partitioning the data. The algorithm
 accounts for one-stage of stratification and clustering as well as unequal probability of selection.
- </li>
- <li>
- Package <pkg>svyPVpack</pkg> extends package <pkg>survey</pkg>. This package deals with data
- which stem from survey designs and has been created to handle data from large scale
- assessments like PISA, PIAAC etc.. 
  </li>
    <li>
  Package <pkg>collapse</pkg> implements advanced and computationally fast methods for grouped and weighted statistics and multi-type data aggregation (e.g. mean, variance, statistical mode etc.), fast (grouped, weighted) transformations of time series and panel data (e.g. scaling, centering, differences, growth rates), and fast (grouped, weighted, panel-decomposed) summary statistics for complex multilevel / panel data.
@@ -765,7 +760,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>surveybootstrap</pkg>
   <pkg>surveydata</pkg>
   <pkg>surveyplanning</pkg>
-  <pkg>svyPVpack</pkg>
   <pkg>surveyoutliers</pkg>
   <pkg>synthpop</pkg>
   <pkg>tidycensus</pkg>
