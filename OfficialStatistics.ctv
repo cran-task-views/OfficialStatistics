@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Methodology</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-08-04</version>
+<version>2021-08-09</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -360,9 +360,6 @@ Less functionality but with the support of SEATS Spec is supported by package <p
   Package <pkg>reclin</pkg> is a record linkage toolkit to assist in performing probabilistic record linkage and deduplication
   </li>
   <li>
-  The package <pkg>diyar</pkg> provides a means of performing multi-stage deterministic record linkages, while attempting to address missing data and conflicting matches. 
-  </li>
-  <li>
   Package <pkg>XBRL</pkg> allows the extraction of business financial information from XBRL Documents.
   </li>
 </ul>  
@@ -665,7 +662,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>convey</pkg>
   <pkg>deducorrect</pkg>
   <pkg>DHS.rates</pkg>
-  <pkg>diyar</pkg>
   <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
   <pkg>EdSurvey</pkg>
