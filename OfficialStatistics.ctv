@@ -516,6 +516,9 @@ tools to download data from the <a href="http://www.ilo.org/ilostat"> internatio
 Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
 </li>
 <li>
+Package <pkg>insee</pkg> searches and extracts data from the Insee's BDM database.
+</li>
+<li>
 Package <pkg>acs</pkg> downloads, manipulates, and presents the American Community Survey and decennial data from the US Census.
 </li>
 <li>
@@ -686,6 +689,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>idbr</pkg> 
   <pkg>inegiR</pkg>
   <pkg>ineq</pkg>
+  <pkg>insee</pkg>
   <pkg>ipumsr</pkg>
   <pkg>JoSAE</pkg>
   <pkg>laeken</pkg>
