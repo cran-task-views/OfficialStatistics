@@ -461,9 +461,6 @@ Package <pkg>saeSim</pkg> Tools for the simulation of data in the context of sma
   <li>
 Package <pkg>SimSurvey</pkg> simulates age-structured spatio-temporal populations given built-in or user-defined sampling protocols. 
   </li>
-  <li>
-Package <pkg>GridSample</pkg> generates household survey primary sampling units (PSUs) from gridded population data.
-  </li>
 </ul>
   
 <p><strong>Additional Packages and Functionalities</strong></p>
@@ -681,7 +678,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>foreign</pkg>
   <pkg>Frames2</pkg>
   <pkg>GeomComb</pkg>
-  <pkg>GridSample</pkg>
   <pkg>haven</pkg>
   <pkg>hbsae</pkg>
   <pkg>Hmisc</pkg>
