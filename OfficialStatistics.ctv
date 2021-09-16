@@ -1,9 +1,9 @@
 <CRANTaskView>
 
 <name>OfficialStatistics</name>
-<topic>Official Statistics &amp; Survey Methodology</topic>
+<topic>Official Statistics &amp; Survey Statistics</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-09-09</version>
+<version>2021-09-16</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -506,11 +506,17 @@ Package <pkg>OECD</pkg> searches and extracts data from the OECD.
 Package <pkg>tidyqwi</pkg> provides an api for accessing the United States Census Bureau's Quartely Workforce Indicator.
 </li>
 <li>
+Package <pkg>tidyBdE</pkg> provides access to official statistics provided by the Spanish Banking Authority Banco de Espana
+</li>
+<li>
 <pkg>cancensus</pkg> provides access to Statistics Canada's Census data with the option to retrieve all data as spatial data. 
 </li> 
 <li>
 Package <pkg>Rilostat</pkg> contains 
 tools to download data from the <a href="http://www.ilo.org/ilostat"> international labour organisation database</a> together with search and manipulation utilities. It can also import ilostat data that are available on their data base in SDMX format.
+</li>
+<li>
+Package <pkg>eurostat</pkg> provides search for and access to data from Eurostat, the statistical agency for the European Union.
 </li>
 <li>
 Access to Finnish open government data is provided by package <pkg>sorvi</pkg>
@@ -675,6 +681,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>editrules</pkg>
   <pkg>EdSurvey</pkg>
   <pkg>errorlocate</pkg>
+  <pkg>eurostat</pkg> 
   <pkg>extremevalues</pkg>
   <pkg>FAOSTAT</pkg>
   <pkg>FFD</pkg>
@@ -772,6 +779,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>synthpop</pkg>
   <pkg>tidycensus</pkg>
   <pkg>tidyqwi</pkg> 
+  <pkg>tidyBdE</pkg>
   <pkg>tmap</pkg>
   <pkg>treemap</pkg>
   <pkg>univOutl</pkg>
