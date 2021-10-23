@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Statistics</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-10-13</version>
+<version>2021-10-23</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -508,9 +508,6 @@ Package <pkg>tidyqwi</pkg> provides an api for accessing the United States Censu
 Package <pkg>tidyBdE</pkg> provides access to official statistics provided by the Spanish Banking Authority Banco de Espana
 </li>
 <li>
-<pkg>cancensus</pkg> provides access to Statistics Canada's Census data with the option to retrieve all data as spatial data. 
-</li> 
-<li>
 Package <pkg>Rilostat</pkg> contains 
 tools to download data from the <a href="http://www.ilo.org/ilostat"> international labour organisation database</a> together with search and manipulation utilities. It can also import ilostat data that are available on their data base in SDMX format.
 </li>
@@ -666,7 +663,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>BayesSAE</pkg>
   <pkg>BIFIEsurvey</pkg>
   <pkg>CalibrateSSB</pkg>
-  <pkg>cancensus</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
   <pkg>censusapi</pkg>
