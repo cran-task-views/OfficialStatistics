@@ -3,7 +3,7 @@
 <name>OfficialStatistics</name>
 <topic>Official Statistics &amp; Survey Statistics</topic>
 <maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
-<version>2021-10-23</version>
+<version>2021-12-13</version>
 
 <info> This CRAN task view contains a list of packages that include
 methods typically used in official statistics and survey methodology.
@@ -324,8 +324,9 @@ For a more general view on time series methodology we refer to the
   which can also be found in the stats package.
   </li>
   <li>
-  Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>seasonal</pkg>. <pkg>x12</pkg> provides a wrapper function for the X12 binaries, which have to be installed first. It uses  
-  with a S4-class interface for batch processing of multiple time series.
+  Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>x12GUI</pkg> and package <pkg>seasonal</pkg>. <pkg>x12</pkg> provides a wrapper function for the X12 binaries, which have to be installed first. It uses  
+  with a S4-class interface for batch processing of multiple time series. <pkg>x12GUI</pkg> provides a graphical user interface for 
+  the X12-Arima seasonal adjustment software. 
 Less functionality but with the support of SEATS Spec is supported by package <pkg>seasonal</pkg>. 
   </li>
   <li>
@@ -374,6 +375,9 @@ Less functionality but with the support of SEATS Spec is supported by package <p
 	by means of maximum likelihood (ML) or robust ML. On the basis of the estimated parameters, robust predictions of the area-specific 
 	means are computed (incl. MSE estimates; parametric bootstrap). 
 	The current version (rsae 0.4-x) does not allow for categorical independent variables.
+  </li>
+  <li>
+  Package <pkg>emdi</pkg> contains functions that support estimating, assessing and mapping regional disaggregated indicators. So far, estimation methods comprise direct estimation, the model-based unit-level approach Empirical Best Prediction, the area-level model and various extensions of it, as well as their precision estimates. The assessment of the used model is supported by a summary and diagnostic plots. For a suitable presentation of estimates, map plots can be easily created and exported
   </li>
   <li>
   Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
@@ -507,6 +511,9 @@ Package <pkg>tidyqwi</pkg> provides an api for accessing the United States Censu
 <li>
 Package <pkg>tidyBdE</pkg> provides access to official statistics provided by the Spanish Banking Authority Banco de Espana
 </li>
+<li>
+<pkg>cancensus</pkg> provides access to Statistics Canada's Census data with the option to retrieve all data as spatial data. 
+</li> 
 <li>
 Package <pkg>Rilostat</pkg> contains 
 tools to download data from the <a href="http://www.ilo.org/ilostat"> international labour organisation database</a> together with search and manipulation utilities. It can also import ilostat data that are available on their data base in SDMX format.
@@ -663,6 +670,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>BayesSAE</pkg>
   <pkg>BIFIEsurvey</pkg>
   <pkg>CalibrateSSB</pkg>
+  <pkg>cancensus</pkg>
   <pkg>cat</pkg>
   <pkg>cbsodataR</pkg>
   <pkg>censusapi</pkg>
@@ -675,6 +683,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>easySdcTable</pkg>
   <pkg>editrules</pkg>
   <pkg>EdSurvey</pkg>
+  <pkg>emdi</pkg>
   <pkg>errorlocate</pkg>
   <pkg>eurostat</pkg> 
   <pkg>extremevalues</pkg>
@@ -784,6 +793,7 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>VIM</pkg>
   <pkg>weights</pkg>
   <pkg>x12</pkg>
+  <pkg>x12GUI</pkg>
   <pkg>XBRL</pkg>
   <pkg>yaImpute</pkg>
 </packagelist>
