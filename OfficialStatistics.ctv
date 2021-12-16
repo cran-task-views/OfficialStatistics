@@ -324,9 +324,8 @@ For a more general view on time series methodology we refer to the
   which can also be found in the stats package.
   </li>
   <li>
-  Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>x12GUI</pkg> and package <pkg>seasonal</pkg>. <pkg>x12</pkg> provides a wrapper function for the X12 binaries, which have to be installed first. It uses  
-  with a S4-class interface for batch processing of multiple time series. <pkg>x12GUI</pkg> provides a graphical user interface for 
-  the X12-Arima seasonal adjustment software. 
+  Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>seasonal</pkg>. <pkg>x12</pkg> provides a wrapper function for the X12 binaries, which have to be installed first. It uses  
+  with a S4-class interface for batch processing of multiple time series.
 Less functionality but with the support of SEATS Spec is supported by package <pkg>seasonal</pkg>. 
   </li>
   <li>
@@ -793,7 +792,6 @@ including data with replication weights (e.g. from bootstrap).
   <pkg>VIM</pkg>
   <pkg>weights</pkg>
   <pkg>x12</pkg>
-  <pkg>x12GUI</pkg>
   <pkg>XBRL</pkg>
   <pkg>yaImpute</pkg>
 </packagelist>
