@@ -3,18 +3,12 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ
 email: matthias.templ@gmail.com
-version: 2021-12-29
+version: 2022-01-04
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
 
-This CRAN task view contains a list of packages that include methods
-typically used in official statistics and survey methodology. Many
-packages provide functionality for more than one of the topics listed
-below. Therefore this list is not a strict categorization and packages
-can be listed more than once. Certain data import/export facilities
-regarding to often used statistical software tools like SPSS, SAS or
-Stata are mentioned in the end of the task view.
+This CRAN Task View contains a list of packages with methods typically used in official statistics and survey methodology. Many packages provide functions for more than one of the topics listed below. Therefore, this list is not a strict categorization and packages may be listed more than once. Certain data import/export functions for commonly used statistical software tools such as SPSS, SAS or Stata are listed at the end of the task view.
 
 ### Complex Survey Design: Sampling and Sample Size Calculation
 
