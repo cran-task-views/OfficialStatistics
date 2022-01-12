@@ -1,9 +1,9 @@
 ---
 name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
-maintainer: Matthias Templ
+maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2022-01-04
+version: 2022-01-12
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
