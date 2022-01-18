@@ -38,7 +38,8 @@
 
 ---
 
-# General
+
+# "Maker"
 - 1 Preparations/ Management (questionnaire design, etc.)
 - 2 Sample Design
     2.1 Sampling
@@ -47,7 +48,6 @@
     3.1 Survey
     3.2 Data Integration (Statistical Matching and Record Linkage)
     3.3 Scraping
-    3.4 Access to Official Statistics (Link)
 - 4 Data Processing
     4.1 Weighting and Calibration
     4.2 Editing
@@ -65,4 +65,7 @@
 - B Microsimulation and Generation of Synthetic Data
 - C Indices, Indicators, Tables and Visualisation of Indicators
 - D Varia
+
+# Access to Official Statistics
+
 
