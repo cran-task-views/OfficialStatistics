@@ -26,18 +26,18 @@ The third part is ["Specific Techniques/ Methods"]("specific") which collects me
     track of metadata from surveys, and to easily extract columns with
     specific questions.
 -   Package `r pkg("blaise")`. Reading and writing Files in the Blaise Format from R. By Statistics Netherlands.
-    
+
 ## 2 Sample Design
-### 2.1 Sampling TS
+### 2.1 Sampling and Sample Size Determination
 -   Package `r pkg("sampling")` includes many different
     algorithms (Brewer, Midzuno, pps, systematic, Sampford, balanced
     (cluster or stratified) sampling via the cube method, etc.) for
     drawing survey samples and calibrating the design weights.
--   The `r pkg("pps")` package contains functions to select
+-   Package `r pkg("pps")` contains functions to select
     samples using pps sampling. Also stratified simple random sampling
     is possible as well as to compute joint inclusion probabilities for
     Sampford's method of pps sampling.
--   The package `r pkg("BalancedSampling")` selects balanced
+-   Package `r pkg("BalancedSampling")` provides functions to select balanced
     and spatially balanced probability samples in multi-dimensional
     spaces with any prescribed inclusion probabilities. It also includes
     the local pivot method, the cube and local cube method and a few
@@ -47,13 +47,12 @@ The third part is ["Specific Techniques/ Methods"]("specific") which collects me
     clustered one-, two-, and three-stage sample designs as well as
     functions to compute variance components for multistage designs and
     sample sizes in two-phase designs.
-    
-### 2.2 Sample Size Determination TS
--   R package `r pkg("surveyplanning")` includes tools for
+
+-   Package `r pkg("surveyplanning")` includes tools for
     sample survey planning, including sample size calculation,
     estimation of expected precision for the estimates of totals, and
     calculation of optimal sample size allocation.
-    -   Package `r pkg("stratification")` allows univariate
+-   Package `r pkg("stratification")` allows univariate
     stratification of survey populations with a generalisation of the
     Lavallee-Hidiroglou method.
 -   Package `r pkg("SamplingStrata")` offers an approach for
@@ -63,8 +62,7 @@ The third part is ["Specific Techniques/ Methods"]("specific") which collects me
     on target estimates. To evaluate the distribution of target
     variables in different strata, information of the sampling frame, or
     data from previous rounds of the same survey, may be used.
-    
-    
+
 ## 3 Data Collection (incl. record linkage)
 ### 3.1 Survey [?]
 ### 3.2 Data Integration (Statistical Matching and Record Linkage) MT
@@ -252,7 +250,7 @@ Miscellaneous Imputation Methods:
 ### 4.4 Seasonal Adjustment AK (=> Links zu TimeSeries)
 Seasonal adjustment is an important step in producing official statistics and a very limited set of methodologies are used. In the CRAN Task View `r view("TimeSeries")` section seasonal adjustment, R packages for this can be found.
 ## 5 Analysis of Survey Data
-### 5.1 Estimation and Variance Estimation TS [alle, robust estimation; Beat?]
+### 5.1 Estimation and Variance Estimation
 -   Package `r pkg("survey", priority = "core")` works with
     survey samples. It allows to specify a complex survey design
     (stratified sampling design, cluster sampling, multi-stage sampling
@@ -264,32 +262,25 @@ Seasonal adjustment is an important step in producing official statistics and a 
     models. Variance estimation for means, totals and ratios can be done
     either by Taylor linearization or resampling (BRR, jackkife,
     bootstrap or user-defined).
--   The methods from the `r pkg("survey")` package are
-    called from package `r pkg("srvyr")` using the dplyr
-    syntax, i.e., piping, verbs like `group_by` and `summarize`, and
-    other dplyr-inspired syntactic style when calculating summary
-    statistics on survey data.
--   Package `r pkg("gustave")`. Provides a toolkit for analytical variance estimation in survey sampling.     
--   Package `r pkg("laeken")` provides functions to estimate
-    certain Laeken indicators (at-risk-of-poverty rate, quintile share
-    ratio, relative median risk-of-poverty gap, Gini coefficient)
-    including their variance for domains and strata using a calibrated
-    bootstrap.
+-   Package `r pkg("robsurvey")` provides functions for the computation of robust (outlier-resistant) estimators of finite population characteristics (means, totals, ratios, regression, etc.) using weight reduction, trimming, winsorization and M-estimation. The package complements package `r pkg("survey")`.
+-   Package `r pkg("surveysd")` offers calibration, bootstrap and error
+    estimation for complex surveys (incl. desings with rotational desings).
+
+-   Package `r pkg("gustave")` provides a toolkit for analytical variance
+    estimation in survey sampling.
 -   The `r pkg("lavaan.survey")` package provides a wrapper
     function for packages `r pkg("survey")` and
     `r pkg("lavaan")`. It can be used for fitting structural
-    equation models (SEM) on samples from complex designs. Using the
-    design object functionality from package
+    equation models (SEM) on samples from complex designs (clustering,
+    stratification, sampling weights, and finite population corrections).
+    Using the design object functionality from package
     `r pkg("survey")`, lavaan objects are re-fit (corrected)
-    with the `lavaan.survey()` function of package
-    `r pkg("lavaan.survey")`. This allows for the
-    incorporation of clustering, stratification, sampling weights, and
-    finite population corrections into a SEM analysis. `lavaan.survey()`
-    also accommodates replicate weights and multiply imputed datasets.
+    with the `lavaan.survey()` function. This function also accommodates
+    replicate weights and multiply imputed datasets.
 -   Package `r pkg("vardpoor")` allows to calculate
     linearisation of several nonlinear population statistics, variance
     estimation of sample surveys by the ultimate cluster method,
-    variance estimation for longitudinal and cross-sectional measures
+    variance estimation for longitudinal and cross-sectional measures,
     and measures of change for any stage cluster sampling designs.
 -   The package `r pkg("rpms")` fits a linear model to
     survey data in each node obtained by recursively partitioning the
@@ -302,11 +293,14 @@ Seasonal adjustment is an important step in producing official statistics and a 
     panel data (e.g. scaling, centering, differences, growth rates), and
     fast (grouped, weighted, panel-decomposed) summary statistics for
     complex multilevel / panel data.
--   Package `r pkg("weights")` provides a variety of
-    functions for producing simple weighted statistics, such as weighted
+-   Package `r pkg("srvyr")` is inspired by the synthetic style of the
+    `r plg("dplyr")` package (i.e., piping, verbs like `group_by` and
+    `summarize`). It offers summary statistics for design objects of the
+    `r pkg("survey")` package.
+-   Package `r pkg("weights")` provides a variety of functions for
+    producing simple weighted statistics, such as weighted
     Pearson's correlations, partial correlations, Chi-Squared
     statistics, histograms and t-tests.
--   Package `r pkg("surveysd")`. Calibration, bootstrap and error estimation for complex surveys.
 
 ### 5.2 Visualization MT
 -   Package `r pkg("VIM")` is designed to visualize missing
@@ -426,48 +420,45 @@ amount of information loss.
 -   `r pkg("statcanR")`. An R connection to Statistics Canada's Web Data Service. Open economic data (formerly CANSIM tables) are accessible as a data frame in the R environment.
 -   `r pkg("cdlTools")`. Downloads USDA National Agricultural Statistics Service (NASS) cropscape data for a specified state.
 -   Package `r pkg("csodata")` Download data from Central Statistics Office (CSO) of Ireland. 
+
 # <a name="specific"></a>Specific Techniques/ Methods
+
 ## A Small Area Estimation TS
--   Package `r pkg("sae")` include functions for small area
-    estimation, for example, direct estimators, the empirical best
+-   Package `r pkg("sae")` provides functions for small area
+    estimation (basic area- and unit-level model, Fay-Herriot model with spatial/ temporal correlations), for example, direct estimators, the empirical best
     predictor and composite estimators.
 -   Package `r pkg("rsae")` provides functions to estimate
     the parameters of the basic unit-level small area estimation (SAE)
     model (aka nested error regression model) by means of maximum
-    likelihood (ML) or robust ML. On the basis of the estimated
+    likelihood (ML) or robust M-estimation. On the basis of the estimated
     parameters, robust predictions of the area-specific means are
     computed (incl. MSE estimates; parametric bootstrap). The current
     version (rsae 0.4-x) does not allow for categorical independent
     variables.
--   Package `r pkg("emdi")` contains functions that support
+-   Package `r pkg("emdi")` provides functions that support
     estimating, assessing and mapping regional disaggregated indicators.
     So far, estimation methods comprise direct estimation, the
     model-based unit-level approach Empirical Best Prediction, the
     area-level model and various extensions of it, as well as their
     precision estimates. The assessment of the used model is supported
     by a summary and diagnostic plots. For a suitable presentation of
-    estimates, map plots can be easily created and exported
--   Package `r pkg("nlme")` provides facilities to fit
-    Gaussian linear and nonlinear mixed-effects models and
-    `r pkg("lme4")` provides facilities to fit linear and
-    generalized linear mixed-effects model, both used in small area
-    estimation.
--   The `r pkg("hbsae")` package provides functions to
+    estimates, map plots can be easily created and exported.
+-   Package `r pkg("hbsae")` provides functions to
     compute small area estimates based on a basic area or unit-level
     model. The model is fit using restricted maximum likelihood, or in a
-    hierarchical Bayesian way. Auxilary information can be either counts
+    hierarchical Bayesian way. Auxiliary information can be either counts
     resulting from categorical variables or means from continuous
     population information.
--   With package `r pkg("JoSAE")` point and variance
+-   Package `r pkg("BayesSAE")` provides Bayesian
+    estimation methods that range from the basic Fay-Herriot model to its improvement
+    such as You-Chapman models, unmatched models, spatial models and so
+    on.
+-   Package `r pkg("JoSAE")` provides point and variance
     estimation for the generalized regression (GREG) and a unit level
     empirical best linear unbiased prediction EBLUP estimators can be
     made at domain level. It basically provides wrapper functions to the
     `r pkg("nlme")` package that is used to fit the basic
     random effects models.
--   The package `r pkg("BayesSAE")` also allows for Bayesian
-    methods range from the basic Fay-Herriot model to its improvement
-    such as You-Chapman models, unmatched models, spatial models and so
-    on.
 ## B Microsimulation and Generation of Synthetic Data MT
 -   The `r pkg("MicSim")` package includes methods for
     microsimulations. Given a initial population, mortality rates,
