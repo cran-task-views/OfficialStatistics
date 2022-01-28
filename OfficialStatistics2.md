@@ -149,104 +149,32 @@ The third part is ["Specific Techniques/ Methods"]("specific") which collects me
     method.
 -   Package `r pkg("extremevalues")` is designed to detect
     univariate outliers based on modeling the bulk distribution.
+
 ### 4.3 Imputation MT
-A distinction between iterative model-based methods, k-nearest neighbor
-methods and miscellaneous methods is made. However, often the criteria
-for using a method depend on the scale of the data, which in official
-statistics are typically a mixture of continuous, semi-continuous,
-binary, categorical and count variables. In addition, measurement errors
-may corrupt non-robust imputation methods. Note that only few imputation
-methods can deal with mixed types of variables and only few methods
-account for robustness issues.
 
-EM-Based Imputation Methods:
+Often the criteria for applying a method depend on the scale of the data, which in official statistics are usually a mixture of continuous, semi-continuous, binary, categorical and count variables. In addition, measurement errors can influence non-robust imputation methods to a great extend.
 
--   Package `r pkg("mi")` provides iterative EM-based
-    multiple Bayesian regression imputation of missing values and model
-    checking of the regression models used. The regression models for
-    each variable can also be user-defined. The data set may consist of
-    continuous, semi-continuous, binary, categorical and/or count
-    variables.
--   Package `r pkg("mice")` provides iterative EM-based
-    multiple regression imputation. The data set may consist of
-    continuous, binary, categorical and/or count variables.
--   Package `r pkg("mitools")` provides tools to perform
-    analyses and combine results from multiply-imputed datasets.
--   Package `r pkg("Amelia")` provides multiple imputation
-    where first bootstrap samples with the same dimensions as the
-    original data are drawn, and then used for EM-based imputation. It
-    is also possible to impute longitudinal data. The package in
-    addition comes with a graphical user interface.
--   Package `r pkg("VIM")` provides EM-based multiple
-    imputation (function `irmi()`) using robust estimations, which
-    allows to adequately deal with data including outliers. It can
-    handle data consisting of continuous, semi-continuous, binary,
-    categorical and/or count variables.
--   Single imputation methods are included or called from other packages
-    by the package `r pkg("simputation")`. It supports
-    regression (standard, M-estimation, ridge/lasso/elasticnet),
-    hot-deck methods (powered by VIM), randomForest, EM-based, and
-    iterative randomForest imputation.
--   Package `r pkg("mix")` provides iterative EM-based
-    multiple regression imputation. The data set may consist of
-    continuous, binary or categorical variables, but methods for
-    semi-continuous variables are missing.
--   Package `r pkg("pan")` provides multiple imputation for
-    multivariate panel or clustered data.
--   Package `r pkg("norm")` provides EM-based multiple
-    imputation for multivariate normal data.
--   Package `r pkg("cat")` provides EM-based multiple
-    imputation for multivariate categorical data.
--   Package `r pkg("MImix")` provides tools to combine
-    results for multiply-imputed data using mixture approximations.
--   Package `r pkg("missForest")` uses the functionality of
-    the randomForest to impute missing values in an iterative
-    single-imputation fashion. It can deal with almost any kind of
-    variables except semi-continuous ones. Even the underlying bootstrap
-    approach of random forests ensures that from multiple runs one can
-    get multiple imputations but the additional uncertainty of
-    imputation is only considered when choosing the random forest method
-    of package `r pkg("mice")`.
+Although multiple imputation plays some role in many research areas, due to the production system of official statistics, single imputation methods are often preferred in a single imputation framework. For a comprehensive overview of multiple imputation, methods that impute only continuous data, and methods that are not specific to official statistics, we refer to the CRAN Task View on Missing Data, https://CRAN.R-project.org/view=MissingData . 
+
+`r pkg("VIM")` provides a set of visualisation methods to visualise missing values and learn their relation to observed values. 
+
+#### Model-free methods
 
 Nearest Neighbor Imputation Methods
 
--   Package `r pkg("VIM")` provides an implementation of the
-    popular sequential and random (within a domain) hot-deck algorithm.
--   `r pkg("VIM")` also provides a fast k-nearest neighbor
-    (knn) algorithm which can be used for large data sets. It uses a
-    modification of the Gower Distance for numerical, categorical,
-    ordered, continuous and semi-continuous variables.
--   Package `r pkg("yaImpute")` performs popular nearest
-    neighbor routines for imputation of continuous variables where
-    different metrics and methods can be used for determining the
-    distance between observations.
--   Package `r bioc("impute")` on Bioconductor impute
-    provides knn imputation of continuous variables.
+- Package `r pkg("VIM")` provides an implementation of the popular sequential and random (within a domain) hot-deck algorithm.
+- `r pkg("VIM")` also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets. It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continuous variables.
+    
+#### Model-based methods
 
-Copula-Based Imputation Methods:
+- Package `r pkg("VIM")` provides EM-based multiple imputation (function `irmi()`) using robust estimations, which allows to adequately deal with data including outliers. It can handle data consisting of continuous, semi-continuous, binary, categorical and/or count variables and one can define a model for each variable to be imputed. The procedures does not account for model uncertainty.
+- Package `r pkg("mi")` provides iterative EM-based
+    multiple Bayesian regression imputation of missing values and model checking of the regression models used. The regression models for each variable can also be user-defined. The data set may consist of continuous, semi-continuous, binary, categorical and/or count variables.
+- Package `r pkg("mice")` provides iterative EM-based multiple regression imputation. The data set may consist of continuous, binary, categorical and/or count variables. It can account for model uncertainty trough Bayesian regression, and it's main imputation feature is based on predictive mean matching and midastouch. It provides efficient tools for a multiple imputation framework.
+- Package `r pkg("Hmisc")` (function `aregImpute()`) also allows predictive mean matching imputation.
+- The package `r pkg("Amelia")` provides multiple imputation, where bootstrap samples with the same dimensions as the original data are first drawn and then used for EM-based imputation to account for model uncertainty. It is also possible to impute longitudinal data. The package also has a graphical user interface.
+- Package `r pkg("missForest")` and `r pkg("missRanger")` (preferable over `r pkg("missForest")` because of computational reasons) uses the functionality of a randomForest to impute missing values in an iterative imputation fashion. Through a bootstrap they consider model uncertainty. They can deal with almost any kind of variables except semi-continuous ones. Even the underlying bootstrap approach of random forests ensures that from multiple runs one can get multiple imputations but the additional uncertainty of imputation is only considered when choosing the random forest method of package `r pkg("mice")`.
 
--   The S4 class package `r pkg("CoImp")` imputes
-    multivariate missing data by using conditional copula functions. The
-    imputation procedure is semiparametric: the margins are
-    non-parametrically estimated through local likelihood of low-degree
-    polynomials while a range of different parametric models for the
-    copula can be selected by the user. The missing values are imputed
-    by drawing observations from the conditional density functions by
-    means of the Hit or Miss Monte Carlo method. It works either for a
-    matrix of continuous scaled variables or a matrix of discrete
-    distributions.
-
-Miscellaneous Imputation Methods:
-
--   Package `r pkg("missMDA")` allows to impute incomplete
-    continuous variables by principal component analysis (PCA) or
-    categorical variables by multiple correspondence analysis (MCA).
--   Package `r pkg("mice")` (function `mice.impute.pmm()`)
-    and Package `r pkg("Hmisc")` (function `aregImpute()`)
-    allow predictive mean matching imputation.
--   Package `r pkg("VIM")` allows to visualize the structure
-    of missing values using suitable plot methods. It also comes with a
-    graphical user interface.
 ### 4.4 Seasonal Adjustment AK (=> Links zu TimeSeries)
 Seasonal adjustment is an important step in producing official statistics and a very limited set of methodologies are used. In the CRAN Task View `r view("TimeSeries")` section seasonal adjustment, R packages for this can be found.
 ## 5 Analysis of Survey Data
