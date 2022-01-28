@@ -103,11 +103,13 @@ Additionally, these two add-on parts are listed
 - `r pkg("fuzzyjoin")`. Join tables based on exact or similar matches. Allows for matching records based on inaccurate keys.
 - `r pkg("RELAIS")`. A toolkit providing techniques for dealing with record linkage. The purpose is to identify the same real world entity that can be differently represented in data sources. By Istat. 
 
-### 3.3 Scraping [?] AK (allenfalls nur Verweis)
+### 3.3 Web Scraping
+Web scraping is used nowadays used more frequently in the production of official statistics. For example in price statistics, the collection of product prices, formerly collected by hand over the web or by in person visits to stores are replaced by scraping specific homepages. Tools for this process step are not listed here, but a detailed overview can be found on the CRAN task view on `r view("WebTechnologies")`.
+
 
 ## 4 Data Processing
 
-### 4.1 Weighting and Calibration AK
+### 4.1 Weighting and Calibration
 
 - `r pkg("survey")` allows for
     post-stratification, generalized raking/calibration, GREG estimation
@@ -120,9 +122,8 @@ Additionally, these two add-on parts are listed
     example) implementation of parts of `calib()` from package
     `r pkg("sampling")`.
 - `r pkg("icarus")` focuses on calibration and
-    reweighting in survey sampling and was designed to provide a
-    familiar setting in R for user of the SAS macro
-    `             Calmar           `.
+    re-weighting in survey sampling and was designed to provide a
+    familiar setting in R for users of the SAS macro `Calmar` developed by INSEE.
 - `r pkg("reweight")` allows for calibration of
     survey weights for categorical survey data so that the marginal
     distributions of certain variables fit more closely to those from a
@@ -133,10 +134,10 @@ Additionally, these two add-on parts are listed
     estimation in dual frame surveys. When two probability samples (one
     from each frame) are drawn. Information collected is suitably
     combined to get estimators of the parameter of interest.
-- `r pkg("surveysd")`. Calibration, bootstrap and error estimation for complex surveys.
-- `r pkg("inca")`. Calibration weighting with integer weights. 
+- `r pkg("surveysd")` provides calibration by iterative proportinal fitting, a calibrated bootstrap optimized for complex surveys and error estimation based on it.
+- `r pkg("inca")` performs calibration weighting with integer weights. 
 
-### 4.2 Editing AK [inkl. outlier detection etc.]
+### 4.2 Editing (including outlier detection)
 
 - `r pkg("validate")` includes rule management and
     data validation and package `r pkg("validatetools")` is
@@ -195,9 +196,9 @@ Although multiple imputation plays some role in many research areas, due to the 
 - Single imputation methods are included or called from other packages by the package `r pkg("simputation")`. It supports regression (standard, M-estimation, ridge/lasso/elasticnet), hot-deck methods (powered by VIM), randomForest, EM-based, and iterative randomForest imputation. 
 
 
-### 4.4 Seasonal Adjustment AK (=> Links zu TimeSeries)
+### 4.4 Seasonal Adjustment
 
-Seasonal adjustment is an important step in producing official statistics and a very limited set of methodologies are used. In the CRAN Task View `r view("TimeSeries")` section seasonal adjustment, R packages for this can be found.
+Seasonal adjustment is an important step in producing official statistics and a very limited set of methodologies are used here frequently, e.g. X13-ARIMA-SEATS developed by the US Census Bureau. In the CRAN Task View `r view("TimeSeries")` section seasonal adjustment, R packages for this can be found.
 
 ## 5 Analysis of Survey Data
 
@@ -262,21 +263,17 @@ Seasonal adjustment is an important step in producing official statistics and a 
 - `r pkg("tmap")` offers a layer-based way to make thematic maps, like choropleths and bubble maps.
 - `r pkg("rworldmap")` outline how to map country referenced data and support users in visualising their own data. Examples are given, e.g., maps for the world bank and UN. It provides also new ways to visualise maps.
     
-## 6 Data Dissemination and Reporting
-
-### 6.1 Reporting [?]
-
-### 6.2 Statistical Disclosure Control 
+## 6 Statistical Disclosure Control
 
 Data from statistical agencies and other institutions are in its raw form mostly confidential and data providers have to be ensure confidentiality by both modifying the original data so that no statistical units can be re-identified and by guaranteeing a minimum amount of information loss.
 
-#### Unit-level data (microdata)
+### Unit-level data (microdata)
 
 - `r pkg("sdcMicro")` can be used to anonymise data, i.e. to create anonymized files for public and scientific use. It implements a wide range of methods for anonymising categorical and continuous (key) variables. The package also contains a graphical user interface, which is available by calling the function `sdcGUI`.
 - r pkg("simPop")` using linear and robust regression methods, random forests (and many more methods) to simulate synthetic data from given complex data. It is also suitable to produce synthetic data when the data have hierarchical and cluster information (such as persons in households) as well as when the data had been collected with a complex sampling design. It makes use of parallel computing internally.
 - `r pkg("synthpop")` using regression tree methods to simulate synthetic data from given data. It is suitable to produce synthetic data when the data have no hierarchical and cluster information (such as households) as well as when the data does not collected with a complex sampling design.
 
-#### Aggregated information (tabular data)
+### Aggregated information (tabular data)
 
 - `r pkg("sdcTable")` can be used to provide
     confidential (hierarchical) tabular data. It includes the HITAS and
@@ -293,7 +290,7 @@ Data from statistical agencies and other institutions are in its raw form mostly
     protect frequency tables by rounding necessary inner cells so that
     cross-classifications to be published are safe.
    
-#### Remote access
+### Remote access
 
 - `r pkg("DSI")` is an interface to DataShield. DataShield is an infrastructure and series of R packages that enables the remote and non-disclosive analysis of sensitive research data.
 
