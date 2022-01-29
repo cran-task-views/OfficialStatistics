@@ -7,33 +7,46 @@ version: 2022-01-28
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
+This CRAN Task View contains a list of packages with methods typically used
+in official statistics and survey methodology. Many packages provide
+functions for more than one of the topics listed below. Therefore, this
+list is not a strict categorization and packages may be listed more than once.
 
-This CRAN Task View contains a list of packages with methods typically used in official statistics and survey methodology. Many packages provide functions for more than one of the topics listed below. Therefore, this list is not a strict categorization and packages may be listed more than once. 
+The task view is split into two main parts
 
-The task view is split into two main parts 
+- First part: ["Producing Official Statistics"](#prod). This first part
+  is targeted at people working at national statistical institutes,
+  national banks, international organizations, etc. who are involved in
+  the production of official statistics. It is loosely aligned to
+  the ["Generic Statistical Business Process Model"](https://statswiki.unece.org/display/GSBPM).
+- Second part: ["Access to Official Statistics"](#access). This second
+  part's target audience is everyone interested to use official statistics
+  results directly from within R.
 
-- First part: ["Producing Official Statistics"](#prod). This first part is targeted at people working at national statistical institutes, national banks, international organizations, etc. who are involved in the production of official statistics. It is loosely aligned to the ["Generic Statistical Business Process Model"](https://statswiki.unece.org/display/GSBPM). 
-- Second part: ["Access to Official Statistics"](#access). This second part's target audience is everyone interested to use official statistics results directly from within R.
+Additionally, these two add-on parts are listed
 
-Additionally, these two add-on parts are listed 
-
-- Add-on Part 1: ["Specific Techniques/ Methods"]("specific") shows packages that are important in official statistics, but do not directly fit into the production of official statistics. 
-- Add-on Part 2: ["Misc"]("misc") is a collection of packages that are loosely linked to official statistics or that provide limited complements to official statistics and survey methods.
+- Add-on Part 1: ["Specific Techniques/ Methods"]("specific") shows packages that
+  are important in official statistics, but do not directly fit into the
+  production of official statistics.
+- Add-on Part 2: ["Misc"]("misc") is a collection of packages that are loosely
+  linked to official statistics or that provide limited complements to
+  official statistics and survey methods.
 
 
 # <a name="prod"></a>First Part: Production of Official Statistics
 
-## 1 Preparations/ Management/ Planning (questionnaire design, etc.) 
+## 1 Preparations/ Management/ Planning (questionnaire design, etc.)
 
--   The `r pkg("questionr")` package contains a set of
+- `r pkg("questionr")` package contains a set of
     functions to make the processing and analysis of surveys easier. It
     provides interactive shiny apps and addins for data recoding,
     contingency tables, dataset metadata handling, and several
     convenience functions.
--   `r pkg("surveydata")` makes it easy to keep
+- `r pkg("surveydata")` makes it easy to keep
     track of metadata from surveys, and to easily extract columns with
     specific questions.
--   `r pkg("blaise")`. Reading and writing Files in the Blaise Format from R. By Statistics Netherlands.
+- `r pkg("blaise")` implements functions for reading and writing files
+    in the Blaise Format (Statistics Netherlands).
 
 ## 2 Sampling
 
@@ -50,7 +63,7 @@ Additionally, these two add-on parts are listed
     spaces with any prescribed inclusion probabilities. It also includes
     the local pivot method, the cube and local cube method and a few
     more methods.
--`r pkg("PracTools")` contains functions for
+- `r pkg("PracTools")` contains functions for
     sample size calculation for survey samples using stratified or
     clustered one-, two-, and three-stage sample designs as well as
     functions to compute variance components for multistage designs and
@@ -72,9 +85,7 @@ Additionally, these two add-on parts are listed
 
 ## 3 Data Collection (incl. record linkage)
 
-### 3.1 Survey [?]
-
-### 3.2 Data Integration (Statistical Matching and Record Linkage) 
+### 3.1 Data Integration (Statistical Matching and Record Linkage)
 
 - `r pkg("StatMatch")` provides functions to
     perform statistical matching between two data sources sharing a
@@ -95,16 +106,29 @@ Additionally, these two add-on parts are listed
     levenshtein, optimal sting alignment), qgrams (q-gram, cosine,
     jaccard distance) or heuristic metrics (jaro, jaro-winkler).
 - `r pkg("reclin")` is a record linkage toolkit to
-    assist in performing probabilistic record linkage and deduplication
+    assist in performing probabilistic record linkage and deduplication.
 - `r pkg("XBRL")` allows the extraction of
     business financial information from XBRL Documents.
-- `r pkg("RecordLinkage")`. Implementation of the Fellegi-Sunter method for record linkage. 
-- `r pkg("fastLink")` implements a Fellegi-Sunter probabilistic record linkage model that allows for missing data and the inclusion of auxiliary information. Documentation can be found on http://imai.princeton.edu/research/linkage.html
-- `r pkg("fuzzyjoin")`. Join tables based on exact or similar matches. Allows for matching records based on inaccurate keys.
-- `r pkg("RELAIS")`. A toolkit providing techniques for dealing with record linkage. The purpose is to identify the same real world entity that can be differently represented in data sources. By Istat. 
+- `r pkg("RecordLinkage")` implements the Fellegi-Sunter method for record
+    linkage.
+- `r pkg("fastLink")` implements a Fellegi-Sunter probabilistic record
+    linkage model that allows for missing data and the inclusion of
+    auxiliary information. Documentation can be found
+    on http://imai.princeton.edu/research/linkage.html
+- `r pkg("fuzzyjoin")` provides function for joining tables based on exact
+    or similar matches. It allows for matching records based on inaccurate keys.
+- FIXME: dieses Package ist nicht (mehr?) auf CRAN `r pkg("RELAIS")` is
+    a toolkit providing techniques for dealing with record linkage. The
+    purpose is to identify the same real world entity that can be
+    differently represented in data sources. By Istat.
 
-### 3.3 Web Scraping
-Web scraping is used nowadays used more frequently in the production of official statistics. For example in price statistics, the collection of product prices, formerly collected by hand over the web or by in person visits to stores are replaced by scraping specific homepages. Tools for this process step are not listed here, but a detailed overview can be found on the CRAN task view on `r view("WebTechnologies")`.
+### 3.2 Web Scraping
+Web scraping is used nowadays used more frequently in the production
+of official statistics. For example in price statistics, the collection
+of product prices, formerly collected by hand over the web or by in person
+visits to stores are replaced by scraping specific homepages. Tools
+for this process step are not listed here, but a detailed overview can
+be found on the CRAN task view on `r view("WebTechnologies")`.
 
 
 ## 4 Data Processing
@@ -114,13 +138,12 @@ Web scraping is used nowadays used more frequently in the production of official
 - `r pkg("survey")` allows for
     post-stratification, generalized raking/calibration, GREG estimation
     and trimming of weights.
--   The `calib()` function in package `r pkg("sampling")`
-    allows to calibrate for nonresponse (with response homogeneity
+- `r pkg("sampling")`  provides the function `calib()` to calibrate for
+    nonresponse (with response homogeneity
     groups) for stratified samples.
--   The `calibWeights()` function in package
-    `r pkg("laeken")` is a possible faster (depending on the
-    example) implementation of parts of `calib()` from package
-    `r pkg("sampling")`.
+- `r pkg("laeken")` provides the function `calibWeights()`  for calibration,
+    which is possibly faster (depending on the
+    example) than `calib()` from `r pkg("sampling")`.
 - `r pkg("icarus")` focuses on calibration and
     re-weighting in survey sampling and was designed to provide a
     familiar setting in R for users of the SAS macro `Calmar` developed by INSEE.
@@ -134,8 +157,10 @@ Web scraping is used nowadays used more frequently in the production of official
     estimation in dual frame surveys. When two probability samples (one
     from each frame) are drawn. Information collected is suitably
     combined to get estimators of the parameter of interest.
-- `r pkg("surveysd")` provides calibration by iterative proportinal fitting, a calibrated bootstrap optimized for complex surveys and error estimation based on it.
-- `r pkg("inca")` performs calibration weighting with integer weights. 
+- `r pkg("surveysd")` provides calibration by iterative proportinal fitting,
+    a calibrated bootstrap optimized for complex surveys and error
+    estimation based on it.
+- `r pkg("inca")` performs calibration weighting with integer weights.
 
 ### 4.2 Editing (including outlier detection)
 
@@ -155,7 +180,7 @@ Web scraping is used nowadays used more frequently in the production of official
     Values are changed so that the given balanced edits are fulfilled.
     To determine which values are changed the Levenstein-metric is
     applied.
-- `r pkg("deductive")` (new version of deducorrect ?!)    
+- FIXME: `r pkg("deductive")` (new version of deducorrect ?!)
 - `r pkg("rspa")` implements functions to
     minimally adjust numerical records so they obey (in)equation
     restrictions.
@@ -166,39 +191,90 @@ Web scraping is used nowadays used more frequently in the production of official
     method.
 - `r pkg("extremevalues")` is designed to detect
     univariate outliers based on modeling the bulk distribution.
-    
 
-### 4.3 Imputation 
 
-Often the criteria for applying a method depend on the scale of the data, which in official statistics are usually a mixture of continuous, semi-continuous, binary, categorical and count variables. In addition, measurement errors can influence non-robust imputation methods to a great extend.
+### 4.3 Imputation
 
-Although multiple imputation plays some role in many research areas, due to the production system of official statistics, imputation methods are often preferred to apply in a single imputation framework. For a comprehensive overview of multiple imputation, methods that do not account for mixed scale of data, and methods that are not specific to official statistics, we refer to the CRAN Task View on Missing Data, `r view("MissingData")`. 
+Often the criteria for applying a method depend on the scale of the data,
+which in official statistics are usually a mixture of continuous,
+semi-continuous, binary, categorical and count variables. In addition,
+measurement errors can influence non-robust imputation methods to a
+great extend.
 
-`r pkg("VIM")` provides a set of visualisation methods to visualise missing values and learn their relation to observed values. 
+Although multiple imputation plays some role in many research areas, due
+to the production system of official statistics, imputation methods are
+often preferred to apply in a single imputation framework. For a
+comprehensive overview of multiple imputation, methods that do not
+account for mixed scale of data, and methods that are not specific to
+official statistics, we refer to the CRAN Task View on Missing Data,
+`r view("MissingData")`.
+
+`r pkg("VIM")` provides a set of visualisation methods to visualise missing
+values and learn their relation to observed values.
 
 #### Nearest Neighbor Imputation Methods
 
-- `r pkg("VIM")` provides an implementation of the popular sequential and random (within a domain) hot-deck algorithm.
-- `r pkg("VIM")` also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets. It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continuous variables.
-    
+- `r pkg("VIM")` provides an implementation of the popular sequential and
+    random (within a domain) hot-deck algorithm.
+- `r pkg("VIM")` also provides a fast k-nearest neighbor (knn) algorithm
+    which can be used for large data sets. It uses a modification of
+    the Gower Distance for numerical, categorical, ordered, continuous
+    and semi-continuous variables.
+
 #### Model-based methods
 
-- `r pkg("VIM")` provides EM-based multiple imputation (function `irmi()`) using robust estimations, which allows to adequately deal with data including outliers. It can handle data consisting of continuous, semi-continuous, binary, categorical and/or count variables and one can define a model for each variable to be imputed. The procedures does not account for model uncertainty.
+- `r pkg("VIM")` provides EM-based multiple imputation (function `irmi()`)
+    using robust estimations, which allows to adequately deal with data
+    including outliers. It can handle data consisting of continuous,
+    semi-continuous, binary, categorical and/or count variables and one
+    can define a model for each variable to be imputed. The procedures
+    does not account for model uncertainty.
 - `r pkg("mi")` provides iterative EM-based
-    multiple Bayesian regression imputation of missing values and model checking of the regression models used. The regression models for each variable can also be user-defined. The data set may consist of continuous, semi-continuous, binary, categorical and/or count variables.
-- `r pkg("mice")` provides iterative EM-based multiple regression imputation. The data set may consist of continuous, binary, categorical and/or count variables. It can account for model uncertainty trough Bayesian regression, and it's main imputation feature is based on predictive mean matching and midastouch. It provides efficient tools for a multiple imputation framework.
-- `r pkg("Hmisc")` (function `aregImpute()`) also allows predictive mean matching imputation.
-- The package `r pkg("Amelia")` provides multiple imputation, where bootstrap samples with the same dimensions as the original data are first drawn and then used for EM-based imputation to account for model uncertainty. It is also possible to impute longitudinal data. The package also has a graphical user interface.
-- `r pkg("missForest")` and `r pkg("missRanger")` (preferable over `r pkg("missForest")` because of computational reasons and error management) uses the functionality of a randomForest to impute missing values in an iterative imputation fashion. Through a bootstrap they consider model uncertainty. They can deal with almost any kind of variables except semi-continuous ones. Even the underlying bootstrap approach of random forests ensures that from multiple runs one can get multiple imputations but the additional uncertainty of imputation is only considered when choosing the random forest method of package `r pkg("mice")`.
+    multiple Bayesian regression imputation of missing values and model
+    checking of the regression models used. The regression models for
+    each variable can also be user-defined. The data set may consist
+    of continuous, semi-continuous, binary, categorical and/or count
+    variables.
+- `r pkg("mice")` provides iterative EM-based multiple regression imputation.
+    The data set may consist of continuous, binary, categorical and/or
+    count variables. It can account for model uncertainty trough Bayesian
+    regression, and it's main imputation feature is based on predictive
+    mean matching and midastouch. It provides efficient tools for a
+    multiple imputation framework.
+- `r pkg("Hmisc")` (function `aregImpute()`) also allows predictive mean
+    matching imputation.
+- `r pkg("Amelia")` provides multiple imputation, where bootstrap samples
+    with the same dimensions as the original data are first drawn and
+    then used for EM-based imputation to account for model uncertainty.
+    It is also possible to impute longitudinal data. The package also
+    has a graphical user interface.
+- `r pkg("missForest")` and `r pkg("missRanger")` (preferable over
+    `r pkg("missForest")` because of computational reasons and error
+    management) uses the functionality of a randomForest to impute
+    missing values in an iterative imputation fashion. Through a
+    bootstrap they consider model uncertainty. They can deal with
+    almost any kind of variables except semi-continuous ones. Even
+    the underlying bootstrap approach of random forests ensures that
+    from multiple runs one can get multiple imputations but the additional
+    uncertainty of imputation is only considered when choosing the
+    random forest method of package `r pkg("mice")`.
 
-#### Misc 
+#### Misc
 
-- Single imputation methods are included or called from other packages by the package `r pkg("simputation")`. It supports regression (standard, M-estimation, ridge/lasso/elasticnet), hot-deck methods (powered by VIM), randomForest, EM-based, and iterative randomForest imputation. 
+Single imputation methods are included or called from other packages
+by the package `r pkg("simputation")`. It supports regression
+(standard, M-estimation, ridge/lasso/elasticnet), hot-deck methods
+(powered by VIM), randomForest, EM-based, and iterative
+randomForest imputation.
 
 
 ### 4.4 Seasonal Adjustment
 
-Seasonal adjustment is an important step in producing official statistics and a very limited set of methodologies are used here frequently, e.g. X13-ARIMA-SEATS developed by the US Census Bureau. In the CRAN Task View `r view("TimeSeries")` section seasonal adjustment, R packages for this can be found.
+Seasonal adjustment is an important step in producing official statistics
+and a very limited set of methodologies are used here frequently,
+e.g. X13-ARIMA-SEATS developed by the US Census Bureau. In the CRAN
+Task View `r view("TimeSeries")` section seasonal adjustment,
+R packages for this can be found.
 
 ## 5 Analysis of Survey Data
 
@@ -215,9 +291,13 @@ Seasonal adjustment is an important step in producing official statistics and a 
     models. Variance estimation for means, totals and ratios can be done
     either by Taylor linearization or resampling (BRR, jackkife,
     bootstrap or user-defined).
-- `r pkg("robsurvey")` provides functions for the computation of robust (outlier-resistant) estimators of finite population characteristics (means, totals, ratios, regression, etc.) using weight reduction, trimming, winsorization and M-estimation. The package complements package `r pkg("survey")`.
+- `r pkg("robsurvey")` provides functions for the computation of robust
+    (outlier-resistant) estimators of finite population characteristics
+    (means, totals, ratios, regression, etc.) using weight reduction,
+    trimming, winsorization and M-estimation. The package
+    complements `r pkg("survey")`.
 - `r pkg("surveysd")` offers calibration, bootstrap and error
-    estimation for complex surveys (incl. desings with rotational desings).
+    estimation for complex surveys (incl. designs with rotational designs).
 
 - `r pkg("gustave")` provides a toolkit for analytical variance
     estimation in survey sampling.
@@ -255,23 +335,54 @@ Seasonal adjustment is an important step in producing official statistics and a 
     Pearson's correlations, partial correlations, Chi-Squared
     statistics, histograms and t-tests.
 
-### 5.2 Visualization 
+### 5.2 Visualization
 
-- `r pkg("VIM")` is designed to visualize missing values using suitable plot methods. It can be used to analyse the structure of missing values in microdata using univariate, bivariate, multiple and multivariate plots where the information of missing values from specified variables are highlighted in selected variables. It also comes with a graphical user interface.
-- `r pkg("longCatEDA")` extends the matrixplot from package `r pkg("VIM")` to check for monotone missingness in longitudinal data.
-- `r pkg("treemap")` provide treemaps. A treemap is a space-filling visualization of aggregates of data with hierarchical structures. Colors can be used to relate to highlight differences between comparable aggregates.
-- `r pkg("tmap")` offers a layer-based way to make thematic maps, like choropleths and bubble maps.
-- `r pkg("rworldmap")` outline how to map country referenced data and support users in visualising their own data. Examples are given, e.g., maps for the world bank and UN. It provides also new ways to visualise maps.
-    
+- `r pkg("VIM")` is designed to visualize missing values using suitable
+    plot methods. It can be used to analyse the structure of missing values
+    in microdata using univariate, bivariate, multiple and multivariate
+    plots where the information of missing values from specified variables
+    are highlighted in selected variables. It also comes with a
+    graphical user interface.
+- `r pkg("longCatEDA")` extends the matrixplot from package `r pkg("VIM")`
+    to check for monotone missingness in longitudinal data.
+- `r pkg("treemap")` provide treemaps. A treemap is a space-filling
+    visualization of aggregates of data with hierarchical structures.
+    Colors can be used to relate to highlight differences between
+    comparable aggregates.
+- `r pkg("tmap")` offers a layer-based way to make thematic maps,
+    like choropleths and bubble maps.
+- `r pkg("rworldmap")` outline how to map country referenced data and
+    support users in visualising their own data. Examples are given,
+    e.g., maps for the world bank and UN. It provides also new ways
+    to visualise maps.
+
 ## 6 Statistical Disclosure Control
 
-Data from statistical agencies and other institutions are in its raw form mostly confidential and data providers have to be ensure confidentiality by both modifying the original data so that no statistical units can be re-identified and by guaranteeing a minimum amount of information loss.
+Data from statistical agencies and other institutions are in its raw
+form mostly confidential and data providers have to be ensure
+confidentiality by both modifying the original data so that no
+statistical units can be re-identified and by guaranteeing a minimum
+amount of information loss.
 
 ### Unit-level data (microdata)
 
-- `r pkg("sdcMicro")` can be used to anonymise data, i.e. to create anonymized files for public and scientific use. It implements a wide range of methods for anonymising categorical and continuous (key) variables. The package also contains a graphical user interface, which is available by calling the function `sdcGUI`.
-- r pkg("simPop")` using linear and robust regression methods, random forests (and many more methods) to simulate synthetic data from given complex data. It is also suitable to produce synthetic data when the data have hierarchical and cluster information (such as persons in households) as well as when the data had been collected with a complex sampling design. It makes use of parallel computing internally.
-- `r pkg("synthpop")` using regression tree methods to simulate synthetic data from given data. It is suitable to produce synthetic data when the data have no hierarchical and cluster information (such as households) as well as when the data does not collected with a complex sampling design.
+- `r pkg("sdcMicro")` can be used to anonymise data, i.e. to create
+    anonymized files for public and scientific use. It implements a
+    wide range of methods for anonymising categorical and continuous
+    (key) variables. The package also contains a graphical user
+    interface, which is available by calling the function `sdcGUI`.
+- `r pkg("simPop")` using linear and robust regression methods,
+    random forests (and many more methods) to simulate synthetic data
+    from given complex data. It is also suitable to produce synthetic
+    data when the data have hierarchical and cluster information
+    (such as persons in households) as well as when the data had been
+    collected with a complex sampling design. It makes use of
+    parallel computing internally.
+- `r pkg("synthpop")` using regression tree methods to simulate
+    synthetic data from given data. It is suitable to produce synthetic
+    data when the data have no hierarchical and cluster information
+    (such as households) as well as when the data does not collected
+    with a complex sampling design.
 
 ### Aggregated information (tabular data)
 
@@ -289,12 +400,13 @@ Data from statistical agencies and other institutions are in its raw form mostly
 - `r pkg("SmallCountRounding")` can be used to
     protect frequency tables by rounding necessary inner cells so that
     cross-classifications to be published are safe.
-   
+
 ### Remote access
 
-- `r pkg("DSI")` is an interface to DataShield. DataShield is an infrastructure and series of R packages that enables the remote and non-disclosive analysis of sensitive research data.
+- `r pkg("DSI")` is an interface to DataShield. DataShield is an
+    infrastructure and series of R packages that enables the remote
+    and non-disclosive analysis of sensitive research data.
 
-    
 # <a name="access"></a>Second Part: Access to Official Statistics
 
 ## Access to data from international organizations and multiple organizations
@@ -310,76 +422,84 @@ Data from statistical agencies and other institutions are in its raw form mostly
     access to data from Eurostat, the statistical agency for the
     European Union.
 - `r pkg("ipumsr")` provides an easy way to import
-    census, survey and geographic data provided by IPUMS.    
-- `r pkg("FAOSTAT")` to download data from the
+    census, survey and geographic data provided by IPUMS.
+- `r pkg("FAOSTAT")` can be used to download data from the
     FAOSTAT database of the Food and Agricultural Organization (FAO) of
-    the United Nations
+    the United Nations.
 - `r pkg("pxweb")` provides generic interface for
     the PX-Web/PC-Axis API used by many National Statistical Agencies.
 - `r pkg("PxWebApiData")` provides easy API access
     to e.g. Statistics Norway, Statistics Sweden and Statistics Finland.
 - `r pkg("rdhs")` interacts with The Demographic
     and Health Surveys (DHS) Program datasets.
--   With package `r pkg("prevR")` and it's function
-    `import.dhs()` it is possible to directly imports data from the
+- `r pkg("prevR")` implements functions (see
+    `import.dhs()`) to import data from the
     Demographic Health Survey.
-- `r pkg("rsdmx")`. Easy access to data from statistical organisations that support SDMX webservices. The package contains a list of SDMX access points of various national and international statistical institutes.
-- `r pkg("readsdmx")`. Read SDMX into dataframes from local SDMX-ML file or web-service. By OECD.
-- `r pkg("rdbnomics")`. Access to the DB.nomics database which provide macroeconomic data from 38 official providers such as INSEE, Eurostat, Wolrd bank, etc. 
+- `r pkg("rsdmx")` provides easy access to data from statistical organisations
+    that support SDMX webservices. The package contains a list of SDMX
+    access points of various national and international statistical institutes.
+- `r pkg("readsdmx")` implements functions to read SDMX into dataframes
+    from local SDMX-ML file or web-service. By OECD.
+- `r pkg("rdbnomics")` provides access to the DB.nomics database on
+    macroeconomic data from 38 official providers such as INSEE, Eurostat,
+    Wolrd bank, etc.
 
 ## Access to data from national organizations
 
 - `r pkg("tidyqwi")` provides an api for accessing
     the United States Census Bureau's Quartely Workforce Indicator.
 - `r pkg("tidyBdE")` provides access to official
-    statistics provided by the Spanish Banking Authority Banco de Espana
--   `r pkg("cancensus")` provides access to Statistics
+    statistics provided by the Spanish Banking Authority Banco de Espana.
+- `r pkg("cancensus")` provides access to Statistics
     Canada's Census data with the option to retrieve all data as
     spatial data.
--   Access to Finnish open government data is provided by package
-    `r pkg("sorvi")`
+- `r pkg("sorvi")` provides access to Finnish open government data.
 - `r pkg("insee")` searches and extracts data from
     the Insee's BDM database.
 - `r pkg("acs")` downloads, manipulates, and
     presents the American Community Survey and decennial data from the
     US Census.
--   A wrapper for the U.S. Census Bureau APIs that returns data frames
-    of Census data and metadata is implemented in package
-    `r pkg("censusapi")`.
+- `r pkg("censusapi")` implements a wrapper for the U.S. Census Bureau APIs
+    that returns data frames of Census data and meta data.
 - `r pkg("censusGeography")` converts spefific
     United States Census geographic code for city, state (FIP and ICP),
     region, and birthplace.
--   With package `r pkg("idbr")` you can to make requests to
+- `r pkg("idbr")` implements functions to make requests to
     the US Census Bureau's International Data Base API.
 - `r pkg("tidycensus")` provides an integrated R
     interface to the decennial US Census and American Community Survey
     APIs and the US Census Bureau's geographic boundary files
--   Access to data published by INEGI, Mexico's official statistics
-    agency, is supported by package `r pkg("inegiR")`
+- `r pkg("inegiR")`  provides access to data published by INEGI, Mexico's
+    official statistics agency.
 - `r pkg("cbsodataR")` provides access to
     Statistics Netherlands' (CBS) open data API.
 - `r pkg("EdSurvey")` includes analysis of NCES
-    Education Survey and Assessment Data
+    Education Survey and Assessment Data.
 - `r pkg("nomisr")` gives access to Nomis UK
-    Labour Market Data including Census and Labour Force Survey
-- `r pkg("readabs")` to download and tidy time
-    series data from the Australian Bureau of Statistics
-    https://cran.r-project.org/package=readabs
--   `r pkg("BIFIEsurvey")` includes tools for survey
+    Labour Market Data including Census and Labour Force Survey.
+- `r pkg("readabs")` implements functions to download and tidy time
+    series data from the Australian Bureau of Statistics.
+- `r pkg("BIFIEsurvey")` includes tools for survey
     statistics in educational assessment including data with replication
     weights (e.g. from bootstrap).
--  `r pkg("CANSIM2R")`. Extract CANSIM (Statistics Canada) tables and transform them into readily usable data 
--   `r pkg("statcanR")`. An R connection to Statistics Canada's Web Data Service. Open economic data (formerly CANSIM tables) are accessible as a data frame in the R environment.
--   `r pkg("cdlTools")`. Downloads USDA National Agricultural Statistics Service (NASS) cropscape data for a specified state.
-- With `r pkg("csodata")` on can download data from Central Statistics Office (CSO) of Ireland. 
+- `r pkg("CANSIM2R")` provides functions to extract CANSIM (Statistics Canada)
+    tables and transform them into readily usable data.
+- `r pkg("statcanR")` provides an R connection to Statistics Canada's Web
+    Data Service. Open economic data (formerly CANSIM tables) are
+    accessible as a data frame in the R environment.
+- `r pkg("cdlTools")` provides functions to download USDA National
+    Agricultural Statistics Service (NASS) cropscape data for a specified state.
+- `r pkg("csodata")` provides functions to download data from Central
+    Statistics Office (CSO) of Ireland.
 
 # <a name="specific"></a>Add-on Part 1: Specific Techniques/ Methods
 
-## A: Small Area Estimation TS
+## A: Small Area Estimation
 
 - `r pkg("sae")` provides functions for small area
-    estimation (basic area- and unit-level model, Fay-Herriot model with spatial/ temporal correlations), for example, direct estimators, the empirical best
-    predictor and composite estimators.
+    estimation (basic area- and unit-level model, Fay-Herriot model with
+    spatial/ temporal correlations), for example, direct estimators,
+    the empirical best predictor and composite estimators.
 - `r pkg("rsae")` provides functions to estimate
     the parameters of the basic unit-level small area estimation (SAE)
     model (aka nested error regression model) by means of maximum
@@ -403,31 +523,32 @@ Data from statistical agencies and other institutions are in its raw form mostly
     resulting from categorical variables or means from continuous
     population information.
 - `r pkg("BayesSAE")` provides Bayesian
-    estimation methods that range from the basic Fay-Herriot model to its improvement
-    such as You-Chapman models, unmatched models, spatial models and so
-    on.
+    estimation methods that range from the basic Fay-Herriot model to its
+    improvement such as You-Chapman models, unmatched models, spatial
+    models and so on.
 - `r pkg("JoSAE")` provides point and variance
     estimation for the generalized regression (GREG) and a unit level
     empirical best linear unbiased prediction EBLUP estimators can be
     made at domain level. It basically provides wrapper functions to the
     `r pkg("nlme")` package that is used to fit the basic
     random effects models.
-    
+
 ## B: Microsimulation
 
-- `r pkg("simPop")` allows to produce synthetic population data, sometimes needed as a starting population for microsimulations.
+- `r pkg("simPop")` allows to produce synthetic population data, sometimes
+    needed as a starting population for microsimulations.
 - `r pkg("sms")` provides facilities to simulate
     micro-data from given area-based macro-data. Simulated annealing is
     used to best satisfy the available description of an area. For
     computational issues, the calculations can be run in parallel mode.
-- `r pkg("saeSim")` Tools for the simulation of
+- `r pkg("saeSim")` implements tools for the simulation of
     data in the context of small area estimation.
 - `r pkg("SimSurvey")` simulates age-structured
     spatio-temporal populations given built-in or user-defined sampling
     protocols.
 
-    
-## C: Indices, Indicators, Tables and Visualisation of Indicators AK
+
+## C: Indices, Indicators, Tables and Visualisation of Indicators
 
 - `r pkg("laeken")` provides functions to estimate
     popular risk-of-poverty and inequality indicators
@@ -449,22 +570,21 @@ Data from statistical agencies and other institutions are in its raw form mostly
     theoretical Lorenz curves as well as Pen's parade. It is not
     designed to deal with sampling weights directly (these could only be
     emulated via `rep(x, weights)`).
-- `r pkg("IC2")` include three inequality indices:
+- `r pkg("IC2")` includes three inequality indices:
     extended Gini, Atkinson and Generalized Entropy. It can deal with
     sampling weights and subgroup decomposition is supported.
 - `r pkg("DHS.rates")` estimates key indicators
     (especially fertility rates) and their variances for the Demographic
     and Health Survey (DHS) data.
--   Functions `priceIndex()` from package
-    `r pkg("micEconIndex")` allows to estimate the Paasche,
-    the Fisher and the Laspeyres price indices. For estimating
-    quantities (of goods, for example), function `quantityIndex()` might
-    be your friend.
+- `r pkg("micEconIndex")` implements functions to compute prices indices
+    (of type Paasche, Fisher and Laspeyres); see `priceIndex()`. For
+    estimating quantities (of goods, for example) see function
+    `quantityIndex()`.
 - `r pkg("rrcov3way")` provides robust methods for
     multiway data analysis, applicable also for compositional data.
 
 
-# <a name="misc"></a>Add-on Part 2: Misc [alle]
+# <a name="misc"></a>Add-on Part 2: Misc
 
 - `r pkg("samplingbook")` includes sampling
     procedures from the book 'Stichproben. Methoden und praktische
@@ -472,9 +592,8 @@ Data from statistical agencies and other institutions are in its raw form mostly
 - `r pkg("SDaA")` is designed to reproduce results
     from Lohr, S. (1999) 'Sampling: Design and Analysis, Duxbury' and
     includes the data sets from this book.
--   The main contributions of `r pkg("samplingVarEst")` are
-    Jackknife alternatives for variance estimation of unequal
-    probability with one or two stage designs.
+- `r pkg("samplingVarEst")` implements Jackknife methods for variance
+    estimation of unequal probability with one or two stage designs.
 - `r pkg("memisc")` includes tools for the
     management of survey data, graphics and simulation.
 - `r pkg("anesrake")` provides a comprehensive
@@ -483,7 +602,7 @@ Data from statistical agencies and other institutions are in its raw form mostly
 - `r pkg("spsurvey")` includes facilities for
     spatial survey design and analysis for equal and unequal probability
     (stratified) sampling.
--   The `r pkg("FFD")` package is designed to calculate
+- `r pkg("FFD")` provides function to calculate
     optimal sample sizes of a population of animals living in herds for
     surveys to substantiate freedom from disease. The criteria of
     estimating the sample sizes take the herd-level clustering of
@@ -491,7 +610,7 @@ Data from statistical agencies and other institutions are in its raw form mostly
     select the samples based on a two-stage design. Inclusion
     probabilities are not considered in the estimation. The package
     provides a graphical user interface as well.
--   `r pkg("mipfp")` provides multidimensional iterative
+- `r pkg("mipfp")` provides multidimensional iterative
     proportional fitting to calibrate n-dimensional arrays given target
     marginal tables.
 - `r pkg("MBHdesign")` provides spatially balanced
@@ -501,7 +620,7 @@ Data from statistical agencies and other institutions are in its raw form mostly
     functions for quantifying qualitative survey data. It supports the
     Carlson-Parkin method, the regression approach, the balance approach
     and the conditional expectations method.
--   `r pkg("surveybootstrap")` includes tools for using
+- `r pkg("surveybootstrap")` includes tools for using
     different kinds of bootstrap for estimating sampling variation using
     complex survey data.
 - `r pkg("RRreg")` implements univariate and
@@ -513,16 +632,19 @@ Data from statistical agencies and other institutions are in its raw form mostly
 - `r pkg("panelaggregation")` aggregates business
     tendency survey data (and other qualitative surveys) to time series
     at various aggregation levels.
--   `r pkg("RcmdrPlugin.sampling")` includes tools for
+- `r pkg("RcmdrPlugin.sampling")` includes tools for
     sampling in official statistical surveys. It includes tools for
     calculating sample sizes and selecting samples using various
     sampling designs.
 - `r pkg("mapStats")` does automated calculation
     and visualization of survey data statistics on a color-coded map.
-- `r pkg("rtrim")`. Trends and Indices for Monitoring data. Provides tools for estimating animal/plant populations based on site counts, including occurrence of missing data.
+- `r pkg("rtrim")` implements functions to study trends and indices for
+    monitoring data. It provides tools for estimating animal/plant
+    populations based on site counts, including occurrence of missing data.
 - `r pkg("rjstat")`. Read and write data sets in the JSON-stat format.
-- `r pkg("diffpriv")` implements the perturbation of statistics with differential privacy.
-- An interface to the package `r pkg("sdcTable")` is
+- `r pkg("diffpriv")` implements the perturbation of statistics with
+    differential privacy.
+- FIXME: An interface to the package [?] is
     provided by package `r pkg("easySdcTable")`.
 - `r pkg("MicSim")` includes methods for
     microsimulations. Given a initial population, mortality rates,
