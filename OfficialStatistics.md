@@ -324,7 +324,7 @@ R packages for this can be found.
     fast (grouped, weighted, panel-decomposed) summary statistics for
     complex multilevel / panel data.
 - `r pkg("srvyr")` is inspired by the synthetic style of the
-    `r plg("dplyr")` package (i.e., piping, verbs like `group_by` and
+    `dplyr` package (i.e., piping, verbs like `group_by` and
     `summarize`). It offers summary statistics for design objects of the
     `r pkg("survey")` package.
 - `r pkg("weights")` provides a variety of functions for
