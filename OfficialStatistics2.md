@@ -117,12 +117,9 @@ Additionally, these two add-on parts are listed
     on http://imai.princeton.edu/research/linkage.html
 - `r pkg("fuzzyjoin")` provides function for joining tables based on exact
     or similar matches. It allows for matching records based on inaccurate keys.
-- FIXME: dieses Package ist nicht (mehr?) auf CRAN `r pkg("RELAIS")` is
-    a toolkit providing techniques for dealing with record linkage. The
-    purpose is to identify the same real world entity that can be
-    differently represented in data sources. By Istat.
 
 ### 3.2 Web Scraping
+
 Web scraping is used nowadays used more frequently in the production
 of official statistics. For example in price statistics, the collection
 of product prices, formerly collected by hand over the web or by in person
@@ -180,7 +177,7 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
     Values are changed so that the given balanced edits are fulfilled.
     To determine which values are changed the Levenstein-metric is
     applied.
-- FIXME: `r pkg("deductive")` (new version of deducorrect ?!)
+- `r pkg("deductive")` allows for data correction and imputation using deductive methods.
 - `r pkg("rspa")` implements functions to
     minimally adjust numerical records so they obey (in)equation
     restrictions.
@@ -644,8 +641,7 @@ amount of information loss.
 - `r pkg("rjstat")`. Read and write data sets in the JSON-stat format.
 - `r pkg("diffpriv")` implements the perturbation of statistics with
     differential privacy.
-- FIXME: An interface to the package [?] is
-    provided by package `r pkg("easySdcTable")`.
+- `r pkg("easySdcTable")` provides a graphical interface to a small selection of functionality of package `r pkg("sdcTable")`.
 - `r pkg("MicSim")` includes methods for
     microsimulations. Given a initial population, mortality rates,
     divorce rates, marriage rates, education changes, etc. and their
