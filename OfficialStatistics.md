@@ -8,27 +8,23 @@ source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
 This CRAN Task View contains a list of packages with methods typically used
-in official statistics and survey methodology. Many packages provide
+in official statistics and survey statistics. Many packages provide
 functions for more than one of the topics listed below. Therefore, this
 list is not a strict categorization and packages may be listed more than once.
 
-The task view is split into two main parts
+The task view is split into several parts
 
 - First part: ["Producing Official Statistics"](#prod). This first part
   is targeted at people working at national statistical institutes,
   national banks, international organizations, etc. who are involved in
-  the production of official statistics. It is loosely aligned to
+  the production of official statistics and using methods from survey statistics. It is loosely aligned to
   the ["Generic Statistical Business Process Model"](https://statswiki.unece.org/display/GSBPM).
 - Second part: ["Access to Official Statistics"](#access). This second
   part's target audience is everyone interested to use official statistics
   results directly from within R.
-
-Additionally, these two add-on parts are listed
-
-- Add-on Part 1: ["Specific Techniques/ Methods"]("specific") shows packages that
-  are important in official statistics, but do not directly fit into the
-  production of official statistics.
-- Add-on Part 2: ["Misc"]("misc") is a collection of packages that are loosely
+- Third part: ["Related Methods"]("specific") shows packages that
+  are important in official and survey statistics, but do not directly fit into the production of official statistics.
+- ["Misc"]("misc") is a collection of packages that are loosely
   linked to official statistics or that provide limited complements to
   official statistics and survey methods.
 
@@ -198,18 +194,11 @@ semi-continuous, binary, categorical and count variables. In addition,
 measurement errors can influence non-robust imputation methods to a
 great extend.
 
-Although multiple imputation plays some role in many research areas, due
-to the production system of official statistics, imputation methods are
-often preferred to apply in a single imputation framework. For a
+Commonly used packages within statistical agencies are `r pkg("VIM")` and `r pkg("simputation")`. A general overview of imputation methods and for a
 comprehensive overview of multiple imputation, methods that do not
 account for mixed scale of data, and methods that are not specific to
 official statistics, we refer to the CRAN Task View on Missing Data,
 `r view("MissingData")`.
-
-`r pkg("VIM")` provides a set of visualisation methods to visualise missing
-values and learn their relation to observed values.
-
-#### Nearest Neighbor Imputation Methods
 
 - `r pkg("VIM")` provides an implementation of the popular sequential and
     random (within a domain) hot-deck algorithm.
@@ -217,52 +206,20 @@ values and learn their relation to observed values.
     which can be used for large data sets. It uses a modification of
     the Gower Distance for numerical, categorical, ordered, continuous
     and semi-continuous variables.
-
-#### Model-based methods
-
 - `r pkg("VIM")` provides EM-based multiple imputation (function `irmi()`)
     using robust estimations, which allows to adequately deal with data
     including outliers. It can handle data consisting of continuous,
     semi-continuous, binary, categorical and/or count variables and one
     can define a model for each variable to be imputed. The procedures
     does not account for model uncertainty.
-- `r pkg("mi")` provides iterative EM-based
-    multiple Bayesian regression imputation of missing values and model
-    checking of the regression models used. The regression models for
-    each variable can also be user-defined. The data set may consist
-    of continuous, semi-continuous, binary, categorical and/or count
-    variables.
-- `r pkg("mice")` provides iterative EM-based multiple regression imputation.
-    The data set may consist of continuous, binary, categorical and/or
-    count variables. It can account for model uncertainty trough Bayesian
-    regression, and it's main imputation feature is based on predictive
-    mean matching and midastouch. It provides efficient tools for a
-    multiple imputation framework.
-- `r pkg("Hmisc")` (function `aregImpute()`) also allows predictive mean
-    matching imputation.
-- `r pkg("Amelia")` provides multiple imputation, where bootstrap samples
-    with the same dimensions as the original data are first drawn and
-    then used for EM-based imputation to account for model uncertainty.
-    It is also possible to impute longitudinal data. The package also
-    has a graphical user interface.
-- `r pkg("missForest")` and `r pkg("missRanger")` (preferable over
-    `r pkg("missForest")` because of computational reasons and error
-    management) uses the functionality of a randomForest to impute
-    missing values in an iterative imputation fashion. Through a
-    bootstrap they consider model uncertainty. They can deal with
-    almost any kind of variables except semi-continuous ones. Even
-    the underlying bootstrap approach of random forests ensures that
-    from multiple runs one can get multiple imputations but the additional
-    uncertainty of imputation is only considered when choosing the
-    random forest method of package `r pkg("mice")`.
-
-#### Misc
-
-Single imputation methods are included or called from other packages
+- Single imputation methods are included or called from other packages
 by the package `r pkg("simputation")`. It supports regression
 (standard, M-estimation, ridge/lasso/elasticnet), hot-deck methods
 (powered by VIM), randomForest, EM-based, and iterative
 randomForest imputation.
+
+Note that `r pkg("VIM")` provides a set of visualization methods to visualise missing values and learn their relation to observed values.
+
 
 
 ### 4.4 Seasonal Adjustment
@@ -349,9 +306,9 @@ R packages for this can be found.
 - `r pkg("tmap")` offers a layer-based way to make thematic maps,
     like choropleths and bubble maps.
 - `r pkg("rworldmap")` outline how to map country referenced data and
-    support users in visualising their own data. Examples are given,
+    support users in visualizing their own data. Examples are given,
     e.g., maps for the world bank and UN. It provides also new ways
-    to visualise maps.
+    to visualize maps.
 
 ## 6 Statistical Disclosure Control
 
@@ -363,9 +320,9 @@ amount of information loss.
 
 ### Unit-level data (microdata)
 
-- `r pkg("sdcMicro")` can be used to anonymise data, i.e. to create
+- `r pkg("sdcMicro")` can be used to anonymize data, i.e. to create
     anonymized files for public and scientific use. It implements a
-    wide range of methods for anonymising categorical and continuous
+    wide range of methods for anonymizing categorical and continuous
     (key) variables. The package also contains a graphical user
     interface, which is available by calling the function `sdcGUI`.
 - `r pkg("simPop")` using linear and robust regression methods,
@@ -433,9 +390,9 @@ amount of information loss.
     `import.dhs()`) to import data from the
     Demographic Health Survey.
 - `r pkg("rsdmx")` provides easy access to data from statistical organisations
-    that support SDMX webservices. The package contains a list of SDMX
+    that support SDMX web services. The package contains a list of SDMX
     access points of various national and international statistical institutes.
-- `r pkg("readsdmx")` implements functions to read SDMX into dataframes
+- `r pkg("readsdmx")` implements functions to read SDMX into data frames
     from local SDMX-ML file or web-service. By OECD.
 - `r pkg("rdbnomics")` provides access to the DB.nomics database on
     macroeconomic data from 38 official providers such as INSEE, Eurostat,
@@ -444,7 +401,7 @@ amount of information loss.
 ## Access to data from national organizations
 
 - `r pkg("tidyqwi")` provides an api for accessing
-    the United States Census Bureau's Quartely Workforce Indicator.
+    the United States Census Bureau's Quarterly Workforce Indicator.
 - `r pkg("tidyBdE")` provides access to official
     statistics provided by the Spanish Banking Authority Banco de Espana.
 - `r pkg("cancensus")` provides access to Statistics
@@ -458,7 +415,7 @@ amount of information loss.
     US Census.
 - `r pkg("censusapi")` implements a wrapper for the U.S. Census Bureau APIs
     that returns data frames of Census data and meta data.
-- `r pkg("censusGeography")` converts spefific
+- `r pkg("censusGeography")` converts specific
     United States Census geographic code for city, state (FIP and ICP),
     region, and birthplace.
 - `r pkg("idbr")` implements functions to make requests to
@@ -489,7 +446,7 @@ amount of information loss.
 - `r pkg("csodata")` provides functions to download data from Central
     Statistics Office (CSO) of Ireland.
 
-# <a name="specific"></a>Add-on Part 1: Specific Techniques/ Methods
+# <a name="specific"></a>Third Part: Related Methods
 
 ## A: Small Area Estimation
 
@@ -581,7 +538,7 @@ amount of information loss.
     multiway data analysis, applicable also for compositional data.
 
 
-# <a name="misc"></a>Add-on Part 2: Misc
+# <a name="misc"></a>Misc
 
 - `r pkg("samplingbook")` includes sampling
     procedures from the book 'Stichproben. Methoden und praktische
