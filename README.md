@@ -4,7 +4,9 @@
 
 **Source file:** [OfficialStatistics.md](OfficialStatistics.md)
 
-**Contributions:** For reasons of transparency we encourage you to send suggestions and improvements for this task view through issues or pull requests here on GitHub. For further details see the
+**Contributions:** Suggestions and improvements for this task view are very
+welcome and can be made through issues or pull requests here on GitHub or
+via e-mail to the maintainer address. For further details see the
 [Contributing](https://github.com/cran-task-views/ctv/blob/main/Contributing.md)
 guide. All contributions must adhere to the
 [code of conduct](https://github.com/cran-task-views/ctv/blob/main/CodeOfConduct.md).
