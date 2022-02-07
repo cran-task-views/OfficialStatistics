@@ -22,11 +22,7 @@ The task view is split into several parts
 - Second part: ["Access to Official Statistics"](#access). This second
   part's target audience is everyone interested to use official statistics
   results directly from within R.
-- Third part: ["Related Methods"]("specific") shows packages that
-  are important in official and survey statistics, but do not directly fit into the production of official statistics.
-- ["Misc"]("misc") is a collection of packages that are loosely
-  linked to official statistics or that provide limited complements to
-  official statistics and survey methods.
+- Third part: ["Related Methods"]("specific") shows packages that are important in official and survey statistics, but do not directly fit into the production of official statistics. It complements with a subsection on ["Miscellaneous"]("Miscellaneous") - a collection of packages that are loosely linked to official statistics or that provide limited complements to official statistics and survey methods.
 
 
 # <a name="prod"></a>First Part: Production of Official Statistics
@@ -128,7 +124,7 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 
 ### 4.1 Weighting and Calibration
 
-- `r pkg("survey")` allows for
+- `r pkg("survey", priority = "core")` allows for
     post-stratification, generalized raking/calibration, GREG estimation
     and trimming of weights.
 - `r pkg("sampling")`  provides the function `calib()` to calibrate for
@@ -150,7 +146,7 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
     estimation in dual frame surveys. When two probability samples (one
     from each frame) are drawn. Information collected is suitably
     combined to get estimators of the parameter of interest.
-- `r pkg("surveysd")` provides calibration by iterative proportinal fitting,
+- `r pkg("surveysd", priority = "core")` provides calibration by iterative proportinal fitting,
     a calibrated bootstrap optimized for complex surveys and error
     estimation based on it.
 - `r pkg("inca")` performs calibration weighting with integer weights.
@@ -188,38 +184,10 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 
 ### 4.3 Imputation
 
-Often the criteria for applying a method depend on the scale of the data,
-which in official statistics are usually a mixture of continuous,
-semi-continuous, binary, categorical and count variables. In addition,
-measurement errors can influence non-robust imputation methods to a
-great extend.
+A general overview of imputation methods can be found in the CRAN Task View on Missing Data, `r view("MissingData")`. However, most of these presented methods do not take into account the specificities of survey's from complex designs, i.e., methods that are not specifically designed for official statistics and surveys. 
+For example, the criteria for applying a method often depend on the scale of the data, which in official statistics are usually a mixture of continuous, semi-continuous, binary, categorical, and count variables. In addition, measurement error can greatly affect non-robust imputation methods.
 
-Commonly used packages within statistical agencies are `r pkg("VIM")` and `r pkg("simputation")`. A general overview of imputation methods and for a
-comprehensive overview of multiple imputation, methods that do not
-account for mixed scale of data, and methods that are not specific to
-official statistics, we refer to the CRAN Task View on Missing Data,
-`r view("MissingData")`.
-
-- `r pkg("VIM")` provides an implementation of the popular sequential and
-    random (within a domain) hot-deck algorithm.
-- `r pkg("VIM")` also provides a fast k-nearest neighbor (knn) algorithm
-    which can be used for large data sets. It uses a modification of
-    the Gower Distance for numerical, categorical, ordered, continuous
-    and semi-continuous variables.
-- `r pkg("VIM")` provides EM-based multiple imputation (function `irmi()`)
-    using robust estimations, which allows to adequately deal with data
-    including outliers. It can handle data consisting of continuous,
-    semi-continuous, binary, categorical and/or count variables and one
-    can define a model for each variable to be imputed. The procedures
-    does not account for model uncertainty.
-- Single imputation methods are included or called from other packages
-by the package `r pkg("simputation")`. It supports regression
-(standard, M-estimation, ridge/lasso/elasticnet), hot-deck methods
-(powered by VIM), randomForest, EM-based, and iterative
-randomForest imputation.
-
-Note that `r pkg("VIM")` provides a set of visualization methods to visualise missing values and learn their relation to observed values.
-
+Commonly used packages within statistical agencies are `r pkg("VIM", priority = "core")` and `r pkg("simputation")` having fast k-nearest neighbor (knn) algorithms for general distances and (robust) EM-based multiple imputation algorithms implemented.
 
 
 ### 4.4 Seasonal Adjustment
@@ -250,7 +218,7 @@ R packages for this can be found.
     (means, totals, ratios, regression, etc.) using weight reduction,
     trimming, winsorization and M-estimation. The package
     complements `r pkg("survey")`.
-- `r pkg("surveysd")` offers calibration, bootstrap and error
+- `r pkg("surveysd", priority = "core")` offers calibration, bootstrap and error
     estimation for complex surveys (incl. designs with rotational designs).
 
 - `r pkg("gustave")` provides a toolkit for analytical variance
@@ -291,7 +259,7 @@ R packages for this can be found.
 
 ### 5.2 Visualization
 
-- `r pkg("VIM")` is designed to visualize missing values using suitable
+- `r pkg("VIM", priority = "core")` is designed to visualize missing values using suitable
     plot methods. It can be used to analyse the structure of missing values
     in microdata using univariate, bivariate, multiple and multivariate
     plots where the information of missing values from specified variables
@@ -320,12 +288,12 @@ amount of information loss.
 
 ### Unit-level data (microdata)
 
-- `r pkg("sdcMicro")` can be used to anonymize data, i.e. to create
+- `r pkg("sdcMicro", priority = "core")` can be used to anonymize data, i.e. to create
     anonymized files for public and scientific use. It implements a
     wide range of methods for anonymizing categorical and continuous
     (key) variables. The package also contains a graphical user
     interface, which is available by calling the function `sdcGUI`.
-- `r pkg("simPop")` using linear and robust regression methods,
+- `r pkg("simPop", priority = "core")` using linear and robust regression methods,
     random forests (and many more methods) to simulate synthetic data
     from given complex data. It is also suitable to produce synthetic
     data when the data have hierarchical and cluster information
@@ -340,7 +308,7 @@ amount of information loss.
 
 ### Aggregated information (tabular data)
 
-- `r pkg("sdcTable")` can be used to provide
+- `r pkg("sdcTable", priority = "core")` can be used to provide
     confidential (hierarchical) tabular data. It includes the HITAS and
     the HYPERCUBE technique and uses linear programming packages (Rglpk
     and lpSolveAPI) for solving (a large amount of) linear programs.
@@ -448,9 +416,9 @@ amount of information loss.
 
 # <a name="specific"></a>Third Part: Related Methods
 
-## A: Small Area Estimation
+## Small Area Estimation
 
-- `r pkg("sae")` provides functions for small area
+- `r pkg("sae", priority = "core")` provides functions for small area
     estimation (basic area- and unit-level model, Fay-Herriot model with
     spatial/ temporal correlations), for example, direct estimators,
     the empirical best predictor and composite estimators.
@@ -487,9 +455,9 @@ amount of information loss.
     `r pkg("nlme")` package that is used to fit the basic
     random effects models.
 
-## B: Microsimulation
+## Microsimulation
 
-- `r pkg("simPop")` allows to produce synthetic population data, sometimes
+- `r pkg("simPop", priority = "core")` allows to produce synthetic population data, sometimes
     needed as a starting population for microsimulations.
 - `r pkg("sms")` provides facilities to simulate
     micro-data from given area-based macro-data. Simulated annealing is
@@ -502,7 +470,7 @@ amount of information loss.
     protocols.
 
 
-## C: Indices, Indicators, Tables and Visualisation of Indicators
+## Indices, Indicators, Tables and Visualization of Indicators
 
 - `r pkg("laeken")` provides functions to estimate
     popular risk-of-poverty and inequality indicators
@@ -538,7 +506,7 @@ amount of information loss.
     multiway data analysis, applicable also for compositional data.
 
 
-# <a name="misc"></a>Misc
+# <a name="misc"></a>Miscellaneous
 
 - `r pkg("samplingbook")` includes sampling
     procedures from the book 'Stichproben. Methoden und praktische
