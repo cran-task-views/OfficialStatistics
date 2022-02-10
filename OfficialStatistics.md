@@ -3,7 +3,7 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2022-01-28
+version: 2022-02-10
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
@@ -502,8 +502,6 @@ amount of information loss.
     (of type Paasche, Fisher and Laspeyres); see `priceIndex()`. For
     estimating quantities (of goods, for example) see function
     `quantityIndex()`.
-- `r pkg("rrcov3way")` provides robust methods for
-    multiway data analysis, applicable also for compositional data.
 
 
 # <a name="misc"></a>Miscellaneous
