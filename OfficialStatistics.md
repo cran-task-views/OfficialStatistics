@@ -42,7 +42,7 @@ The task view is split into several parts
 
 ## 2 Sampling
 
-- `r pkg("sampling")` includes many different
+- `r pkg("sampling", priority = "core")` includes many different
     algorithms (Brewer, Midzuno, pps, systematic, Sampford, balanced
     (cluster or stratified) sampling via the cube method, etc.) for
     drawing survey samples and calibrating the design weights.
@@ -67,7 +67,7 @@ The task view is split into several parts
 - `r pkg("stratification")` allows univariate
     stratification of survey populations with a generalisation of the
     Lavallee-Hidiroglou method.
-- `r pkg("SamplingStrata")` offers an approach for
+- `r pkg("SamplingStrata", priority = "core")` offers an approach for
     choosing the best stratification of a sampling frame in a
     multivariate and multidomain setting, where the sampling sizes in
     each strata are determined in order to satisfy accuracy constraints
@@ -153,10 +153,10 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 
 ### 4.2 Editing (including outlier detection)
 
-- `r pkg("validate")` includes rule management and
-    data validation and package `r pkg("validatetools")` is
+- `r pkg("validate", priority = "core")` includes rule management and
+    data validation and package `r pkg("validatetools", priority = "core")` is
     checking and simplifying sets of validation rules.
-- `r pkg("errorlocate")` includes error
+- `r pkg("errorlocate", priority = "core")` includes error
     localisation based on the principle of Fellegi and Holt. It supports
     categorical and/or numeric data and linear equalities, inequalities
     and conditional rules. The package includes a configurable backend
