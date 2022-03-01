@@ -74,6 +74,10 @@ The task view is split into several parts
     on target estimates. To evaluate the distribution of target
     variables in different strata, information of the sampling frame, or
     data from previous rounds of the same survey, may be used.
+- `r pkg(R2BEAT)` provides functions for multivariate, domain-specific optimal
+    sample size allocation for one- and two-stage stratified sampling
+    designs (i.e., generalization of the allocation methods of Neyman
+    and Tschuprow to the case of several variables).
 
 ## 3 Data Collection (incl. record linkage)
 
@@ -448,6 +452,11 @@ amount of information loss.
     estimation methods that range from the basic Fay-Herriot model to its
     improvement such as You-Chapman models, unmatched models, spatial
     models and so on.
+- `r pkg("SAEval")` provides diagnostics and graphic tools for the
+    evaluation of small area estimators
+- `r pkg("mind")` provides multivariate prediction and inference
+    (mean square error) for domains using mixed linear models as proposed
+    in Datta, Day, and Basawa (1999, J. Stat. Plan. Inference)
 - `r pkg("JoSAE")` provides point and variance
     estimation for the generalized regression (GREG) and a unit level
     empirical best linear unbiased prediction EBLUP estimators can be
