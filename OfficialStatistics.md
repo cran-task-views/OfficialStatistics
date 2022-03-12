@@ -74,7 +74,7 @@ The task view is split into several parts
     on target estimates. To evaluate the distribution of target
     variables in different strata, information of the sampling frame, or
     data from previous rounds of the same survey, may be used.
-- `r pkg(R2BEAT)` provides functions for multivariate, domain-specific optimal
+- `r pkg("R2BEAT")` provides functions for multivariate, domain-specific optimal
     sample size allocation for one- and two-stage stratified sampling
     designs (i.e., generalization of the allocation methods of Neyman
     and Tschuprow to the case of several variables).
