@@ -260,6 +260,11 @@ R packages for this can be found.
     producing simple weighted statistics, such as weighted
     Pearson's correlations, partial correlations, Chi-Squared
     statistics, histograms and t-tests.
+- `r pkg("svrep")` provides tools for creating, updating and
+    analyzing survey replicate weights as an extension of `r pkg("survey")`.
+    Non-response adjustments to both full-sample and replicate
+    weights can be applied.
+    
 
 ### 5.2 Visualization
 
@@ -581,3 +586,4 @@ amount of information loss.
     future states of the population. The package does not contain
     compiled code but functionality to run the microsimulation in
     parallel is provided.
+
