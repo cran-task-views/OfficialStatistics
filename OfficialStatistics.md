@@ -22,10 +22,10 @@ The task view is split into several parts
 - Second part: ["Access to Official Statistics"](#access). This second
   part's target audience is everyone interested to use official statistics
   results directly from within R.
-- Third part: ["Related Methods"]("specific") shows packages that are important in official and survey statistics, but do not directly fit into the production of official statistics. It complements with a subsection on ["Miscellaneous"]("Miscellaneous") - a collection of packages that are loosely linked to official statistics or that provide limited complements to official statistics and survey methods.
+- Third part: ["Related Methods"](#specific) shows packages that are important in official and survey statistics, but do not directly fit into the production of official statistics. It complements with a subsection on ["Miscellaneous"]("Miscellaneous") - a collection of packages that are loosely linked to official statistics or that provide limited complements to official statistics and survey methods.
 
 
-# <a name="prod"></a>First Part: Production of Official Statistics
+# <a id="prod"></a>First Part: Production of Official Statistics
 
 ## 1 Preparations/ Management/ Planning (questionnaire design, etc.)
 
@@ -338,7 +338,7 @@ amount of information loss.
     infrastructure and series of R packages that enables the remote
     and non-disclosive analysis of sensitive research data.
 
-# <a name="access"></a>Second Part: Access to Official Statistics
+# <a id="access"></a>Second Part: Access to Official Statistics
 
 ## Access to data from international organizations and multiple organizations
 
@@ -423,7 +423,7 @@ amount of information loss.
 - `r pkg("csodata")` provides functions to download data from Central
     Statistics Office (CSO) of Ireland.
 
-# <a name="specific"></a>Third Part: Related Methods
+# <a id="specific"></a>Third Part: Related Methods
 
 ## Small Area Estimation
 
@@ -518,7 +518,7 @@ amount of information loss.
     `quantityIndex()`.
 
 
-# <a name="misc"></a>Miscellaneous
+# <a id="misc"></a>Miscellaneous
 
 - `r pkg("samplingbook")` includes sampling
     procedures from the book 'Stichproben. Methoden und praktische
