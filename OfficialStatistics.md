@@ -224,7 +224,6 @@ R packages for this can be found.
     complements `r pkg("survey")`.
 - `r pkg("surveysd", priority = "core")` offers calibration, bootstrap and error
     estimation for complex surveys (incl. designs with rotational designs).
-
 - `r pkg("gustave")` provides a toolkit for analytical variance
     estimation in survey sampling.
 - `r pkg("lavaan.survey")` provides a wrapper
@@ -236,6 +235,9 @@ R packages for this can be found.
     `r pkg("survey")`, lavaan objects are re-fit (corrected)
     with the `lavaan.survey()` function. This function also accommodates
     replicate weights and multiply imputed datasets.
+- `r pgk("WeMix")` fits weighted linear mixed models (also called
+    heirarchical linear models) with survey weights at n-levels
+    (linear models) or 2-levels (non-linear models).
 - `r pkg("vardpoor")` allows to calculate
     linearisation of several nonlinear population statistics, variance
     estimation of sample surveys by the ultimate cluster method,
