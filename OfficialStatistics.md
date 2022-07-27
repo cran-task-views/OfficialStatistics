@@ -436,9 +436,7 @@ amount of information loss.
     model (aka nested error regression model) by means of maximum
     likelihood (ML) or robust M-estimation. On the basis of the estimated
     parameters, robust predictions of the area-specific means are
-    computed (incl. MSE estimates; parametric bootstrap). The current
-    version (rsae 0.4-x) does not allow for categorical independent
-    variables.
+    computed (incl. MSE estimates; parametric bootstrap).
 - `r pkg("emdi")` provides functions that support
     estimating, assessing and mapping regional disaggregated indicators.
     So far, estimation methods comprise direct estimation, the
