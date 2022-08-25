@@ -564,10 +564,6 @@ amount of information loss.
 - `r pkg("panelaggregation")` aggregates business
     tendency survey data (and other qualitative surveys) to time series
     at various aggregation levels.
-- `r pkg("RcmdrPlugin.sampling")` includes tools for
-    sampling in official statistical surveys. It includes tools for
-    calculating sample sizes and selecting samples using various
-    sampling designs.
 - `r pkg("mapStats")` does automated calculation
     and visualization of survey data statistics on a color-coded map.
 - `r pkg("rtrim")` implements functions to study trends and indices for
