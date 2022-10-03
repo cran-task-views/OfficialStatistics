@@ -140,10 +140,6 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 - `r pkg("icarus")` focuses on calibration and
     re-weighting in survey sampling and was designed to provide a
     familiar setting in R for users of the SAS macro `Calmar` developed by INSEE.
-- `r pkg("reweight")` allows for calibration of
-    survey weights for categorical survey data so that the marginal
-    distributions of certain variables fit more closely to those from a
-    given population, but does not allow complex sampling designs.
 - `r pkg("CalibrateSSB")` include a function
     to calculate weights and estimates for panel data with non-response.
 - `r pkg("Frames2")` allows point and interval
@@ -420,8 +416,6 @@ amount of information loss.
     accessible as a data frame in the R environment.
 - `r pkg("cdlTools")` provides functions to download USDA National
     Agricultural Statistics Service (NASS) cropscape data for a specified state.
-- `r pkg("csodata")` provides functions to download data from Central
-    Statistics Office (CSO) of Ireland.
 
 # <a id="specific"></a>Third Part: Related Methods
 
@@ -504,9 +498,6 @@ amount of information loss.
     theoretical Lorenz curves as well as Pen's parade. It is not
     designed to deal with sampling weights directly (these could only be
     emulated via `rep(x, weights)`).
-- `r pkg("IC2")` includes three inequality indices:
-    extended Gini, Atkinson and Generalized Entropy. It can deal with
-    sampling weights and subgroup decomposition is supported.
 - `r pkg("DHS.rates")` estimates key indicators
     (especially fertility rates) and their variances for the Demographic
     and Health Survey (DHS) data.
@@ -564,8 +555,6 @@ amount of information loss.
 - `r pkg("panelaggregation")` aggregates business
     tendency survey data (and other qualitative surveys) to time series
     at various aggregation levels.
-- `r pkg("mapStats")` does automated calculation
-    and visualization of survey data statistics on a color-coded map.
 - `r pkg("rtrim")` implements functions to study trends and indices for
     monitoring data. It provides tools for estimating animal/plant
     populations based on site counts, including occurrence of missing data.
