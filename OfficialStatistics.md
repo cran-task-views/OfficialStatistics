@@ -367,9 +367,12 @@ amount of information loss.
     access points of various national and international statistical institutes.
 - `r pkg("readsdmx")` implements functions to read SDMX into data frames
     from local SDMX-ML file or web-service. By OECD.
+- `r pkg("regions")` offers tools to process regional statistics focusing on European data.    
+- `r pkg("statcodelists")` makes the internationally standardized SDMX code lists available for the R user.
 - `r pkg("rdbnomics")` provides access to the DB.nomics database on
     macroeconomic data from 38 official providers such as INSEE, Eurostat,
     Wolrd bank, etc.
+- `r pkg("iotables")` makes input-output tables tidy, and allows for economic and environmental impact analysis with formatting the data received from the Eurostat data warehouse into appropriate, validated, matrix forms. 
 
 ## Access to data from national organizations
 
