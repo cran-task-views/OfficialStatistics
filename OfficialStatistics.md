@@ -3,7 +3,7 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2022-02-10
+version: 2022-14-10
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
@@ -113,6 +113,9 @@ The task view is split into several parts
     on http://imai.princeton.edu/research/linkage.html
 - `r pkg("fuzzyjoin")` provides function for joining tables based on exact
     or similar matches. It allows for matching records based on inaccurate keys.
+- `r pkg("PPRL") implements privacy preserving record linkage, especially useful 
+    when personal ID's cannot be used to link two data sets. This approach then
+    protects the identity of persons.
 
 ### 3.2 Web Scraping
 
