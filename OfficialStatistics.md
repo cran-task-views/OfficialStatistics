@@ -3,7 +3,7 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2022-10-14
+version: 2022-11-17
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
@@ -376,6 +376,8 @@ amount of information loss.
     macroeconomic data from 38 official providers such as INSEE, Eurostat,
     Wolrd bank, etc.
 - `r pkg("iotables")` makes input-output tables tidy, and allows for economic and environmental impact analysis with formatting the data received from the Eurostat data warehouse into appropriate, validated, matrix forms. 
+- `r pkg("npi")` provides access to the API for the U.S. National Provider Identifier Registry, which is the authoritative data source for National Provider Identifier records in the healthcare domain. 
+
 
 ## Access to data from national organizations
 
