@@ -424,6 +424,8 @@ amount of information loss.
     accessible as a data frame in the R environment.
 - `r pkg("cdlTools")` provides functions to download USDA National
     Agricultural Statistics Service (NASS) cropscape data for a specified state.
+- `r pkg("csodata")` provides functions to download data from Central
+    Statistics Office (CSO) of Ireland.
 
 # <a id="specific"></a>Third Part: Related Methods
 
