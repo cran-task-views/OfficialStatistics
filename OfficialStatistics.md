@@ -262,7 +262,9 @@ R packages for this can be found.
 - `r pkg("svrep")` provides tools for creating, updating and
     analyzing survey replicate weights as an extension of `r pkg("survey")`.
     Non-response adjustments to both full-sample and replicate
-    weights can be applied.
+    weights can be applied. Bootstrap replicate weights can be 
+    created for a variety of sampling designs, including stratified multistage samples
+    and samples selected using systematic or unequal probability sampling.
     
 
 ### 5.2 Visualization
