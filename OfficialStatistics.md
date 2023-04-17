@@ -332,6 +332,9 @@ amount of information loss.
 - `r pkg("SmallCountRounding")` can be used to
     protect frequency tables by rounding necessary inner cells so that
     cross-classifications to be published are safe.
+- `r pkg("GaussSuppression")` can be used to
+    protect tables by suppression using the Gaussian elimination
+    secondary suppression algorithm.   
 
 ### Remote access
 
