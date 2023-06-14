@@ -587,4 +587,4 @@ amount of information loss.
     future states of the population. The package does not contain
     compiled code but functionality to run the microsimulation in
     parallel is provided.
-
+- `r pkg("singleRcapture")` provides methods to estimate the population size of hard-to-reach populations using single-source capture-recapture methods. 
