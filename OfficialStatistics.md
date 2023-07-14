@@ -383,6 +383,7 @@ amount of information loss.
 - `r pkg("iotables")` makes input-output tables tidy, and allows for economic and environmental impact analysis with formatting the data received from the Eurostat data warehouse into appropriate, validated, matrix forms. 
 - `r pkg("npi")` provides access to the API for the U.S. National Provider Identifier Registry, which is the authoritative data source for National Provider Identifier records in the healthcare domain. 
 - `r pkg("WDI")` provides access to the API for the World Development Indicators gathered by the World Bank.
+- `r pkg("refugees")` contains data from the [Refugee Population Statistics Database](https://www.unhcr.org/refugee-statistics/) published by the UN Refugee Agency (UNHCR).
 
 ## Access to data from national organizations
 
