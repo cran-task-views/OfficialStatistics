@@ -514,9 +514,8 @@ amount of information loss.
     theoretical Lorenz curves as well as Pen's parade. It is not
     designed to deal with sampling weights directly (these could only be
     emulated via `rep(x, weights)`).
-- `r pkg("wINEQ")` fills the gap of `r pkg("ineq")` and allows for sampling weights directly. 
-    It contains various inequality measures such as Fini, Theil, Leti index, Palma ratio, 
-    20:20 ratio, Allison and Foster index, Jenkins index, Cowell and Flechaire index.
+- `r pkg("wINEQ")` fills the gap of `r pkg("ineq")` and allows for sampling weights directly.
+   It contains various inequality measures such as Gini, Theil, Leti index, Palma ratio, 20:20 ratio, Allison and Foster index, Jenkins index, Cowell and Flechaire index, Abul Naga and Yalcin index, Apouey index, Blair and Lacy index. 
 - `r pkg("DHS.rates")` estimates key indicators
     (especially fertility rates) and their variances for the Demographic
     and Health Survey (DHS) data.
