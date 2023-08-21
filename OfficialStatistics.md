@@ -265,6 +265,8 @@ R packages for this can be found.
     weights can be applied. Bootstrap replicate weights can be 
     created for a variety of sampling designs, including stratified multistage samples
     and samples selected using systematic or unequal probability sampling.
+- `r pkg("NonProbEst") includes different inference procedures to correct for selection
+    bias that might be introduced with non-random selection mechanisms. 
     
 
 ### 5.2 Visualization
