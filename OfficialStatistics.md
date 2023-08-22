@@ -3,7 +3,7 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2023-02-19
+version: 2023-08-21
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
