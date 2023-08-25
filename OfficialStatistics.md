@@ -201,6 +201,24 @@ e.g. X13-ARIMA-SEATS developed by the US Census Bureau. In the CRAN
 Task View `r view("TimeSeries")` section seasonal adjustment,
 R packages for this can be found.
 
+### 4.5 Response Rates and Nonresponse Analysis
+
+- `r pkg("nrba")` facilitates nonresponse bias analysis (NRBA)
+    for survey data, potentially arising from complex sample designs.
+    The user can calculate response rates, model response propensities,
+    and assess how respondents differ from the full sample or from
+    external benchmark data. Also implements weighting adjustments
+    commonly used to mitigate nonresponse bias.
+
+- `r pkg("idcnrba")` implements an interactive Shiny application
+    that can be used to calculate response rates,
+    assess representativeness of survey respondents, and analyze
+    nonresponse bias. The application can export a formatted Excel report
+    to summarize analysis results.
+
+- `r pkg("outcomerate")` calculates outcome rates (response rates, 
+    refusal rates, etc.) using definitions standardized by AAPOR.
+
 ## 5 Analysis of Survey Data
 
 ### 5.1 Estimation and Variance Estimation
