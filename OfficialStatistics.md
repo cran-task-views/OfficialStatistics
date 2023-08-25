@@ -153,6 +153,15 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
     a calibrated bootstrap optimized for complex surveys and error
     estimation based on it.
 - `r pkg("inca")` performs calibration weighting with integer weights.
+- `r pkg("nrba")` provides functions for weight adjustments
+    to mitigate nonresponse bias, in particular `wt_class_adjust()` and
+    `rake_to_benchmarks()`. It also includes a diagnostic function
+    `t_test_of_weight_adjustment()` to compare estimates from different
+    stages of weight adjustments.
+- `r pkg("svrep")` includes a function for conducting
+    weighting class adjustments, `redistribute_weights()`.
+    It also includes functions `calibrate_to_sample()` and `calibrate_to_estimate()` which
+    implement sample-based calibration methods that account for sampling error in control totals.
 
 ### 4.2 Editing (including outlier detection)
 
