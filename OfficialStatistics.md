@@ -153,6 +153,7 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
     a calibrated bootstrap optimized for complex surveys and error
     estimation based on it.
 - `r pkg("inca")` performs calibration weighting with integer weights.
+- `r pkg("jointCalib")` performs a joint calibration of totals and quantiles.
 
 ### 4.2 Editing (including outlier detection)
 
