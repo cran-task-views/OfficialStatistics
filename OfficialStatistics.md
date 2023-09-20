@@ -3,7 +3,7 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2023-08-21
+version: 2023-09-20
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
@@ -134,6 +134,7 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 - `r pkg("survey", priority = "core")` allows for
     post-stratification, generalized raking/calibration, GREG estimation
     and trimming of weights.
+- `r pkg("svrep")` provides calibration tools with its function `calibrate_to_estimate` (method of Fuller 1998, raking, post-stratification) that extends package `r pkg("survey")`.
 - `r pkg("sampling")`  provides the function `calib()` to calibrate for
     nonresponse (with response homogeneity
     groups) for stratified samples.
