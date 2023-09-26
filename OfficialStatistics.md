@@ -479,6 +479,7 @@ amount of information loss.
     made at domain level. It basically provides wrapper functions to the
     `r pkg("nlme")` package that is used to fit the basic
     random effects models.
+- `r pkg("SUMMER")` SUMMER: provides small area estimation unit and area models and methods for spatial and spatio-temporal smoothing of demographic and health indicators using survey data
 
 ## Microsimulation
 
