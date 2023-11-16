@@ -178,8 +178,6 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 - `r pkg("rspa")` implements functions to
     minimally adjust numerical records so they obey (in)equation
     restrictions.
-- `r pkg("surveyoutliers")` winsorize values of a
-    variable of interest.
 - `r pkg("univOutl")` includes various methods
     for detecting univariate outliers, e.g. the Hidiroglou-Berthelot
     method.
