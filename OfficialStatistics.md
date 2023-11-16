@@ -395,9 +395,6 @@ amount of information loss.
     US Census.
 - `r pkg("censusapi")` implements a wrapper for the U.S. Census Bureau APIs
     that returns data frames of Census data and meta data.
-- `r pkg("censusGeography")` converts specific
-    United States Census geographic code for city, state (FIP and ICP),
-    region, and birthplace.
 - `r pkg("idbr")` implements functions to make requests to
     the US Census Bureau's International Data Base API.
 - `r pkg("tidycensus")` provides an integrated R
