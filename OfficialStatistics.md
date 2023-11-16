@@ -463,10 +463,6 @@ amount of information loss.
     hierarchical Bayesian way. Auxiliary information can be either counts
     resulting from categorical variables or means from continuous
     population information.
-- `r pkg("BayesSAE")` provides Bayesian
-    estimation methods that range from the basic Fay-Herriot model to its
-    improvement such as You-Chapman models, unmatched models, spatial
-    models and so on.
 - `r pkg("SAEval")` provides diagnostics and graphic tools for the
     evaluation of small area estimators
 - `r pkg("mind")` provides multivariate prediction and inference
