@@ -116,6 +116,8 @@ The task view is split into several parts
 - `r pkg("PPRL")` implements privacy preserving record linkage, especially useful 
     when personal ID's cannot be used to link two data sets. This approach then
     protects the identity of persons.
+- `r pkg("reclin2")` provides functions to assist in performing 
+    probabilistic record linkage and deduplication.
 
 ### 3.2 Web Scraping
 
