@@ -226,15 +226,6 @@ R packages for this can be found.
 
 - `r pkg("gustave")` provides a toolkit for analytical variance
     estimation in survey sampling.
-- `r pkg("lavaan.survey")` provides a wrapper
-    function for packages `r pkg("survey")` and
-    `r pkg("lavaan")`. It can be used for fitting structural
-    equation models (SEM) on samples from complex designs (clustering,
-    stratification, sampling weights, and finite population corrections).
-    Using the design object functionality from package
-    `r pkg("survey")`, lavaan objects are re-fit (corrected)
-    with the `lavaan.survey()` function. This function also accommodates
-    replicate weights and multiply imputed datasets.
 - `r pkg("vardpoor")` allows to calculate
     linearisation of several nonlinear population statistics, variance
     estimation of sample surveys by the ultimate cluster method,
