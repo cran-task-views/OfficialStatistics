@@ -116,7 +116,7 @@ The task view is split into several parts
     protects the identity of persons.
 - `r pkg("reclin2")` provides functions to assist in performing 
     probabilistic record linkage and deduplication.
-- `r pkg(klsh)` provides blocking of records using a k-means variant of locality sensitive hashing.
+- `r pkg(klsh)` provides blocking (for record linkage) of records using a k-means variant of locality sensitive hashing.
 - `r pkg(representr)` provides tools to create representative records after entity resolution/record linkage is performed.
 - `r pkg(clevr)` provides tools for evaluating link prediction and clustering algorithms with respect to ground truth.
 
