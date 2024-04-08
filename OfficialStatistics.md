@@ -257,7 +257,8 @@ R packages for this can be found.
     created for a variety of sampling designs, including stratified multistage samples
     and samples selected using systematic or unequal probability sampling.
 - `r pkg("NonProbEst")` includes different inference procedures to correct for selection
-    bias that might be introduced with non-random selection mechanisms. 
+    bias that might be introduced with non-random selection mechanisms.
+- `r pkg("nonprobsvy")` includes statistical inference methods with non-probability samples when auxiliary information is available from external sources such as probability samples or population totals or means.
     
 
 ### 5.2 Visualization
