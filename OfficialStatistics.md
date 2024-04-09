@@ -3,7 +3,7 @@ name: OfficialStatistics
 topic: Official Statistics & Survey Statistics
 maintainer: Matthias Templ, Alexander Kowarik, Tobias Schoch
 email: matthias.templ@gmail.com
-version: 2023-09-20
+version: 2024-04-09
 source: https://github.com/cran-task-views/OfficialStatistics/
 ---
 
@@ -116,9 +116,9 @@ The task view is split into several parts
     protects the identity of persons.
 - `r pkg("reclin2")` provides functions to assist in performing 
     probabilistic record linkage and deduplication.
-- `r pkg(klsh)` provides blocking (for record linkage) of records using a k-means variant of locality sensitive hashing.
-- `r pkg(representr)` provides tools to create representative records after entity resolution/record linkage is performed.
-- `r pkg(clevr)` provides tools for evaluating link prediction and clustering algorithms with respect to ground truth.
+- `r pkg("klsh")` provides blocking (for record linkage) of records using a k-means variant of locality sensitive hashing.
+- `r pkg("representr")` provides tools to create representative records after entity resolution/record linkage is performed.
+- `r pkg("clevr")` provides tools for evaluating link prediction and clustering algorithms with respect to ground truth.
 
 ### 3.2 Web Scraping
 
