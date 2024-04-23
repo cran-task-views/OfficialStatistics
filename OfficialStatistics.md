@@ -78,6 +78,10 @@ The task view is split into several parts
     sample size allocation for one- and two-stage stratified sampling
     designs (i.e., generalization of the allocation methods of Neyman
     and Tschuprow to the case of several variables).
+- `r pkg("sps")` implements the sequential Poisson method for drawing
+    probability-proportional-to-size samples. Includes tools to coordinate
+    samples with permanent random numbers, draw stratified samples, and use
+    other order-sampling methods. 
 
 ## 3 Data Collection (incl. record linkage)
 
@@ -514,6 +518,10 @@ amount of information loss.
     (of type Paasche, Fisher and Laspeyres); see `priceIndex()`. For
     estimating quantities (of goods, for example) see function
     `quantityIndex()`.
+- `r pkg("piar")` provides tools to make price indexes that aggregate a
+    collection of elemental indexes according to a hierarchical structure.
+    Includes methods to flexibly build indexes from multiple sources of data,
+    chain indexes over time, and construct product contributions. 
 
 
 # <a id="misc"></a>Miscellaneous
