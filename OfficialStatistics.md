@@ -272,8 +272,6 @@ R packages for this can be found.
     plots where the information of missing values from specified variables
     are highlighted in selected variables. It also comes with a
     graphical user interface.
-- `r pkg("longCatEDA")` extends the matrixplot from package `r pkg("VIM")`
-    to check for monotone missingness in longitudinal data.
 - `r pkg("treemap")` provide treemaps. A treemap is a space-filling
     visualization of aggregates of data with hierarchical structures.
     Colors can be used to relate to highlight differences between
