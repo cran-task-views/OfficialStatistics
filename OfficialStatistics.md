@@ -160,6 +160,8 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 - `r pkg("surveysd", priority = "core")` provides calibration by iterative proportinal fitting,
     a calibrated bootstrap optimized for complex surveys and error
     estimation based on it.
+-   `r pkg("GECal")`: Implements generalized entropy calibration, optimizing weights 
+while ensuring design consistency by incorporating design weights into the constraints.
 - `r pkg("inca")` performs calibration weighting with integer weights.
 - `r pkg("jointCalib")` performs a joint calibration of totals and quantiles.
 
