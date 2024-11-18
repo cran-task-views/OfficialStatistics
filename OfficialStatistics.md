@@ -389,8 +389,6 @@ amount of information loss.
 
 ## Access to data from national organizations
 
-- `r pkg("tidyqwi")` provides an api for accessing
-    the United States Census Bureau's Quarterly Workforce Indicator.
 - `r pkg("tidyBdE")` provides access to official
     statistics provided by the Spanish Banking Authority Banco de Espana.
 - `r pkg("cancensus")` provides access to Statistics
@@ -532,6 +530,9 @@ amount of information loss.
 - `r pkg("samplingbook")` includes sampling
     procedures from the book 'Stichproben. Methoden und praktische
     Umsetzung mit R' by Goeran Kauermann and Helmut Kuechenhoff (2010).
+-   `r pkg("RALSA")` facilitates the preparation and analysis of large-scale 
+assessments like TIMSS, PIRLS, and PISA. Supports data conversion, merging, descriptive statistics, 
+and multivariate analyses, with a graphical interface for non-technical users.
 - `r pkg("SDaA")` is designed to reproduce results
     from Lohr, S. (1999) 'Sampling: Design and Analysis, Duxbury' and
     includes the data sets from this book.
