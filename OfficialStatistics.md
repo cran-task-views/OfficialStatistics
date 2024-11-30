@@ -389,6 +389,7 @@ amount of information loss.
 
 ## Access to data from national organizations
 
+- `r pkg("restatis")` access a wide range of Germany's Federal Statistical System data bases on the GENESIS Web Service.
 - `r pkg("tidyBdE")` provides access to official
     statistics provided by the Spanish Banking Authority Banco de Espana.
 - `r pkg("cancensus")` provides access to Statistics
