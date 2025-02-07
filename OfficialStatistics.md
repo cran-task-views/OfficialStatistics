@@ -126,7 +126,7 @@ The task view is split into several parts
 
 ### 3.2 Web Scraping
 
-Web scraping is used nowadays used more frequently in the production
+Web scraping is used nowadays more frequently in the production
 of official statistics. For example in price statistics, the collection
 of product prices, formerly collected by hand over the web or by in person
 visits to stores are replaced by scraping specific homepages. Tools
