@@ -82,6 +82,9 @@ The task view is split into several parts
     probability-proportional-to-size samples. Includes tools to coordinate
     samples with permanent random numbers, draw stratified samples, and use
     other order-sampling methods. 
+- `r pkg("prnsamplr")` implements permanent random number sampling for
+   stratfied and simple random sampling as well pps sampling in order to coordinate
+   the overlap between samples.
 
 ## 3 Data Collection (incl. record linkage)
 
