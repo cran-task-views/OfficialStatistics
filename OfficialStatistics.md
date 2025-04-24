@@ -595,3 +595,10 @@ and multivariate analyses, with a graphical interface for non-technical users.
     compiled code but functionality to run the microsimulation in
     parallel is provided.
 - `r pkg("singleRcapture")` provides methods to estimate the population size of hard-to-reach populations using single-source capture-recapture methods. 
+- `r pkg("SSBtools")` includes functionality to compute tabular aggregates according to a hierarchical structure. 
+    For example, using the package's functions 
+    [model_aggregate()](https://statisticsnorway.github.io/ssb-ssbtools/reference/model_aggregate.html), 
+    [tables_by_formulas()](https://statisticsnorway.github.io/ssb-ssbtools/reference/tables_by_formulas.html) and 
+    [quantile_weighted()](https://statisticsnorway.github.io/ssb-ssbtools/reference/quantile_weighted.html). 
+    It also is a dependency package for some of the packages under "Statistical Disclosure Control".
+
