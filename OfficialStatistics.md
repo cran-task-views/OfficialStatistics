@@ -575,6 +575,7 @@ and multivariate analyses, with a graphical interface for non-technical users.
     multivariate analysis (correlation, linear, and logistic regression)
     for several variants of the randomized response technique, a survey
     method for eliminating response biases due to social desirability.
+- `r pkg("SSBtools")` includes functionality to compute tabular aggregates according to a hierarchical structure. 
 - `r pkg("RRTCS")` includes randomized response
     techniques for complex surveys.
 - `r pkg("panelaggregation")` aggregates business
