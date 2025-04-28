@@ -362,6 +362,8 @@ amount of information loss.
     European Union.
 - `r pkg("ipumsr")` provides an easy way to import
     census, survey and geographic data provided by IPUMS.
+- `r pkg("fishstat")` provides the UN Food and Agricultural Organization (FAO)
+    FishStat global fisheries and aquaculture production data as R data frames.
 - `r pkg("FAOSTAT")` can be used to download data from the
     FAOSTAT database of the Food and Agricultural Organization (FAO) of
     the United Nations.
