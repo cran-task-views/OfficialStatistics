@@ -108,8 +108,6 @@ The task view is split into several parts
     string distances based on edits (damerau-levenshtein, hamming,
     levenshtein, optimal sting alignment), qgrams (q-gram, cosine,
     jaccard distance) or heuristic metrics (jaro, jaro-winkler).
-- `r pkg("XBRL")` allows the extraction of
-    business financial information from XBRL Documents.
 - `r pkg("RecordLinkage")` implements the Fellegi-Sunter method for record
     linkage.
 - `r pkg("fastLink")` implements a Fellegi-Sunter probabilistic record
