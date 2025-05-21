@@ -423,8 +423,6 @@ amount of information loss.
 - `r pkg("BIFIEsurvey")` includes tools for survey
     statistics in educational assessment including data with replication
     weights (e.g. from bootstrap).
-- `r pkg("CANSIM2R")` provides functions to extract CANSIM (Statistics Canada)
-    tables and transform them into readily usable data.
 - `r pkg("statcanR")` provides an R connection to Statistics Canada's Web
     Data Service. Open economic data (formerly CANSIM tables) are
     accessible as a data frame in the R environment.
