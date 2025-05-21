@@ -403,9 +403,6 @@ amount of information loss.
 - `r pkg("sorvi")` provides access to Finnish open government data.
 - `r pkg("insee")` searches and extracts data from
     the Insee's BDM database.
-- `r pkg("acs")` downloads, manipulates, and
-    presents the American Community Survey and decennial data from the
-    US Census.
 - `r pkg("censusapi")` implements a wrapper for the U.S. Census Bureau APIs
     that returns data frames of Census data and meta data.
 - `r pkg("idbr")` implements functions to make requests to
