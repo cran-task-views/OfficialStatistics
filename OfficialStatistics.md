@@ -416,8 +416,6 @@ amount of information loss.
     Statistics Netherlands' (CBS) open data API.
 - `r pkg("EdSurvey")` includes analysis of NCES
     Education Survey and Assessment Data.
-- `r pkg("nomisr")` gives access to Nomis UK
-    Labour Market Data including Census and Labour Force Survey.
 - `r pkg("readabs")` implements functions to download and tidy time
     series data from the Australian Bureau of Statistics.
 - `r pkg("BIFIEsurvey")` includes tools for survey
