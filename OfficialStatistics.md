@@ -571,9 +571,6 @@ and multivariate analyses, with a graphical interface for non-technical users.
 - `r pkg("SSBtools")` includes functionality to compute tabular aggregates according to a hierarchical structure. 
 - `r pkg("RRTCS")` includes randomized response
     techniques for complex surveys.
-- `r pkg("panelaggregation")` aggregates business
-    tendency survey data (and other qualitative surveys) to time series
-    at various aggregation levels.
 - `r pkg("rtrim")` implements functions to study trends and indices for
     monitoring data. It provides tools for estimating animal/plant
     populations based on site counts, including occurrence of missing data.
