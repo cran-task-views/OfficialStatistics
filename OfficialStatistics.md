@@ -39,6 +39,14 @@ The task view is split into several parts
     specific questions.
 - `r pkg("blaise")` implements functions for reading and writing files
     in the Blaise Format (Statistics Netherlands).
+- `r pkg("surveyframe")` supports the full survey research workflow
+    through a typed instrument object (the sframe). Features cover
+    visual instrument design via a browser-based builder and Shiny
+    studio, self-contained static HTML survey export, an embeddable
+    Shiny module for response collection, SHA-256 integrity-checked
+    instrument serialisation, response quality checking, scale scoring,
+    psychometric diagnostics, analysis plan execution, model syntax
+    planning for CFA and SEM, and reproducible HTML reporting.
 
 ## 2 Sampling
 
