@@ -165,6 +165,7 @@ be found on the CRAN task view on `r view("WebTechnologies")`.
 while ensuring design consistency by incorporating design weights into the constraints.
 - `r pkg("inca")` performs calibration weighting with integer weights.
 - `r pkg("jointCalib")` performs a joint calibration of totals and quantiles.
+- `r pkg("weightflow")` builds survey weights by chaining hierarchical adjustments (unknown eligibility, within-household selection, nonresponse, and calibration by raking, post-stratification or linear/GREG, with bounds, ridge and domain/partitioned calibration) through a declarative, pipeable API, following Deville and Särndal (1992). It is dependency-free and also produces recipe-aware bootstrap and delete-a-PSU jackknife replicate weights that bridge to `r pkg("survey")` / `r pkg("srvyr")`.
 
 ### 4.2 Editing (including outlier detection)
 
