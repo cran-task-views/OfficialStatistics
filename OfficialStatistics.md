@@ -411,8 +411,6 @@ amount of information loss.
 - `r pkg("tidycensus")` provides an integrated R
     interface to the decennial US Census and American Community Survey
     APIs and the US Census Bureau's geographic boundary files
-- `r pkg("inegiR")`  provides access to data published by INEGI, Mexico's
-    official statistics agency.
 - `r pkg("cbsodataR")` provides access to
     Statistics Netherlands' (CBS) open data API.
 - `r pkg("EdSurvey")` includes analysis of NCES
