@@ -429,6 +429,8 @@ amount of information loss.
     Agricultural Statistics Service (NASS) cropscape data for a specified state.
 - `r pkg("csodata")` provides functions to download data from Central
     Statistics Office (CSO) of Ireland.
+- `r pkg("healthbR")` provides access to Brazilian public health data from multiple sources.
+- `r pkg("educabR")` provides access to Brazilian education data from INEP (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira).
 
 # <a id="specific"></a>Third Part: Related Methods
 
