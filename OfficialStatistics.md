@@ -437,6 +437,16 @@ amount of information loss.
     limits from the published coefficients of variation and their quality
     flags, the 2021 Census Indigenous Population Profile, and Ontario Special
     Investigations Unit director's reports.
+- `r pkg("rmoriebricklayer")` also reaches data.rmorie.com, a hosted collection
+    of over 1,000 curated tables (Canadian and U.S. justice, health, census
+    and city open data among them): `dtabs()` lists them, and `dload()`
+    downloads one and checks it against the service's SHA-256 manifest. A
+    free key is needed (`dlogin()`); a few licensed tables open only after
+    their terms are accepted.
+- `r pkg("rmoriedata")` loads the same collection (`hostload()`,
+    `hostlogin()`), the Ontario Special Investigations Unit director's-report
+    corpus (`siuload()`), Chicago crime and arrest data (`chiload()`) and its
+    own bundled snapshots of public datasets (`mdload()`).
 
 # <a id="specific"></a>Third Part: Related Methods
 
