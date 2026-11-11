@@ -196,6 +196,10 @@ while ensuring design consistency by incorporating design weights into the const
     univariate outliers based on modeling the bulk distribution.
 
 
+- `r pkg("rmoriebricklayer")` checks published tables for Benford
+    first-digit departures, multivariate outliers and categories reported
+    under one another's labels.
+
 ### 4.3 Imputation
 
 A general overview of imputation methods can be found in the CRAN Task View on Missing Data, `r view("MissingData")`. However, most of these presented methods do not take into account the specificities of survey's from complex designs, i.e., methods that are not specifically designed for official statistics and surveys. 
@@ -429,6 +433,10 @@ amount of information loss.
     Statistics Office (CSO) of Ireland.
 - `r pkg("healthbR")` provides access to Brazilian public health data from multiple sources.
 - `r pkg("educabR")` provides access to Brazilian education data from INEP (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira).
+- `r pkg("rmoriebricklayer")` reads Statistics Canada tables with confidence
+    limits from the published coefficients of variation and their quality
+    flags, the 2021 Census Indigenous Population Profile, and Ontario Special
+    Investigations Unit director's reports.
 
 # <a id="specific"></a>Third Part: Related Methods
 
@@ -521,6 +529,12 @@ amount of information loss.
     collection of elemental indexes according to a hierarchical structure.
     Includes methods to flexibly build indexes from multiple sources of data,
     chain indexes over time, and construct product contributions. 
+- `r pkg("rmoriebricklayer")` computes Community Well-Being scores, the
+    indicators and progress of the Truth and Reconciliation Commission's
+    Calls to Action 19 and 55, gaps against a reference group, and justice
+    indicators: Lakner's stock-and-flow identities (average daily population,
+    length of stay, admissions), court clearance decomposition and a
+    severity-weighted crime index.
 
 
 # <a id="misc"></a>Miscellaneous
