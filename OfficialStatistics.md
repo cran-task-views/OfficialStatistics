@@ -433,20 +433,11 @@ amount of information loss.
     Statistics Office (CSO) of Ireland.
 - `r pkg("healthbR")` provides access to Brazilian public health data from multiple sources.
 - `r pkg("educabR")` provides access to Brazilian education data from INEP (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira).
-- `r pkg("rmoriebricklayer")` reads Statistics Canada tables with confidence
-    limits from the published coefficients of variation and their quality
-    flags, the 2021 Census Indigenous Population Profile, and Ontario Special
-    Investigations Unit director's reports.
-- `r pkg("rmoriebricklayer")` also reaches data.rmorie.com, a hosted collection
-    of over 1,000 curated tables (Canadian and U.S. justice, health, census
-    and city open data among them): `dtabs()` lists them, and `dload()`
-    downloads one and checks it against the service's SHA-256 manifest. A
-    free key is needed (`dlogin()`); a few licensed tables open only after
-    their terms are accepted.
-- `r pkg("rmoriedata")` loads the same collection (`hostload()`,
-    `hostlogin()`), the Ontario Special Investigations Unit director's-report
-    corpus (`siuload()`), Chicago crime and arrest data (`chiload()`) and its
-    own bundled snapshots of public datasets (`mdload()`).
+- `r pkg("rmoriebricklayer")` reads Statistics Canada tables, the 2021 Census
+    Indigenous Population Profile and Ontario SIU reports, and downloads
+    curated tables from data.rmorie.com.
+- `r pkg("rmoriedata")` loads the data.rmorie.com tables and bundled public
+    datasets.
 
 # <a id="specific"></a>Third Part: Related Methods
 
@@ -539,12 +530,9 @@ amount of information loss.
     collection of elemental indexes according to a hierarchical structure.
     Includes methods to flexibly build indexes from multiple sources of data,
     chain indexes over time, and construct product contributions. 
-- `r pkg("rmoriebricklayer")` computes Community Well-Being scores, the
-    indicators and progress of the Truth and Reconciliation Commission's
-    Calls to Action 19 and 55, gaps against a reference group, and justice
-    indicators: Lakner's stock-and-flow identities (average daily population,
-    length of stay, admissions), court clearance decomposition and a
-    severity-weighted crime index.
+- `r pkg("rmoriebricklayer")` computes Community Well-Being scores, Truth and
+    Reconciliation Calls to Action indicators, and justice indicators such as
+    Lakner's stock-and-flow identities and a severity-weighted crime index.
 
 
 # <a id="misc"></a>Miscellaneous
