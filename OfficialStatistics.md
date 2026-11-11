@@ -433,11 +433,10 @@ amount of information loss.
     Statistics Office (CSO) of Ireland.
 - `r pkg("healthbR")` provides access to Brazilian public health data from multiple sources.
 - `r pkg("educabR")` provides access to Brazilian education data from INEP (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira).
-- `r pkg("rmoriebricklayer")` reads Statistics Canada tables, the 2021 Census
-    Indigenous Population Profile and Ontario SIU reports, and downloads
-    curated tables from data.rmorie.com.
-- `r pkg("rmoriedata")` loads the data.rmorie.com tables and bundled public
-    datasets.
+- `r pkg("rmoriebricklayer")` reads Statistics Canada tables and the 2021
+    Census Indigenous Population Profile.
+- `r pkg("rmoriedata")` loads curated tables from data.rmorie.com, the Ontario
+    SIU report corpus, Chicago crime data and bundled public datasets.
 
 # <a id="specific"></a>Third Part: Related Methods
 
@@ -532,7 +531,9 @@ amount of information loss.
     chain indexes over time, and construct product contributions. 
 - `r pkg("rmoriebricklayer")` computes Community Well-Being scores, Truth and
     Reconciliation Calls to Action indicators, and justice indicators such as
-    Lakner's stock-and-flow identities and a severity-weighted crime index.
+    Lakner's stock-and-flow identities, a severity-weighted crime index and
+    clearance-rate changes split into rate and case-mix effects (Simpson's
+    paradox).
 
 
 # <a id="misc"></a>Miscellaneous
